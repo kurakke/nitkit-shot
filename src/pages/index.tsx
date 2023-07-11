@@ -4,7 +4,7 @@ import { NextPage } from 'next'
 const Home: NextPage = () => {
   return (
     <>
-      <div>kurakke</div>
+      <div className='bg-orange-300'>kurakke</div>
     </>
   )
 }
