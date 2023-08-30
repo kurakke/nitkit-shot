@@ -66,3 +66,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 | move     | ファイル・フォルダの移動   |
 | remove   | ファイル・コード等の削除   |
 | readme   | README の追記              |
+
+## 命名ルール
+
+### ブランチ
+
+- ケバブケース
+
+- ブランチ名は右の形式: `issue/issueの番号`
+
+例: `issue#1`に関してブランチを作成する: `issue/1` 
