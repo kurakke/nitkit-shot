@@ -50,3 +50,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
    1. `cd food-web`
 
    1. `npm install`
+
+## コミットメッセージ
+
+- コミットメッセージは`タイトル: 詳細`の形式
+
+- タイトル一覧
+
+| タイトル | コミット内容               |
+| -------- | -------------------------- |
+| add      | 機能・ファイル等の追加     |
+| fix      | バグ等の修正               |
+| update   | 機能等修正（バグではない） |
+| rename   | ファイル・変数等の改名     |
+| move     | ファイル・フォルダの移動   |
+| remove   | ファイル・コード等の削除   |
+| readme   | README の追記              |
