@@ -4,8 +4,8 @@ function MyApp({
   Component,
   pageProps,
 }: {
-  Component: (props: Object) => JSX.Element;
-  pageProps: Object;
+  Component: (props: object) => JSX.Element;
+  pageProps: object;
 }) {
   return (
     <>
