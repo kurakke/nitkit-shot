@@ -37,8 +37,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-以下コーディングルール
-
 ## クローンの手順
 
 1. 作業用フォルダを用意。
@@ -47,9 +45,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 1. 以下のコマンドを上から順に実行。
 
-   1. `cd food-web`
+   1. `cd nitkit-shot`
 
    1. `npm install`
+
+以下コーディングルール
 
 ## コミットメッセージ
 
@@ -70,8 +70,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## 命名ルール
 
 ### ブランチ
-
-- ケバブケース
 
 - ブランチ名は右の形式: `issue/issueの番号`
 
@@ -189,9 +187,9 @@ console.log(
 -良い例
 
 ```tsx
-const name = "デク";
+const name = 'デク';
 const age = 16;
-const food = "リンゴ";
+const food = 'リンゴ';
 
 console.log(`私の名前は${name} です。年齢は${age}歳です。好きな食べ物は${food}です。`);
 //出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
