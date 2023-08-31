@@ -194,7 +194,7 @@
 
 - ### 一度のプルリクエストでの変更量は、レビュアー側の負担を考えて、適切な大きさにすること
 
-  - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#pr%E3%81%AF%E9%81%A9%E5%88%87%E3%81%AA%E5%A4%A7%E3%81%8D%E3%81%95%E3%81%AB%E5%88%86%E5%89%B2%E3%81%99%E3%82%8B)
+  - [具体例](https://zenn.dev/keitakn/articles/github-code-review-reviewee#pr%E3%81%AF%E9%81%A9%E5%88%87%E3%81%AA%E5%A4%A7%E3%81%8D%E3%81%95%E3%81%AB%E5%88%86%E5%89%B2%E3%81%99%E3%82%8B)
 
 - ### レビューコメントに対する修正を行なった際は修正内容のコミットIDのリンクをコメントに貼って返信すること
 
