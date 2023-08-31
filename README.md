@@ -182,7 +182,11 @@
 
 - ### 一度のプルリクエストでの変更量は、レビュアー側の負担を考えて、適切な大きさにすること
 
+  - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#pr%E3%81%AF%E9%81%A9%E5%88%87%E3%81%AA%E5%A4%A7%E3%81%8D%E3%81%95%E3%81%AB%E5%88%86%E5%89%B2%E3%81%99%E3%82%8B)
+
 - ### レビューコメントに対する修正を行なった際は修正内容のコミットIDのリンクをコメントに貼って返信すること
+
+  - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#%E4%BF%AE%E6%AD%A3%E5%86%85%E5%AE%B9%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88id%E3%82%92%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%A7%E4%BC%9D%E3%81%88%E3%82%8B)
 
 - ### ブランチを作成した時点で、`git commit --allow-empty`を実行して`push`した後、githubで`Draft Pull Request`を出すこと
 
