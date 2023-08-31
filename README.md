@@ -2,13 +2,13 @@
 
 1. 作業用フォルダを用意。
 
-1. 作業用フォルダで`git clone git@github.com:kurakke/nitkit-shot.git`
+2. 作業用フォルダで`git clone git@github.com:kurakke/nitkit-shot.git`
 
-1. 以下のコマンドを上から順に実行。
+3. 以下のコマンドを上から順に実行。
 
    1. `cd nitkit-shot`
 
-   1. `npm install`
+   2. `npm install`
 
 以下コーディングルール
 
@@ -30,15 +30,13 @@
 
 ## 命名ルール
 
-### ブランチ
+- ### ブランチ
 
-- ブランチ名は右の形式: `issue/issueの番号`
+  - ブランチ名は右の形式: `issue/issueの番号`
 
-- 例: `issue#1`に関してブランチを作成する: `issue/1`
+  - 例: `issue#1`に関してブランチを作成する: `issue/1`
 
-### TypeScript(JavaScript)の命名
-
-- 命名規則一覧
+- ### TypeScript(JavaScript)の命名
 
 | 記法               | コミット内容           | 例             |
 | ------------------ | ---------------------- | -------------- |
@@ -52,111 +50,119 @@
 
 ## 処理系のルール
 
-### レンダー内で関数を定義しないこと
+- ### レンダー内で関数を定義しないこと
 
-- 悪い例
+  - 悪い例
 
-```tsx
-return <button onClick={() => dispatch(ACTION_TO_SEND_DATA)}>This is a bad example</button>;
-```
+  ```tsx
+  return <button onClick={() => dispatch(ACTION_TO_SEND_DATA)}>This is a bad example</button>;
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-const submitData = () => dispatch(ACTION_TO_SEND_DATA);
+  ```tsx
+  const submitData = () => dispatch(ACTION_TO_SEND_DATA);
 
-return <button onClick={submitData}>This is a good example</button>;
-```
+  return <button onClick={submitData}>This is a good example</button>;
+  ```
 
-### コンポーネントに子要素がない場合は、自己終了タグを使うこと
+- ### コンポーネントに子要素がない場合は、自己終了タグを使うこと
 
-- 悪い例
+  - 悪い例
 
-```tsx
-<SomeComponent variant='stuff'></SomeComponent>
-```
+  ```tsx
+  <SomeComponent variant='stuff'></SomeComponent>
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-<SomeComponent variant='stuff' />
-```
+  ```tsx
+  <SomeComponent variant='stuff' />
+  ```
 
-### 三項演算子を使用すること
+- ### 三項演算子を使用すること
 
-- 悪い例
+  - 悪い例
 
-```tsx
-const { role } = user;
-if (role === ADMIN) {
-  return <AdminUser />;
-} else {
-  return <NormalUser />;
-}
-```
+  ```tsx
+  const { role } = user;
+  if (role === ADMIN) {
+    return <AdminUser />;
+  } else {
+    return <NormalUser />;
+  }
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-const { role } = user;
-return role === ADMIN ? <AdminUser /> : <NormalUser />;
-```
+  ```tsx
+  const { role } = user;
+  return role === ADMIN ? <AdminUser /> : <NormalUser />;
+  ```
 
-### 文字列変数の受け渡しには波括弧は使用しないこと
+- ### 文字列変数の受け渡しには波括弧は使用しないこと
 
-- 悪い例
+  - 悪い例
 
-```tsx
-return <Navbar title={'My Special App'} />;
-```
+  ```tsx
+  return <Navbar title={'My Special App'} />;
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-return <Navbar title='My Special App' />;
-```
+  ```tsx
+  return <Navbar title='My Special App' />;
+  ```
 
-### ブール変数の受け渡しの時、値が`true`の場合には、省略形を使うこと
+- ### ブール変数の受け渡しの時、値が`true`の場合には、省略形を使うこと
 
-- 悪い例
+  - 悪い例
 
-```tsx
-return <Navbar showTitle={true} />;
-```
+  ```tsx
+  return <Navbar showTitle={true} />;
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-return <Navbar showTitle />;
-```
+  ```tsx
+  return <Navbar showTitle />;
+  ```
 
-### 文字列の合成にはテンプレートリテラルを使用すること
+- ### 文字列の合成にはテンプレートリテラルを使用すること
 
-- 悪い例
+  - 悪い例
 
-```tsx
-const name = 'デク';
-const age = 16;
-const food = 'リンゴ';
+  ```tsx
+  const name = 'デク';
+  const age = 16;
+  const food = 'リンゴ';
 
-console.log(
-  '私の名前は' + name + 'です。' + '年齢は' + age + '歳です。' + '好きな食べ物は' + food + 'です。',
-);
-//出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
-```
+  console.log(
+    '私の名前は' +
+      name +
+      'です。' +
+      '年齢は' +
+      age +
+      '歳です。' +
+      '好きな食べ物は' +
+      food +
+      'です。',
+  );
+  //出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
+  ```
 
-- 良い例
+  - 良い例
 
-```tsx
-const name = 'デク';
-const age = 16;
-const food = 'リンゴ';
+  ```tsx
+  const name = 'デク';
+  const age = 16;
+  const food = 'リンゴ';
 
-console.log(`私の名前は${name} です。年齢は${age}歳です。好きな食べ物は${food}です。`);
-//出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
-```
+  console.log(`私の名前は${name} です。年齢は${age}歳です。好きな食べ物は${food}です。`);
+  //出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
+  ```
 
-### 変数の宣言にはなるべく`const`を使用すること
+- ### 変数の宣言にはなるべく`const`を使用すること
 
 ## プルリクエストのルール
 
@@ -164,9 +170,9 @@ console.log(`私の名前は${name} です。年齢は${age}歳です。好き�
 
 - ### 説明欄には以下のものを必ず記述すること
 
-- 対応するGitHubのissueのURL
+  1. 対応するGitHubのissueのURL
 
-- どのような変更・追加を行ったかの説明
+  2. どのような変更・追加を行ったかの説明
 
 - ### エラー等の問題解決のためにプルリクエストを立ち上げた場合、どのような問題が発生し、どのように解決したかを説明欄に記述すること
 
@@ -180,6 +186,6 @@ console.log(`私の名前は${name} です。年齢は${age}歳です。好き�
 
 - ### ブランチを作成した時点で、`git commit --allow-empty`を実行して`push`した後、githubで`Draft Pull Request`を出すこと
 
-- [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#%E6%97%A9%E3%82%81%E3%81%ABdraft-pull-request%E3%82%92%E5%87%BA%E3%81%99)
+  - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#%E6%97%A9%E3%82%81%E3%81%ABdraft-pull-request%E3%82%92%E5%87%BA%E3%81%99)
 
-- [Draft Pull Requestについて](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
+  - [Draft Pull Requestについて](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
