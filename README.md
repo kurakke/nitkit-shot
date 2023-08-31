@@ -73,11 +73,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - ブランチ名は右の形式: `issue/issueの番号`
 
-例: `issue#1`に関してブランチを作成する: `issue/1`
+- 例: `issue#1`に関してブランチを作成する: `issue/1`
 
 ### TypeScript(JavaScript)の命名
 
--命名規則一覧
+- 命名規則一覧
 
 | 記法               | コミット内容           | 例             |
 | ------------------ | ---------------------- | -------------- |
@@ -93,13 +93,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### レンダー内で関数を定義しないこと
 
--悪い例
+- 悪い例
 
 ```tsx
 return <button onClick={() => dispatch(ACTION_TO_SEND_DATA)}>This is a bad example</button>;
 ```
 
--良い例
+- 良い例
 
 ```tsx
 const submitData = () => dispatch(ACTION_TO_SEND_DATA);
@@ -109,13 +109,13 @@ return <button onClick={submitData}>This is a good example</button>;
 
 ### コンポーネントに子要素がない場合は、自己終了タグを使うこと
 
--悪い例
+- 悪い例
 
 ```tsx
 <SomeComponent variant='stuff'></SomeComponent>
 ```
 
--良い例
+- 良い例
 
 ```tsx
 <SomeComponent variant='stuff' />
@@ -123,7 +123,7 @@ return <button onClick={submitData}>This is a good example</button>;
 
 ### 三項演算子を使用すること
 
--悪い例
+- 悪い例
 
 ```tsx
 const { role } = user;
@@ -134,7 +134,7 @@ if (role === ADMIN) {
 }
 ```
 
--良い例
+- 良い例
 
 ```tsx
 const { role } = user;
@@ -143,13 +143,13 @@ return role === ADMIN ? <AdminUser /> : <NormalUser />;
 
 ### 文字列変数の受け渡しには波括弧は使用しないこと
 
--悪い例
+- 悪い例
 
 ```tsx
 return <Navbar title={'My Special App'} />;
 ```
 
--良い例
+- 良い例
 
 ```tsx
 return <Navbar title='My Special App' />;
@@ -157,13 +157,13 @@ return <Navbar title='My Special App' />;
 
 ### ブール変数の受け渡しの時、値が`true`の場合には、省略形を使うこと
 
--悪い例
+- 悪い例
 
 ```tsx
 return <Navbar showTitle={true} />;
 ```
 
--良い例
+- 良い例
 
 ```tsx
 return <Navbar showTitle />;
@@ -171,7 +171,7 @@ return <Navbar showTitle />;
 
 ### 文字列の合成にはテンプレートリテラルを使用すること
 
--悪い例
+- 悪い例
 
 ```tsx
 const name = 'デク';
@@ -184,7 +184,7 @@ console.log(
 //出力結果：私の名前はデクです。年齢は１６歳です。好きな食べ物はリンゴです。
 ```
 
--良い例
+- 良い例
 
 ```tsx
 const name = 'デク';
