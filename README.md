@@ -76,3 +76,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - ブランチ名は右の形式: `issue/issueの番号`
 
 例: `issue#1`に関してブランチを作成する: `issue/1` 
+
+### TypeScript(JavaScript)の命名
+
+-命名規則一覧
+
+| 記法                | コミット内容          | 例               |
+| ------------------ | ------------------- | ---------------- | 
+| コンポーネント名      | アッパーキャメルケース | UserForm         |
+| 変数名              | ローワーキャメルケース | sampleFunction   |
+| 定数名              | スネークケース        | API_URL           |
+| 関数名              | ローワーキャメルケース | addNumber         |
+| プロパティ名          | ローワーキャメルケース | userName         |
+| クラス名             | アッパーキャメルケース | MyCar            |
+| インターフェイス名    | アッパーキャメルケース | MemberProps      |
