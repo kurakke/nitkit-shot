@@ -24,13 +24,13 @@ module.exports = {
           20: 'rgba(30, 30, 30, 0.20)',
           30: 'rgba(30, 30, 30, 0.30)',
           40: 'rgba(30, 30, 30, 0.40)',
-          50: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
           60: 'rgba(30, 30, 30, 0.60)',
           70: 'rgba(30, 30, 30, 0.70)',
           80: 'rgba(30, 30, 30, 0.80)',
           85: 'rgba(30, 30, 30, 0.85)',
           90: 'rgba(30, 30, 30, 0.90)',
           DEFAULT: 'rgba(30, 30, 30, 1)', // Theme Color/Dark
+          secondary: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
         },
         greenaccent: {
           10: 'rgba(165, 208, 64, 0.10)',
@@ -67,9 +67,9 @@ module.exports = {
           60: 'rgba(1, 74, 46, 0.60)',
           70: 'rgba(1, 74, 46, 0.70)',
           80: 'rgba(1, 74, 46, 0.80)',
-          85: 'rgba(1, 74, 46, 0.85)', // Theme Color/Deep Green 85%
           90: 'rgba(1, 74, 46, 0.90)',
           DEFAULT: 'rgba(1, 74, 46, 1)', // Theme Color/Deep Green
+          secondary: 'rgba(1, 74, 46, 0.85)', // Theme Color/Deep Green 85%
         },
         yellwaccent: {
           10: 'rgba(236, 184, 29, 0.10)',
