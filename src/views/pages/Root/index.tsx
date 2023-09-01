@@ -8,7 +8,7 @@ import React from 'react';
 const RootPage: NextPage = () => {
   return (
     <>
-      <div className='bg-orange-300'>kurakke</div>
+      <div className='bg-greenaccent text-light-80'>kurakke</div>
       <Card className='max-w-sm mx-auto'>
         <CardHeader className='flex items-center justify-center'>
           <div className='text-lg font-medium'>Sign up</div>
@@ -22,9 +22,7 @@ const RootPage: NextPage = () => {
           </div>
         </CardBody>
         <CardFooter>
-          <Button className='w-full' color='primary'>
-            Sign Up
-          </Button>
+          <Button className='w-full bg-yellwaccent'>Sign Up</Button>
         </CardFooter>
       </Card>
     </>
