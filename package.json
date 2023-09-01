@@ -10,6 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@fontsource/cuprum": "^5.0.11",
+    "@fontsource/dotgothic16": "^5.0.10",
+    "@fontsource/inter": "^5.0.8",
+    "@fontsource/nosifer": "^5.0.11",
+    "@fontsource/road-rage": "^5.0.11",
     "@nextui-org/react": "^2.1.7",
     "@types/node": "18.16.0",
     "@types/react": "18.0.38",
@@ -19,6 +24,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
     "eslint-plugin-sort": "^2.10.0",
+    "fontsource-frijole": "^4.0.0",
     "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
