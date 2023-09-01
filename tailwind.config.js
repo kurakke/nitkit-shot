@@ -37,6 +37,14 @@ module.exports = {
           DEFAULT: 'rgba(236, 184, 29, 1)', // Theme Color/Yellow
         },
       },
+      fontFamily: {
+        main: ['DotGothic16'],
+        'menu-english': ['Road Rage'],
+        'menu-japanese': ['Cuprum'],
+        ranking: ['Frijole'],
+        sub: ['Inter'],
+        title: ['Nosifer'],
+      },
     },
   },
 };
