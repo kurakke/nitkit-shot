@@ -1,9 +1,9 @@
-import { NextPage } from 'next';
-import React from 'react';
+import { Button } from '@nextui-org/button';
 import { Card, CardHeader, CardBody, CardFooter } from '@nextui-org/card';
 import { Divider } from '@nextui-org/divider';
 import { Input } from '@nextui-org/input';
-import { Button } from '@nextui-org/button';
+import { NextPage } from 'next';
+import React from 'react';
 
 const RootPage: NextPage = () => {
   return (
