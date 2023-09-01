@@ -30,7 +30,7 @@ module.exports = {
           80: 'rgba(30, 30, 30, 0.80)',
           85: 'rgba(30, 30, 30, 0.85)',
           90: 'rgba(30, 30, 30, 0.90)',
-          100: 'rgba(30, 30, 30, 1)', // Theme Color/Dark
+          DEFAULT: 'rgba(30, 30, 30, 1)', // Theme Color/Dark
         },
         greenaccent: {
           10: 'rgba(165, 208, 64, 0.10)',
@@ -43,7 +43,7 @@ module.exports = {
           80: 'rgba(165, 208, 64, 0.80)',
           85: 'rgba(165, 208, 64, 0.85)',
           90: 'rgba(165, 208, 64, 0.90)',
-          100: 'rgba(165, 208, 64, 1)', // Theme Color/Light Green
+          DEFAULT: 'rgba(165, 208, 64, 1)', // Theme Color/Light Green
         },
         light: {
           10: 'rgba(241, 241, 241, 0.10)',
@@ -56,7 +56,7 @@ module.exports = {
           80: 'rgba(241, 241, 241, 0.80)',
           85: 'rgba(241, 241, 241, 0.85)',
           90: 'rgba(241, 241, 241, 0.90)',
-          100: 'rgba(241, 241, 241, 1)', // Theme Color/Light
+          DEFAULT: 'rgba(241, 241, 241, 1)', // Theme Color/Light
         },
         main: {
           10: 'rgba(1, 74, 46, 0.10)',
@@ -69,7 +69,7 @@ module.exports = {
           80: 'rgba(1, 74, 46, 0.80)',
           85: 'rgba(1, 74, 46, 0.85)', // Theme Color/Deep Green 85%
           90: 'rgba(1, 74, 46, 0.90)',
-          100: 'rgba(1, 74, 46, 1)', // Theme Color/Deep Green
+          DEFAULT: 'rgba(1, 74, 46, 1)', // Theme Color/Deep Green
         },
         yellwaccent: {
           10: 'rgba(236, 184, 29, 0.10)',
@@ -82,7 +82,7 @@ module.exports = {
           80: 'rgba(236, 184, 29, 0.80)',
           85: 'rgba(236, 184, 29, 0.85)',
           90: 'rgba(236, 184, 29, 0.90)',
-          100: 'rgba(236, 184, 29, 1)', // Theme Color/Yellow
+          DEFAULT: 'rgba(236, 184, 29, 1)', // Theme Color/Yellow
         },
       },
     },
