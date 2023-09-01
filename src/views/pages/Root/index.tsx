@@ -1,7 +1,3 @@
-import { Button } from '@nextui-org/button';
-import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card';
-import { Divider } from '@nextui-org/divider';
-import { Input } from '@nextui-org/input';
 import { NextPage } from 'next';
 import React from 'react';
 
