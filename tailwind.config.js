@@ -33,7 +33,7 @@ module.exports = {
           DEFAULT: 'rgba(1, 74, 46, 1)', // Theme Color/Deep Green
           secondary: 'rgba(1, 74, 46, 0.85)', // Theme Color/Deep Green 85%
         },
-        yellwaccent: {
+        yellowaccent: {
           DEFAULT: 'rgba(236, 184, 29, 1)', // Theme Color/Yellow
         },
       },

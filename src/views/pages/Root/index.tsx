@@ -22,7 +22,7 @@ const RootPage: NextPage = () => {
           </div>
         </CardBody>
         <CardFooter>
-          <Button className='w-full bg-yellwaccent'>Sign Up</Button>
+          <Button className='w-full bg-yellowaccent'>Sign Up</Button>
         </CardFooter>
       </Card>
     </>
