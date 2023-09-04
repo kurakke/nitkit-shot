@@ -17,8 +17,8 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   },
   introduction: {
     id: 'introduction',
-    path: '/instroduction',
-    englishName: 'Instroduction',
+    path: '/introduction',
+    englishName: 'Introduction',
     japaneseName: 'ゲーム紹介',
   },
   forPlayer: {
