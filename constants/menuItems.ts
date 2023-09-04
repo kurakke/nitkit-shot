@@ -4,7 +4,7 @@ import { PageId } from '../types/PageId';
 interface MenuItems {
   id: PageId;
   path: string;
-  engkishName: string;
+  englishName: string;
   japaneseName: string;
 }
 
@@ -12,43 +12,43 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   top: {
     id: 'top',
     path: '/',
-    engkishName: 'Top',
+    englishName: 'Top',
     japaneseName: 'トップ',
   },
   instroduction: {
     id: 'instroduction',
     path: '/instroduction',
-    engkishName: 'Instroduction',
+    englishName: 'Instroduction',
     japaneseName: 'ゲーム紹介',
   },
   forPlayer: {
     id: 'forPlayer',
     path: '/forplayer',
-    engkishName: 'For Player',
+    englishName: 'For Player',
     japaneseName: 'プレイする人へ',
   },
   ranking: {
     id: 'ranking',
     path: '/ranking',
-    engkishName: 'Ranking',
+    englishName: 'Ranking',
     japaneseName: 'ランキング',
   },
   movie: {
     id: 'movie',
     path: '/movie',
-    engkishName: 'Movie',
+    englishName: 'Movie',
     japaneseName: '動画',
   },
   qAndA: {
     id: 'qAndA',
     path: '/qanda',
-    engkishName: 'Q&A',
+    englishName: 'Q&A',
     japaneseName: 'よくある質問',
   },
   credit: {
     id: 'credit',
     path: '/credit',
-    engkishName: 'Credit',
+    englishName: 'Credit',
     japaneseName: 'クレジット',
   },
 };
