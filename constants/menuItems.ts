@@ -51,5 +51,10 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'Credit',
     japaneseName: 'クレジット',
   },
-
+  reservation: {
+    id: 'reservation',
+    path: '/',
+    englishName: 'Reservation',
+    japaneseName: '予約用LINEbotへ',
+  },
 };

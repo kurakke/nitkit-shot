@@ -5,4 +5,5 @@ export type PageId =
   | 'ranking'
   | 'movie'
   | 'qAndA'
-  | 'credit';
+  | 'credit'
+  | 'reservation';
