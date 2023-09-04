@@ -1,5 +1,8 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import React from 'react';
+
+import Footer from '@/components/Footer';
 
 const RootPage: NextPage = () => {
   return (
@@ -11,6 +14,8 @@ const RootPage: NextPage = () => {
       <div className='text-[30px] font-ranking'>Text Preview</div>
       <div className='text-[30px] font-sub'>Text Preview</div>
       <div className='text-[30px] font-title'>Text Preview</div>
+      <Image src="/logo.png" width={80} height={600} alt="Logo" />
+      <Footer />
     </>
   );
 };
