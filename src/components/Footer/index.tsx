@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
         <div className="bg-main h-[48px] pl-[15px] flex justify-between items-center">
             <Image src={"/logo.png"} alt={"Logo"} height={44} width={120}  />
             <div className="text-[10px] pt-[25px] pr-[4px] text-white">
-                copy right txt
+                @ 2023 NitKit 4I.
             </div>
         </div>
     );
