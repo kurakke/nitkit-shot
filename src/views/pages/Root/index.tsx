@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 
+// eslint-disable-next-line import/no-unresolved
 import Footer from '@/components/Footer';
 
 const RootPage: NextPage = () => {
