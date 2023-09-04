@@ -15,8 +15,8 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'Top',
     japaneseName: 'トップ',
   },
-  instroduction: {
-    id: 'instroduction',
+  introduction: {
+    id: 'introduction',
     path: '/instroduction',
     englishName: 'Instroduction',
     japaneseName: 'ゲーム紹介',
@@ -51,4 +51,5 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'Credit',
     japaneseName: 'クレジット',
   },
+
 };

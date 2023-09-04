@@ -1,6 +1,6 @@
 export type PageId =
   | 'top'
-  | 'instroduction'
+  | 'introduction'
   | 'forPlayer'
   | 'ranking'
   | 'movie'
