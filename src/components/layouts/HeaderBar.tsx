@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { MENUS_ITEMS } from '../../../constants/menuItems';
+import logo from '../../../public/logo.svg';
 
 export const HeaderBar = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -21,7 +22,7 @@ export const HeaderBar = (): JSX.Element => {
         className='fixed justify-between mx-[15px] mt-[15px] pr-[10.5px] pl-[15px] w-auto h-[48px] rounded-[5px] bg-main [&>header]:max-w-full [&>header]:px-0'
       >
         <NavbarBrand>
-          <Image src={'/logo.svg'} alt={'Logo'} width={120} height={39} />
+          <Image src={logo} alt={'Logo'} width={120} height={39} />
         </NavbarBrand>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -54,7 +55,7 @@ export const HeaderBar = (): JSX.Element => {
             </NavbarItem>
           ))}
           <NavbarBrand className='mt-[-10px] ml-auto'>
-            <Image src={'/logo.svg'} alt={'Logo'} width={150} height={54} />
+            <Image src={logo} alt={'Logo'} width={150} height={54} />
           </NavbarBrand>
         </NavbarMenu>
       </Navbar>
