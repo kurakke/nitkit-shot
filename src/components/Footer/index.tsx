@@ -4,7 +4,7 @@ import React from 'react';
 // eslint-disable-next-line import/no-unresolved
 import logo from '../../../public/logo.png';
 
-const Footer: React.FC = () => {
+const Footer = (): JSX.Element => {
   return (
     <div className='px-[15px] py-[12px]'>
       <div className='bg-main h-[48px] pl-[15px] flex justify-between items-center rounded-[10px]'>
