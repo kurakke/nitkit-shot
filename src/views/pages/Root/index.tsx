@@ -4,6 +4,9 @@ import React from 'react';
 import { HeaderBar } from '../../../components/layouts/HeaderBar';
 import { ScrollToTopButton } from '../../../components/layouts/ScrollToTopButton';
 
+// eslint-disable-next-line import/no-unresolved
+import Footer from '@/components/layouts/Footer';
+
 const RootPage: NextPage = () => {
   return (
     <>
@@ -90,7 +93,48 @@ const RootPage: NextPage = () => {
         <div>kurakke</div>
         <div>kurakke</div>
         <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
+        <div>kurakke</div>
       </main>
+      <Footer />
     </>
   );
 };
