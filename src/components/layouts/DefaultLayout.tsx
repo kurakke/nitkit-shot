@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { LayoutProps } from '../../../types/LayoutProps';
+
 import { Footer } from './Footer';
 import { HeaderBar } from './HeadBar';
 import { ScrollToTopButton } from './ScrollToTopButton';
