@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 import allow from '../../../public/allow.svg';
 
-export const ScrollTopButton = (): JSX.Element => {
+export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {

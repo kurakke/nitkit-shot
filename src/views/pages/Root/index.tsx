@@ -2,14 +2,14 @@ import { NextPage } from 'next';
 import React from 'react';
 
 import { HeaderBar } from '../../../components/layouts/HeaderBar';
-import { ScrollTopButton } from '../../../components/layouts/ScrollTopButton';
+import { ScrollToTopButton } from '../../../components/layouts/ScrollToTopButton';
 
 const RootPage: NextPage = () => {
   return (
     <>
       <HeaderBar />
       <main className='mt-[100px]'>
-        <ScrollTopButton />
+        <ScrollToTopButton />
         <div>kurakke</div>
         <div>kurakke</div>
         <div>kurakke</div>
