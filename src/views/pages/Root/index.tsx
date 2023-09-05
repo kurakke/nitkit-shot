@@ -1,12 +1,53 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-import { HeaderBar } from '../../../components/layouts/HeaderBar';
+// eslint-disable-next-line import/no-unresolved
+import Footer from '@/components/layouts/Footer';
 
 const RootPage: NextPage = () => {
   return (
     <>
-      <HeaderBar />
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <Footer />
     </>
   );
 };
