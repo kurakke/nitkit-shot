@@ -12,9 +12,19 @@ import { useState } from 'react';
 
 import { MENUS_ITEMS } from '../../../constants/menuItems';
 import logo from '../../../public/logo.svg';
+import { PageId } from '../../../types/PageId';
 
 export const HeaderBar = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  const navbarItemState = (pageId: PageId): string => {
+    return pageId === 'reservation' ? 'mt-[45px] border-accent-green' : 'border-accent-yellow';
+  };
+
+  const menuLinkState = (pageId: PageId): string => {
+    return pageId === 'reservation' ? 'text-accent-green' : 'text-accent-yellow';
+  };
+
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
@@ -33,17 +43,10 @@ export const HeaderBar = (): JSX.Element => {
             key={menuItems.id}
             className={classNames(
               'h-[40px] w-fit items-end border-b-[2px]',
-              menuItems.id === 'reservation'
-                ? 'mt-[45px] border-accent-green'
-                : 'border-accent-yellow',
+              navbarItemState(menuItems.id),
             )}
           >
-            <Link
-              href={menuItems.path}
-              className={classNames(
-                menuItems.id === 'reservation' ? 'text-accent-green' : 'text-accent-yellow',
-              )}
-            >
+            <Link href={menuItems.path} className={classNames(menuLinkState(menuItems.id))}>
               <div className='font-menu-english text-[56px] leading-[40px]'>
                 {menuItems.englishName}
                 <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>
