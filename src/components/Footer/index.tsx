@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 // eslint-disable-next-line import/no-unresolved
-import logo from '../../../public/logo.png';
+import logo from '../../../public/logo.svg';
 
 const Footer = (): JSX.Element => {
   return (
