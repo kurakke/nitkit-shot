@@ -67,12 +67,12 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
                   menuItems.id === 'reservation' ? 'text-accent-green' : 'text-accent-yellow',
                 )}
               >
-                <p className='font-menu-english text-[56px] leading-[40px]'>
+                <div className='font-menu-english text-[56px] leading-[40px]'>
                   {menuItems.englishName}
                   <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>
                     {menuItems.japaneseName}
                   </span>
-                </p>
+                </div>
               </Link>
             </NavbarItem>
           ))}
