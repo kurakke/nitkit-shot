@@ -1,5 +1,9 @@
 import { Transition } from '@headlessui/react';
+import { Button } from '@nextui-org/react';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
+import allow from '../../../public/allow.svg';
 
 export const ScrollTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -18,7 +22,6 @@ export const ScrollTopButton = (): JSX.Element => {
     return () => window.removeEventListener('scroll', toggleVisibility);
   }, []);
 
-  // トップにスクロールする関数
   const scrollToTop = () => {
     window.scrollTo({
       behavior: 'smooth',
@@ -28,22 +31,14 @@ export const ScrollTopButton = (): JSX.Element => {
 
   return (
     <>
-      <Transition
-        show={isVisible}
-        enter='transition-opacity duration-300'
-        enterFrom='opacity-0'
-        enterTo='opacity-100'
-        leave='transition-opacity duration-300'
-        leaveFrom='opacity-100'
-        leaveTo='opacity-0'
-      >
-        <button
+      <Transition show={isVisible} leave='transition-opacity duration-300'>
+        <Button
           onClick={scrollToTop}
-          className='fixed bottom-4 right-4 p-2 bg-blue-500 text-white rounded-full focus:outline-none focus:bg-blue-600 hover:bg-blue-600'
+          className='fixed w-[48px] h-[48px] bottom-[15px] right-[15px] min-w-0 bg-accent-yellow border border-accent-green rounded-[6px]'
           aria-label='Scroll to top'
         >
-          ↑
-        </button>
+          <Image src={allow} alt={'allow'} layout='fill' />
+        </Button>
       </Transition>
     </>
   );
