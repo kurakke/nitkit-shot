@@ -1,5 +1,6 @@
 import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
+import { throttle } from 'lodash';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -7,17 +8,20 @@ import allow from '../../../public/allow.svg';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const visibleNumber = 500;
+  const visibleNumber: number = 500;
 
   useEffect(() => {
-    const toTopButtonVisibility = () => {
-      window.pageYOffset > visibleNumber ? setIsVisible(true) : setIsVisible(false);
-    };
+    const toTopButtonVisibility = throttle(() => {
+      const visibilityState: boolean = window.pageYOffset > visibleNumber;
+      if (isVisible !== visibilityState) {
+        setIsVisible(visibilityState);
+      }
+    }, 200);
 
     window.addEventListener('scroll', toTopButtonVisibility);
 
     return () => window.removeEventListener('scroll', toTopButtonVisibility);
-  }, []);
+  }, [isVisible]);
 
   const scrollToTop = () => {
     window.scrollTo({
