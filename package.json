@@ -15,6 +15,7 @@
     "@fontsource/inter": "^5.0.8",
     "@fontsource/nosifer": "^5.0.11",
     "@fontsource/road-rage": "^5.0.11",
+    "@headlessui/react": "^1.7.17",
     "@nextui-org/react": "^2.1.7",
     "@types/node": "18.16.0",
     "@types/react": "18.0.38",
