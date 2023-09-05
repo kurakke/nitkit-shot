@@ -14,7 +14,7 @@ const RootPage: NextPage = () => {
       <HeaderBar />
       <main className='mt-[100px]'>
         <ScrollToTopButton />
-        <TitleText title='Introduction' />
+        <TitleText title='introduction' />
         <div>kurakke</div>
         <div>kurakke</div>
         <div>kurakke</div>
