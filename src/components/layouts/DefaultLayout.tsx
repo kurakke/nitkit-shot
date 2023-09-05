@@ -39,10 +39,10 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
   };
   return (
     <>
-      <body className='bg-accent-green h-max'>
+      <body className='bg-accent-green'>
         <Navbar
           onMenuOpenChange={setIsMenuOpen}
-          className='fixed justify-between mx-[15px] mt-[15px] pr-[10.5px] pl-[15px] w-auto h-[48px] rounded-[5px] bg-main [&>header]:max-w-full [&>header]:px-0'
+          className='fixed mx-[15px] mt-[15px] h-[48px] w-auto justify-between rounded-[5px] bg-main pl-[15px] pr-[10.5px] [&>header]:max-w-full [&>header]:px-0'
         >
           <NavbarBrand>
             <Image src={logo} alt={'Logo'} width={120} height={39} />
@@ -51,14 +51,14 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
             className='text-light'
           />
-          <NavbarMenu className='ml-auto mr-[15px] p-[10px] gap-y-[40px] w-[291px] rounded-[5px] bg-main-secondary'>
+          <NavbarMenu className='ml-auto mr-[15px] w-[291px] gap-y-[40px] rounded-[5px] bg-main-secondary p-[10px]'>
             {Object.values(MENUS_ITEMS).map((menuItems) => (
               <NavbarItem
                 key={menuItems.id}
                 className={classNames(
-                  'items-end w-fit h-[40px] border-b-[2px]',
+                  'h-[40px] w-fit items-end border-b-[2px]',
                   menuItems.id === 'reservation'
-                    ? 'border-accent-green mt-[80px]'
+                    ? 'mt-[45px] border-accent-green'
                     : 'border-accent-yellow',
                 )}
               >
@@ -68,25 +68,25 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
                     menuItems.id === 'reservation' ? 'text-accent-green' : 'text-accent-yellow',
                   )}
                 >
-                  <p className='text-[56px] font-menu-english leading-[40px]'>
+                  <p className='font-menu-english text-[56px] leading-[40px]'>
                     {menuItems.englishName}
-                    <span className='text-[14px] font-menu-japanese ml-[5px] leading-none'>
+                    <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>
                       {menuItems.japaneseName}
                     </span>
                   </p>
                 </Link>
               </NavbarItem>
             ))}
-            <NavbarBrand className='mt-[-10px] ml-auto'>
+            <NavbarBrand className='ml-auto mt-[-10px]'>
               <Image src={logo} alt={'Logo'} width={150} height={54} />
             </NavbarBrand>
           </NavbarMenu>
         </Navbar>
-        <main className='w-full mt-[110px]'>
+        <main className='mt-[110px] w-full'>
           <Button
             onClick={scrollToTop}
             className={classNames(
-              'fixed w-[48px] h-[48px] bottom-[35px] right-[15px] min-w-0 bg-accent-yellow border border-accent-green rounded-[6px] transition-opacity duration-300',
+              'fixed bottom-[90px] right-[15px] h-[48px] w-[48px] min-w-0 rounded-[6px] border border-accent-green bg-accent-yellow transition-opacity duration-300',
               isVisible ? 'visible opacity-100' : 'invisible opacity-0',
             )}
             aria-label='Scroll to top'
@@ -95,9 +95,9 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
           </Button>
           {children}
         </main>
-        <div className='m-[15px] bg-main h-[48px] pl-[15px] flex justify-between items-center rounded-[5px] pr-[4px]'>
+        <div className='m-[15px] flex h-[48px] items-center justify-between rounded-[5px] bg-main pl-[15px] pr-[5px]'>
           <Image src={logo} alt={'Logo'} height={44} width={120} />
-          <div className='mt-[25px] text-[10px] text-white'>@ 2023 NitKit 4I.</div>
+          <div className='mb-[5px] mt-auto text-[10px] text-white'>@ 2023 NitKit 4I.</div>
         </div>
       </body>
     </>

@@ -53,6 +53,19 @@ const RootPage: NextPage = () => {
       <div>kurakke</div>
       <div>kurakke</div>
       <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
+      <div>kurakke</div>
     </DefaultLayout>
   );
 };
