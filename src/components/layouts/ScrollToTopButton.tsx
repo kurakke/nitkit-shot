@@ -1,4 +1,3 @@
-import { Transition } from '@headlessui/react';
 import { Button } from '@nextui-org/react';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -9,7 +8,7 @@ export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
-    const toggleVisibility = () => {
+    const toTopButtonVisibility = () => {
       if (window.pageYOffset > 300) {
         setIsVisible(true);
       } else {
@@ -17,9 +16,9 @@ export const ScrollToTopButton = (): JSX.Element => {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener('scroll', toTopButtonVisibility);
 
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toTopButtonVisibility);
   }, []);
 
   const scrollToTop = () => {
@@ -31,15 +30,13 @@ export const ScrollToTopButton = (): JSX.Element => {
 
   return (
     <>
-      <Transition show={isVisible} leave='transition-opacity duration-300'>
-        <Button
-          onClick={scrollToTop}
-          className='fixed w-[48px] h-[48px] bottom-[15px] right-[15px] min-w-0 bg-accent-yellow border border-accent-green rounded-[6px]'
-          aria-label='Scroll to top'
-        >
-          <Image src={allow} alt={'allow'} layout='fill' />
-        </Button>
-      </Transition>
+      <Button
+        onClick={scrollToTop}
+        className='fixed w-[48px] h-[48px] bottom-[15px] right-[15px] min-w-0 bg-accent-yellow border border-accent-green rounded-[6px]'
+        aria-label='Scroll to top'
+      >
+        <Image src={allow} alt={'allow'} layout='fill' />
+      </Button>
     </>
   );
 };
