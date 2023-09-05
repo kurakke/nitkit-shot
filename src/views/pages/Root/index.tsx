@@ -1,12 +1,10 @@
 import { NextPage } from 'next';
 import React from 'react';
 
+import { TitleText } from '../../../components/TitleText';
+import Footer from '../../../components/layouts/Footer';
 import { HeaderBar } from '../../../components/layouts/HeaderBar';
 import { ScrollToTopButton } from '../../../components/layouts/ScrollToTopButton';
-
-// eslint-disable-next-line import/no-unresolved
-import { TitleText } from '@/components/TitleText';
-import Footer from '@/components/layouts/Footer';
 
 const RootPage: NextPage = () => {
   return (
