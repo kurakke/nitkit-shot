@@ -10,11 +10,7 @@ export const ScrollToTopButton = (): JSX.Element => {
 
   useEffect(() => {
     const toTopButtonVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
     };
 
     window.addEventListener('scroll', toTopButtonVisibility);
