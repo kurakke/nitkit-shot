@@ -170,23 +170,23 @@
 
 - ### 説明欄には以下のものを必ず記述すること
 
-  1. 対応するGitHubのissueのURL
+  1. 対応する GitHub の issue の URL
 
   2. どのような変更・追加を行ったかの説明
 
 - ### エラー等の問題解決のためにプルリクエストを立ち上げた場合、どのような問題が発生し、どのように解決したかを説明欄に記述すること
 
-  > 例: 「不具合A」が、「ファイルB」で発生したため、「C」のように解決した場合
+  > 例: 「不具合 A」が、「ファイル B」で発生したため、「C」のように解決した場合
   >
   > > `「不具合A」のような問題が「ファイルB」で発生したため、「C」のように解決しました。`と説明欄に追記する。
 
 - ### レビュアーに重点的に見てほしい箇所がある場合それがどこであるかを説明欄で明示すること
 
-  > 例: 実装したコードの中で、「ファイルA」の「X行目」からの処理を重点的に見てほしい場合
+  > 例: 実装したコードの中で、「ファイル A」の「X 行目」からの処理を重点的に見てほしい場合
   >
   > > `「ファイルA」の「X行目」から処理を重点的にチェックしてください。`と説明欄に追記する。
 
-- ### プルリクエストの内容が、issueの一部分の場合、どの部分を担当したのかを説明欄に記述すること
+- ### プルリクエストの内容が、issue の一部分の場合、どの部分を担当したのかを説明欄に記述すること
 
   > 例: `「要素A」、「要素B」、「要素C」`を実装する内容の`issue#1`が存在し、作成したプルリクエストの内容が`「要素A」`のみを実装したものだった場合
   >
@@ -196,14 +196,14 @@
 
   - [具体例](https://zenn.dev/keitakn/articles/github-code-review-reviewee#pr%E3%81%AF%E9%81%A9%E5%88%87%E3%81%AA%E5%A4%A7%E3%81%8D%E3%81%95%E3%81%AB%E5%88%86%E5%89%B2%E3%81%99%E3%82%8B)
 
-- ### レビューコメントに対する修正を行なった際は修正内容のコミットIDのリンクをコメントに貼って返信すること
+- ### レビューコメントに対する修正を行なった際は修正内容のコミット ID のリンクをコメントに貼って返信すること
 
   - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#%E4%BF%AE%E6%AD%A3%E5%86%85%E5%AE%B9%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88id%E3%82%92%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%A7%E4%BC%9D%E3%81%88%E3%82%8B)
 
-- ### ブランチを作成した時点で、`git commit --allow-empty`を実行して`push`した後、githubで`Draft Pull Request`を出すこと
+- ### ブランチを作成した時点で、`git commit --allow-empty`を実行して`push`した後、github で`Draft Pull Request`を出すこと
 
   - [詳しい手順](https://zenn.dev/keitakn/articles/github-code-review-reviewee#%E6%97%A9%E3%82%81%E3%81%ABdraft-pull-request%E3%82%92%E5%87%BA%E3%81%99)
 
-  - [Draft Pull Requestについて](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
+  - [Draft Pull Request について](https://github.blog/jp/2019-02-19-introducing-draft-pull-requests/)
 
 ### [プルリクエストのルールに関する具体例](https://github.com/kurakke/nitkit-shot/pull/4)
