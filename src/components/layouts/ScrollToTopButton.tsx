@@ -7,10 +7,11 @@ import allow from '../../../public/allow.svg';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
+  const visibleNumber = 500;
 
   useEffect(() => {
     const toTopButtonVisibility = () => {
-      window.pageYOffset > 500 ? setIsVisible(true) : setIsVisible(false);
+      window.pageYOffset > visibleNumber ? setIsVisible(true) : setIsVisible(false);
     };
 
     window.addEventListener('scroll', toTopButtonVisibility);
