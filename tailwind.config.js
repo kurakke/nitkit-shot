@@ -48,6 +48,9 @@ module.exports = {
         sub: ['Inter'],
         title: ['Nosifer'],
       },
+      lineHeight: {
+        basic: '1.17',
+      },
     },
   },
 };
