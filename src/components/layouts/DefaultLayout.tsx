@@ -11,8 +11,8 @@ export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ chil
     <div className='inline-block h-full w-full bg-base'>
       <HeaderBar />
       <main className='mt-[110px] h-full w-full'>
-        <ScrollToTopButton />
         {children}
+        <ScrollToTopButton />
       </main>
       <Footer />
     </div>
