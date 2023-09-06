@@ -18,7 +18,7 @@ const Information = (): JSX.Element => {
   return (
     <>
       <div className='flex justify-center'>
-        <div className='flex h-[150px] w-[380px] flex-col items-center rounded border-2 border-accent-yellow'>
+        <div className='flex h-[150px] w-[380px] flex-col items-center rounded border-2 border-accent-yellow pt-[4px]'>
           {informationText.map((text) => (
             <div className='flex whitespace-pre' key={text.date}>
               <p>{text.date}</p>
