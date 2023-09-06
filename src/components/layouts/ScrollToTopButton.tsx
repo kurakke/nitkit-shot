@@ -11,7 +11,7 @@ export const ScrollToTopButton = (): JSX.Element => {
   const visibleNumber: number = 500;
 
   const toTopButoonState = (): string => {
-    return isVisible ? 'visible opacity-100' : 'invisible opacity-0';
+    return isVisible ? 'translate-x-0' : 'translate-x-[63px]';
   };
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export const ScrollToTopButton = (): JSX.Element => {
       <Button
         onClick={scrollToTop}
         className={classNames(
-          'fixed bottom-[78px] right-[15px] h-[48px] w-[48px] min-w-0 rounded-[6px] border border-accent-green bg-accent-yellow transition-opacity duration-300',
+          'transition-[opacity, visibility] duraction-500 fixed bottom-[78px] right-[15px] h-[48px] w-[48px] min-w-0 rounded-[6px] border border-accent-green bg-accent-yellow',
           toTopButoonState(),
         )}
         aria-label='Scroll to top'
