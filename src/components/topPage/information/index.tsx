@@ -21,8 +21,10 @@ const Information = (): JSX.Element => {
         <div className='flex h-[150px] w-[380px] flex-col items-center rounded border-2 border-accent-yellow pt-[4px]'>
           {informationText.map((text) => (
             <div className='flex whitespace-pre' key={text.date}>
-              <p>{text.date}</p>
-              <p className='ml-[5px] w-[280px] whitespace-pre-wrap break-words'>{text.text}</p>
+              <p className='font-main text-sm text-accent-yellow'>{text.date}</p>
+              <p className='ml-[5px] w-[280px] whitespace-pre-wrap break-words font-sub text-sm text-black'>
+                {text.text}
+              </p>
             </div>
           ))}
         </div>
