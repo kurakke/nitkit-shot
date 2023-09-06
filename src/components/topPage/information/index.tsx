@@ -14,11 +14,19 @@ const Information = (): JSX.Element => {
       date: '2021/10/10',
       text: 'kurakke',
     },
+    {
+      date: '2021/10/10',
+      text: 'kurakke',
+    },
+    {
+      date: '2021/10/10',
+      text: 'kurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakkekurakke',
+    },
   ];
   return (
     <>
       <div className='flex justify-center'>
-        <div className='flex h-[150px] w-[380px] flex-col items-center rounded border-2 border-accent-yellow pt-[4px]'>
+        <div className='flex h-[150px] w-[380px] flex-col items-center overflow-y-auto rounded border-2 border-accent-yellow pt-[4px]'>
           {informationText.map((text) => (
             <div className='flex whitespace-pre' key={text.date}>
               <p className='font-main text-sm text-accent-yellow'>{text.date}</p>
