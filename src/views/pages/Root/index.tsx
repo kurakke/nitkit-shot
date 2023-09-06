@@ -6,6 +6,8 @@ import { ScrollToTopButton } from '../../../components/layouts/ScrollToTopButton
 
 // eslint-disable-next-line import/no-unresolved
 import Footer from '@/components/layouts/Footer';
+// eslint-disable-next-line import/no-unresolved
+import Information from '@/components/topPage/information';
 
 const RootPage: NextPage = () => {
   return (
@@ -13,6 +15,7 @@ const RootPage: NextPage = () => {
       <HeaderBar />
       <main className='mt-[100px]'>
         <ScrollToTopButton />
+        <Information />
         <div>kurakke</div>
         <div>kurakke</div>
         <div>kurakke</div>
