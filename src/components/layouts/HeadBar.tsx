@@ -37,7 +37,7 @@ export const HeaderBar = (): JSX.Element => {
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         className='text-light'
       />
-      <NavbarMenu className='ml-auto mr-[15px] w-[291px] gap-y-[40px] rounded-[5px] bg-main-secondary p-[10px]'>
+      <NavbarMenu className='ml-auto mr-[15px] w-[291px] gap-y-[40px] overflow-x-hidden rounded-[5px] bg-main-secondary p-[10px]'>
         {Object.values(MENUS_ITEMS).map((menuItems) => (
           <NavbarItem
             key={menuItems.id}
