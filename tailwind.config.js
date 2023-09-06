@@ -51,6 +51,11 @@ module.exports = {
       lineHeight: {
         basic: '1.17',
       },
+      transitionDuration: {
+        fast: '1000ms',
+        medium: '1500ms',
+        slow: '9000ms',
+      },
     },
   },
 };

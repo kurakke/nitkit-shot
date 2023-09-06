@@ -1,10 +1,10 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState } from 'react';
 
-import { useIntersection } from "./useIntersection";
+import { useIntersection } from './useIntersection';
 
 export const useIntersectionOnce = <T extends HTMLElement>(
   onIntersected?: (isIntersecting: boolean, target: Element) => void,
-  options?: IntersectionObserverInit
+  options?: IntersectionObserverInit,
 ) => {
   const [isIntersected, setIsIntersected] = useState(false);
 
@@ -15,7 +15,7 @@ export const useIntersectionOnce = <T extends HTMLElement>(
         onIntersected?.(isIntersecting, target);
       }
     },
-    [isIntersected, setIsIntersected, onIntersected]
+    [isIntersected, setIsIntersected, onIntersected],
   );
 
   const { ref } = useIntersection<T>(handleIntersection, options);
