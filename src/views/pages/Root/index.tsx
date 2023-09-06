@@ -1,9 +1,8 @@
 import { NextPage } from 'next';
 import React from 'react';
 
+import { TitleText } from '../../../components/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
-
-import { TitleText } from '@/components/TitleText';
 
 const RootPage: NextPage = () => {
   return (
