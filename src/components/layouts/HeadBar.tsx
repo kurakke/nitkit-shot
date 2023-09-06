@@ -17,7 +17,7 @@ import { PageId } from '../../../types/PageId';
 export const HeaderBar = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const setNavItemStyle = (pageId: PageId, regular: string, reservation: string):string => {
+  const setNavItemStyle = (pageId: PageId, regular: string, reservation: string): string => {
     return pageId === 'reservation' ? reservation : regular;
   };
 
