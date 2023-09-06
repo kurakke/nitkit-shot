@@ -17,12 +17,8 @@ import { PageId } from '../../../types/PageId';
 export const HeaderBar = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
-  const navbarItemState = (pageId: PageId): string => {
-    return pageId === 'reservation' ? 'mt-[45px] border-accent-green' : 'border-accent-yellow';
-  };
-
-  const menuLinkState = (pageId: PageId): string => {
-    return pageId === 'reservation' ? 'text-accent-green' : 'text-accent-yellow';
+  const setNavItemStyle = (pageId: PageId, regular: string, reservation: string) => {
+    return pageId === 'reservation' ? reservation : regular;
   };
 
   return (
@@ -43,10 +39,21 @@ export const HeaderBar = (): JSX.Element => {
             key={menuItems.id}
             className={classNames(
               'h-[40px] w-fit items-end border-b-[2px]',
-              navbarItemState(menuItems.id),
+              `${setNavItemStyle(
+                menuItems.id,
+                'border-accent-yellow', //通常のスタイル
+                'mt-[45px] border-accent-green', //reservationのスタイル
+              )}`,
             )}
           >
-            <Link href={menuItems.path} className={classNames(menuLinkState(menuItems.id))}>
+            <Link
+              href={menuItems.path}
+              className={`${setNavItemStyle(
+                menuItems.id,
+                'text-accent-yellow', //通常のスタイル
+                'text-accent-green', //reservationのスタイル
+              )}`}
+            >
               <div className='font-menu-english text-[56px] leading-[40px]'>
                 {menuItems.englishName}
                 <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>
