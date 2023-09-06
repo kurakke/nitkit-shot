@@ -5,7 +5,7 @@ export const useIntersection = <T extends HTMLElement>(
   options: IntersectionObserverInit = { threshold: 0.1 },
 ) => {
   const ref = useRef<T>(null);
-  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [isIntersecting, setIsIntersecting] = useState<boolean>(false);
 
   useEffect(() => {
     if (!ref.current) {

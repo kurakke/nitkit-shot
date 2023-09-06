@@ -6,7 +6,7 @@ export const useIntersectionOnce = <T extends HTMLElement>(
   onIntersected?: (isIntersecting: boolean, target: Element) => void,
   options?: IntersectionObserverInit,
 ) => {
-  const [isIntersected, setIsIntersected] = useState(false);
+  const [isIntersected, setIsIntersected] = useState<boolean>(false);
 
   const handleIntersection = useCallback(
     (isIntersecting: boolean, target: Element) => {
