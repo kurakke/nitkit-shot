@@ -8,7 +8,7 @@ import allow from '../../../public/allow.svg';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const visibleNumber: number = 500;
+  const visibleHeight: number = 500;
 
   const toTopButoonState = (): string => {
     return isVisible ? 'translate-x-0' : 'translate-x-[63px]';
@@ -16,7 +16,7 @@ export const ScrollToTopButton = (): JSX.Element => {
 
   useEffect(() => {
     const toTopButtonVisibility = throttle(() => {
-      const visibilityState: boolean = window.pageYOffset > visibleNumber;
+      const visibilityState: boolean = window.pageYOffset > visibleHeight;
       if (isVisible !== visibilityState) {
         setIsVisible(visibilityState);
       }
