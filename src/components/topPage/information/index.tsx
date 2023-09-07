@@ -27,7 +27,7 @@ const Information = (): JSX.Element => {
   ];
   return (
     <>
-      <div className='flex flex-col justify-center'>
+      <div className='flex flex-col items-center'>
         <TitleText title='information' />
         <div className='mt-[10px] flex h-[150px] w-[380px] flex-col items-center overflow-y-auto rounded border-2 border-accent-yellow pl-[4px] pt-[4px]'>
           {informationText.map((text) => (
