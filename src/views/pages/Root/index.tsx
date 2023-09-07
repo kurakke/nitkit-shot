@@ -6,66 +6,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const RootPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
+      <div className='mx-auto w-fit font-title text-[36px] text-light'>Introduction</div>
     </DefaultLayout>
   );
 };
