@@ -1,144 +1,74 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-import { HeaderBar } from '../../../components/layouts/HeaderBar';
-import { ScrollToTopButton } from '../../../components/layouts/ScrollToTopButton';
-
-// eslint-disable-next-line import/no-unresolved
-import Footer from '@/components/layouts/Footer';
-// eslint-disable-next-line import/no-unresolved
-import Information from '@/components/topPage/information';
+import { TitleText } from '../../../components/TitleText';
+import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const RootPage: NextPage = () => {
   return (
-    <>
-      <HeaderBar />
-      <main className='mt-[100px]'>
-        <ScrollToTopButton />
-        <Information />
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-        <div>kurakke</div>
-      </main>
-      <Footer />
-    </>
+    <DefaultLayout>
+      <TitleText title='introduction' />
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+      <div className='text-light'>kurakke</div>
+    </DefaultLayout>
   );
 };
 export default RootPage;
