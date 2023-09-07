@@ -1,7 +1,7 @@
 import React from 'react';
 
 // eslint-disable-next-line import/no-unresolved
-import { TitleText } from '@/components/TitleText';
+import { TitleText } from '../../TitleText';
 const Information = (): JSX.Element => {
   type InformationText = {
     date: string;
