@@ -1,12 +1,14 @@
-import React from 'react';
-
-import { LayoutProps } from '../../../types/LayoutProps';
+import React, { ReactNode } from 'react';
 
 import { Footer } from './Footer';
 import { HeaderBar } from './HeadBar';
 import { ScrollToTopButton } from './ScrollToTopButton';
 
-export const DefaultLayout: ({ children }: LayoutProps) => JSX.Element = ({ children }) => {
+interface Props {
+  children: ReactNode;
+}
+
+export const DefaultLayout: ({ children }: Props) => JSX.Element = ({ children }) => {
   return (
     <div className='inline-block h-full w-full bg-base'>
       <HeaderBar />
