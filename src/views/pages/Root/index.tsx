@@ -4,7 +4,7 @@ import React from 'react';
 // eslint-disable-next-line import/order
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
-import Information from '../../../components/topPage/Information/index';
+import Information from '../../../components/topPage/Information';
 
 const RootPage: NextPage = () => {
   return (
