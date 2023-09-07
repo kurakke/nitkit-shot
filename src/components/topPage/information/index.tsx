@@ -29,7 +29,7 @@ const Information = (): JSX.Element => {
     <>
       <div className='flex flex-col justify-center'>
         <TitleText title='information' />
-        <div className='flex h-[150px] w-[380px] flex-col items-center overflow-y-auto rounded border-2 border-accent-yellow pl-[4px] pt-[4px]'>
+        <div className='mt-[10px] flex h-[150px] w-[380px] flex-col items-center overflow-y-auto rounded border-2 border-accent-yellow pl-[4px] pt-[4px]'>
           {informationText.map((text) => (
             <div className='flex w-full whitespace-pre' key={text.date}>
               <p className='font-main text-sm text-accent-yellow'>{text.date}</p>
