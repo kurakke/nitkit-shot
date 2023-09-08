@@ -5,7 +5,7 @@ import React from 'react';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 // eslint-disable-next-line import/no-unresolved
-import Information from '../../../components/topPage/Information';
+import Information from '../../../components/topPage/Information/index';
 
 const RootPage: NextPage = () => {
   return (
