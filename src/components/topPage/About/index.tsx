@@ -44,7 +44,7 @@ export const About = (): JSX.Element => {
       <div className='mx-auto mt-[10px] w-fit border-b border-accent-yellow text-[20px] leading-none text-accent-yellow'>
         迫り来るゾンビを撃て！
       </div>
-      <ul className='mt-[20px] grid gap-y-[35px] text-center font-main text-[16px] leading-[30px] text-light'>
+      <ul className='mt-[20px] grid gap-y-[50px] text-center font-main text-[16px] leading-[30px] text-light'>
         {Object.values(INTRODUCTION_SENTENCE).map((introductionParagraphs) => (
           <li key={introductionParagraphs.id}>
             {Object.values(introductionParagraphs.lines).map((inroductionTexts) => (
@@ -67,7 +67,7 @@ export const About = (): JSX.Element => {
           path='forPlayer'
         />
       </div>
-      <ul className='mt-[20px] grid gap-y-[35px] text-center font-main text-[16px] leading-[30px] text-light'>
+      <ul className='mt-[20px] grid gap-y-[50px] text-center font-main text-[16px] leading-[30px] text-light'>
         {Object.values(PS_SENTENCE).map((psParagraphs) => (
           <li key={psParagraphs.id}>
             {Object.values(psParagraphs.lines).map((psTexts) => (
