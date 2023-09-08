@@ -58,11 +58,13 @@ export const About = (): JSX.Element => {
           text='もっと詳しく'
           backGroundColor='bg-accent-green'
           textColor='text-main'
+          path='introduction'
         />
         <RedirectButton
           text='プレイする人へ'
           backGroundColor='bg-accent-yellow'
           textColor='text-main'
+          path='forPlayer'
         />
       </div>
       <ul className='mt-[20px] grid gap-y-[35px] text-center font-main text-[16px] leading-[30px] text-light'>
