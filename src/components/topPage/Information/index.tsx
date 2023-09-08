@@ -31,9 +31,9 @@ const Information = (): JSX.Element => {
         <TitleText title='information' />
         <div className='mt-[10px] flex h-[150px] w-[380px] flex-col items-center overflow-y-scroll rounded-[10px] border-[1px] border-accent-yellow pl-[4px] pt-[4px]'>
           {INFORMATION_TEXT.map((text) => (
-            <div className='flex w-full whitespace-pre' key={text.date}>
-              <p className='font-main text-sm text-accent-yellow'>{text.date}</p>
-              <p className='ml-[8px] w-[280px] whitespace-pre-wrap break-words font-sub text-sm text-white'>
+            <div className='flex w-full whitespace-pre text-sm' key={text.date}>
+              <p className='font-main text-accent-yellow'>{text.date}</p>
+              <p className='ml-[8px] w-[280px] whitespace-pre-wrap break-words font-sub text-white'>
                 {text.text}
               </p>
             </div>
