@@ -1,4 +1,4 @@
-import { TitleId } from '../../types/TitleId';
+import { TitleId } from '../../../types/TitleId';
 
 interface Props {
   title: TitleId;
