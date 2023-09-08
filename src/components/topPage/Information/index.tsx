@@ -33,7 +33,7 @@ const Information = (): JSX.Element => {
           {INFORMATION_TEXT.map((text) => (
             <div className='flex w-full whitespace-pre text-sm' key={text.date}>
               <p className='font-main text-accent-yellow'>{text.date}</p>
-              <p className='ml-[8px] w-[280px] whitespace-pre-wrap break-words font-sub text-white'>
+              <p className='ml-[5px] w-[280px] whitespace-pre-wrap break-words font-sub text-white'>
                 {text.text}
               </p>
             </div>
