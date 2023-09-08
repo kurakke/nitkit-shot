@@ -2,7 +2,7 @@ import React from 'react';
 
 // eslint-disable-next-line import/no-unresolved
 import { TitleText } from '../../TitleText';
-export const Information = (): JSX.Element => {
+const Information = (): JSX.Element => {
   type InformationText = {
     date: string;
     text: string;
@@ -44,3 +44,4 @@ export const Information = (): JSX.Element => {
   );
 };
 
+export default Information;
