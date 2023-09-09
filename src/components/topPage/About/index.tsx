@@ -65,7 +65,7 @@ export const About = (): JSX.Element => {
           path='forPlayer'
         />
       </div>
-      <div className='mt-[20px] '>
+      <div className='mt-[20px] text-center'>
         <SentenceGeneration
           sentence={PS_SENTENCE}
           gap='gap-y-[50px]'
