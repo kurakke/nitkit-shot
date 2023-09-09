@@ -65,7 +65,7 @@ export const About = (): JSX.Element => {
           path='forPlayer'
         />
       </div>
-      <div className='mt-[20px] text-center'>
+      <div className='mt-[20px] '>
         <SentenceGeneration
           sentence={PS_SENTENCE}
           gap='gap-y-[50px]'
@@ -73,9 +73,6 @@ export const About = (): JSX.Element => {
           text='text-[16px]'
         />
       </div>
-      <ul className='list-disc'>
-        <li>secondParagraph</li>
-      </ul>
     </>
   );
 };
