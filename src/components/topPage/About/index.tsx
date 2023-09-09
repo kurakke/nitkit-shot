@@ -1,13 +1,12 @@
 /* eslint-disable sort/object-properties */
+import React from 'react';
+
+import { Sentence } from '../../../../types/Sentence';
+import { SentenceGeneration } from '../../../components/general/SentenceGeneration';
 import { RedirectButton } from '../../general/RedirectButton';
 import { TitleText } from '../../general/TitleText';
 
-interface ParagraphProps {
-  id: string;
-  lines: string[];
-}
-
-const INTRODUCTION_SENTENCE: Record<string, ParagraphProps> = {
+const INTRODUCTION_SENTENCE: Sentence = {
   firstParagraph: {
     id: 'firstParagraph',
     lines: ['ある日突然北九州高専に', '現れたゾンビたち！！！！！！！！'],
@@ -26,7 +25,7 @@ const INTRODUCTION_SENTENCE: Record<string, ParagraphProps> = {
   },
 };
 
-const PS_SENTENCE: Record<string, ParagraphProps> = {
+const PS_SENTENCE: Sentence = {
   firstSetence: {
     id: 'firstParagraph',
     lines: ['P.S.'],
@@ -44,15 +43,14 @@ export const About = (): JSX.Element => {
       <div className='mx-auto mt-[10px] w-fit border-b border-accent-yellow text-[20px] leading-none text-accent-yellow'>
         迫り来るゾンビを撃て！
       </div>
-      <ul className='mt-[20px] grid gap-y-[50px] text-center font-main text-[16px] leading-[30px] text-light'>
-        {Object.values(INTRODUCTION_SENTENCE).map((introductionParagraphs) => (
-          <li key={introductionParagraphs.id}>
-            {Object.values(introductionParagraphs.lines).map((inroductionTexts) => (
-              <p key={inroductionTexts}>{inroductionTexts}</p>
-            ))}
-          </li>
-        ))}
-      </ul>
+      <div className='mt-[20px] text-center'>
+        <SentenceGeneration
+          sentence={INTRODUCTION_SENTENCE}
+          gap='gap-y-[50px]'
+          leading='leading-[30px]'
+          text='text-[16px]'
+        />
+      </div>
       <div className='mx-auto mt-[20px] flex w-fit flex-col gap-y-[20px]'>
         <RedirectButton
           text='もっと詳しく'
@@ -67,14 +65,16 @@ export const About = (): JSX.Element => {
           path='forPlayer'
         />
       </div>
-      <ul className='mt-[20px] grid gap-y-[50px] text-center font-main text-[16px] leading-[30px] text-light'>
-        {Object.values(PS_SENTENCE).map((psParagraphs) => (
-          <li key={psParagraphs.id}>
-            {Object.values(psParagraphs.lines).map((psTexts) => (
-              <p key={psTexts}>{psTexts}</p>
-            ))}
-          </li>
-        ))}
+      <div className='mt-[20px] text-center'>
+        <SentenceGeneration
+          sentence={PS_SENTENCE}
+          gap='gap-y-[50px]'
+          leading='leading-[30px]'
+          text='text-[16px]'
+        />
+      </div>
+      <ul className='list-disc'>
+        <li>secondParagraph</li>
       </ul>
     </>
   );
