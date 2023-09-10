@@ -1,6 +1,7 @@
 import { Button } from '@nextui-org/react';
+import { throttle } from 'lodash';
 import Image from 'next/image';
-import { useState } from 'react';
+import { use, useEffect, useState } from 'react';
 
 import search from '../../../public/search.svg';
 
@@ -246,13 +247,19 @@ const DUO_RANKING_MOCK = {
 export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isSearchUser, setIsSearchUser] = useState<string>('');
-  const searchUserName = { value: '' };
-  if (typeof document !== 'undefined') {
-    const searchUser = document.getElementById('userSearch') as HTMLInputElement;
-    searchUser.addEventListener('input', () => {
-      searchUserName.value = searchUser.value;
-    });
-  }
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const userSearch = throttle(() => {
+        const searchUser = document.getElementById('userSearch') as HTMLInputElement;
+        if (isSearchUser !== searchUser.value) {
+          setIsSearchUser(searchUser.value);
+        }
+      }, 400);
+      window.addEventListener('input', userSearch);
+      return () => window.removeEventListener('input', userSearch);
+    }
+  }, [isSearchUser]);
 
   const setRankingTitle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
@@ -289,12 +296,7 @@ export const Ranking = (): JSX.Element => {
               placeholder='ユーザーネームで自分の順位を検索…'
               className='w-full bg-accent-green font-sub text-[12px] text-base-secondary'
             />
-            <Button
-              onClick={() => setIsSearchUser(searchUserName.value)}
-              className='h-fit w-fit min-w-0 bg-accent-green px-0'
-            >
-              <Image src={search} alt='search' width={24} height={24} />
-            </Button>
+            <Image src={search} alt='search' width={24} height={24} />
           </div>
         </div>
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
