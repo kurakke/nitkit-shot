@@ -245,11 +245,11 @@ const DUO_RANKING_MOCK = {
 };
 
 export const Ranking = (): JSX.Element => {
-  const [isCategory, setIsCategory] = useState<string>('solo');
+  const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isUserName, setIsUserName] = useState<string>('');
 
   const rankingContents = (duo: string, solo: string) => {
-    switch (isCategory) {
+    switch (isSelectedTab) {
       case 'solo':
         return solo;
       case 'duo':
@@ -260,8 +260,8 @@ export const Ranking = (): JSX.Element => {
   return (
     <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[392px] flex-col'>
       <div className='z-10 flex flex-grow items-end justify-center font-ranking text-[16px]'>
-        <RankingTab onClick={() => setIsCategory('solo')} text='solo' category={isCategory} />
-        <RankingTab onClick={() => setIsCategory('duo')} text='duo' category={isCategory} />
+        <RankingTab onClick={() => setIsSelectedTab('solo')} text='solo' category={isSelectedTab} />
+        <RankingTab onClick={() => setIsSelectedTab('duo')} text='duo' category={isSelectedTab} />
       </div>
       <div className='z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]'>
         <div className='mx-auto h-[28px] w-fit rounded-[13px] border border-accent-green px-[10px] font-ranking text-[16px] text-accent-green'>
