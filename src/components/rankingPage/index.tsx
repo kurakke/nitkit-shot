@@ -276,7 +276,15 @@ export const Ranking = (): JSX.Element => {
         return duo;
     }
   };
-  
+
+  const setRankingData = (duo: Ranking, solo: Ranking) => {
+    switch (isSelectedTab) {
+      case 'solo':
+        return solo;
+      case 'duo':
+        return duo;
+    }
+  };
 
   return (
     <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[392px] flex-col'>
@@ -308,7 +316,7 @@ export const Ranking = (): JSX.Element => {
           </div>
         </div>
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
-          {Object.values(DUO_RANKING_MOCK).map(
+          {Object.values(setRankingData(DUO_RANKING_MOCK, SOLO_RANKING_MOCK)).map(
             (rankingContents) =>
               (!isSearchUser || rankingContents.name.includes(isSearchUser)) && (
                 <li key={rankingContents.ranking}>
