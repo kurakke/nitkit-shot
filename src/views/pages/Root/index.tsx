@@ -3,6 +3,7 @@ import React from 'react';
 
 import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
+
 // eslint-disable-next-line import/order
 import { About } from '../../../components/topPage/About';
 
