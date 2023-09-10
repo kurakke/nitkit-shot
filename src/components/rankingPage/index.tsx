@@ -246,8 +246,13 @@ const DUO_RANKING_MOCK = {
 export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isSearchUser, setIsSearchUser] = useState<string>('');
-
-  const searchUserName = document.getElementById('userSearch') as HTMLInputElement;
+  const searchUserName = { value: '' };
+  if (typeof document !== 'undefined') {
+    const searchUser = document.getElementById('userSearch') as HTMLInputElement;
+    searchUser.addEventListener('input', () => {
+      searchUserName.value = searchUser.value;
+    });
+  }
 
   const setRankingTitle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
