@@ -3,17 +3,17 @@ import classNames from 'classnames';
 
 interface Props {
   onClick: () => void;
-  text: string;
-  category: string;
+  tabName: string;
+  selectedTab: string;
 }
 
-const RankingTab: ({ category, onClick, text }: Props) => JSX.Element = ({
-  category,
+const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
   onClick,
-  text,
+  selectedTab,
+  tabName,
 }) => {
   const tabStyle = (inactive: string, active: string) => {
-    return text === category ? active : inactive;
+    return tabName === selectedTab ? active : inactive;
   };
 
   return (
@@ -27,7 +27,7 @@ const RankingTab: ({ category, onClick, text }: Props) => JSX.Element = ({
         )}`,
       )}
     >
-      {text}
+      {tabName}
     </Button>
   );
 };
