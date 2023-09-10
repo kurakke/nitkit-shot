@@ -247,6 +247,8 @@ export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isSearchUser, setIsSearchUser] = useState<string>('');
 
+  const searchUserName = document.getElementById('userSearch') as HTMLInputElement;
+
   const setRankingTitle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
       case 'solo':
@@ -283,7 +285,7 @@ export const Ranking = (): JSX.Element => {
               className='w-full bg-accent-green font-sub text-[12px] text-base-secondary'
             />
             <Button
-              onClick={() => setIsSearchUser(document.getElementById('userSearch')!.value)}
+              onClick={() => setIsSearchUser(searchUserName.value)}
               className='h-fit w-fit min-w-0 bg-accent-green px-0'
             >
               <Image src={search} alt='search' width={24} height={24} />
