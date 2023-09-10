@@ -15,4 +15,3 @@ const RootPage: NextPage = () => {
   );
 };
 export default RootPage;
-ScrollRevealOnce;
