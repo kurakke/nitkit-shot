@@ -14,7 +14,6 @@ export const SentenceGeneration: ({ gap, leading, sentence, text }: Props) => JS
   text,
 }) => {
   return (
-    <>
       <ul className={`grid font-main ${gap} ${text} ${leading} text-light`}>
         {Object.values(sentence).map((paragraphs) => (
           <li key={paragraphs.id}>
@@ -24,6 +23,5 @@ export const SentenceGeneration: ({ gap, leading, sentence, text }: Props) => JS
           </li>
         ))}
       </ul>
-    </>
   );
 };
