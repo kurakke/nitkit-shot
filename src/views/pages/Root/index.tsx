@@ -1,73 +1,16 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-import { TitleText } from '../../../components/TitleText';
+import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
+import { About } from '../../../components/topPage/About';
 
 const RootPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <TitleText title='introduction' />
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
-      <div className='text-light'>kurakke</div>
+      <ScrollRevealOnce>
+        <About />
+      </ScrollRevealOnce>
     </DefaultLayout>
   );
 };
