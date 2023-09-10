@@ -1,8 +1,10 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-// eslint-disable-next-line import/order
+import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
+// eslint-disable-next-line import/order
+import { About } from '../../../components/topPage/About';
 
 // eslint-disable-next-line import/no-unresolved
 import Information from '../../../components/topPage/Information/index';
@@ -10,7 +12,12 @@ import Information from '../../../components/topPage/Information/index';
 const RootPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <Information />
+      <ScrollRevealOnce>
+        <About />
+      </ScrollRevealOnce>
+      <ScrollRevealOnce>
+        <Information />
+      </ScrollRevealOnce>
     </DefaultLayout>
   );
 };
