@@ -245,7 +245,7 @@ const DUO_RANKING_MOCK = {
   },
 };
 
-const RankingPage = (): NextPage => {
+const RankingPage: NextPage = () => {
   const [isCategory, setIsCategory] = useState<string>('solo');
 
   const raking = isCategory === 'solo' ? SOLO_RANKING_MOCK : DUO_RANKING_MOCK;
