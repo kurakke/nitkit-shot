@@ -15,10 +15,7 @@ const RankingCard: ({ name, ranking, score }: Props) => JSX.Element = ({
   score,
 }) => {
   return (
-    <li
-      key={ranking}
-      className='shadow-ranking flex w-full items-center rounded-[18px] border border-main bg-accent-green p-[2px] font-main text-[15px]'
-    >
+    <div className='shadow-ranking flex w-full items-center rounded-[18px] border border-main bg-accent-green p-[2px] font-main text-[15px]'>
       <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
         {ranking}
       </div>
@@ -31,7 +28,7 @@ const RankingCard: ({ name, ranking, score }: Props) => JSX.Element = ({
       <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
         {score}
       </div>
-    </li>
+    </div>
   );
 };
 

@@ -301,11 +301,13 @@ export const Ranking = (): JSX.Element => {
           {Object.values(DUO_RANKING_MOCK).map(
             (rankingContents) =>
               (!isSearchUser || rankingContents.name.includes(isSearchUser)) && (
-                <RankingCard
-                  name={rankingContents.name}
-                  ranking={rankingContents.ranking}
-                  score={rankingContents.score}
-                />
+                <li key={rankingContents.ranking}>
+                  <RankingCard
+                    name={rankingContents.name}
+                    ranking={rankingContents.ranking}
+                    score={rankingContents.score}
+                  />
+                </li>
               ),
           )}
         </ul>
