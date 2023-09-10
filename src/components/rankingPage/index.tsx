@@ -246,7 +246,7 @@ const DUO_RANKING_MOCK = {
 
 export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
-  const [isUserName, setIsUserName] = useState<string>('');
+  const [isSearchUser, setIsSearchUser] = useState<string>('');
 
   const rankingContents = (duo: string, solo: string) => {
     switch (isSelectedTab) {
@@ -276,7 +276,7 @@ export const Ranking = (): JSX.Element => {
               className='w-full bg-accent-green font-sub text-[12px] text-base-secondary'
             />
             <Button
-              onClick={() => setIsUserName(document.getElementById('userSearch')!.value)}
+              onClick={() => setIsSearchUser(document.getElementById('userSearch')!.value)}
               className='h-fit w-fit min-w-0 bg-accent-green px-0'
             >
               <Image src={search} alt='search' width={24} height={24} />
@@ -286,7 +286,7 @@ export const Ranking = (): JSX.Element => {
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
           {Object.values(DUO_RANKING_MOCK).map(
             (rankingContents) =>
-              (!isUserName || rankingContents.name.includes(isUserName)) && (
+              (!isSearchUser || rankingContents.name.includes(isSearchUser)) && (
                 <RankingCard
                   name={rankingContents.name}
                   ranking={rankingContents.ranking}
