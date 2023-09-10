@@ -48,7 +48,7 @@ export const About = (): JSX.Element => {
           sentence={INTRODUCTION_SENTENCE}
           gap='gap-y-[50px]'
           leading='leading-[30px]'
-          text='text-[16px]'
+          textSize='text-[16px]'
         />
       </div>
       <div className='mx-auto mt-[20px] flex w-fit flex-col gap-y-[20px]'>
@@ -70,7 +70,7 @@ export const About = (): JSX.Element => {
           sentence={PS_SENTENCE}
           gap='gap-y-[50px]'
           leading='leading-[30px]'
-          text='text-[16px]'
+          textSize='text-[16px]'
         />
       </div>
     </>

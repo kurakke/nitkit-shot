@@ -4,24 +4,24 @@ interface Props {
   sentence: Sentence;
   leading: string;
   gap: string;
-  text: string;
+  textSize: string;
 }
 
-export const SentenceGeneration: ({ gap, leading, sentence, text }: Props) => JSX.Element = ({
+export const SentenceGeneration: ({ gap, leading, sentence, textSize }: Props) => JSX.Element = ({
   gap,
   leading,
   sentence,
-  text,
+  textSize,
 }) => {
   return (
-      <ul className={`grid font-main ${gap} ${text} ${leading} text-light`}>
-        {Object.values(sentence).map((paragraphs) => (
-          <li key={paragraphs.id}>
-            {Object.values(paragraphs.lines).map((texts) => (
-              <p key={texts}>{texts}</p>
-            ))}
-          </li>
-        ))}
-      </ul>
+    <ul className={`grid font-main ${gap} ${textSize} ${leading} text-light`}>
+      {Object.values(sentence).map((paragraphs) => (
+        <li key={paragraphs.id}>
+          {Object.values(paragraphs.lines).map((texts) => (
+            <p key={texts}>{texts}</p>
+          ))}
+        </li>
+      ))}
+    </ul>
   );
 };
