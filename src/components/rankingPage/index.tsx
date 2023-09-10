@@ -1,7 +1,6 @@
-import { Button } from '@nextui-org/react';
 import { throttle } from 'lodash';
 import Image from 'next/image';
-import { use, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import search from '../../../public/search.svg';
 
