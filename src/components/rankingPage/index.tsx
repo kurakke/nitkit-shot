@@ -247,7 +247,7 @@ export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isSearchUser, setIsSearchUser] = useState<string>('');
 
-  const rankingContents = (duo: string, solo: string) => {
+  const setRankingTitle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
       case 'solo':
         return solo;
@@ -264,7 +264,7 @@ export const Ranking = (): JSX.Element => {
       </div>
       <div className='z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]'>
         <div className='mx-auto h-[28px] w-fit rounded-[13px] border border-accent-green px-[10px] font-ranking text-[16px] text-accent-green'>
-          {rankingContents('2 Player Leaders', '1 Player Leaders')}
+          {setRankingTitle('2 Player Leaders', '1 Player Leaders')}
         </div>
         <div className='shadow-ranking mx-auto mt-[10px] flex h-[38px] w-[301px] items-center rounded-[19px] bg-main p-[5px]'>
           <div className='flex w-full justify-between rounded-[19px] bg-accent-green  py-[3.3px] pl-[10px] pr-[5px]'>
