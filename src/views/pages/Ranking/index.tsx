@@ -1,3 +1,5 @@
+import { type } from 'os';
+
 import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
 import { NextPage } from 'next';
@@ -6,10 +8,16 @@ import React, { useState } from 'react';
 
 import information from '../../../../public/information.svg';
 import search from '../../../../public/search.svg';
-import { TitleText } from '../../../components/TitleText';
+import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
-const SOLO_RANKING_MOCK = {
+type RankingContents = {
+  name: string;
+  ranking: string;
+  score: string;
+};
+
+const SOLO_RANKING_MOCK: Record<number, RankingContents> = {
   1: {
     name: 'User Name',
     ranking: '1',
@@ -247,10 +255,10 @@ const DUO_RANKING_MOCK = {
 
 const RankingPage: NextPage = () => {
   const [isCategory, setIsCategory] = useState<string>('solo');
+  const [isUserName, setIsUserName] = useState<string>('');
 
-  const raking = isCategory === 'solo' ? SOLO_RANKING_MOCK : DUO_RANKING_MOCK;
-
-  const rankingContentsStyle = (duo: string, solo: string) => {
+  const personName = document.getElementById('userSearch') as HTMLInputElement;
+  const rankingContents = (duo: string, solo: string) => {
     switch (isCategory) {
       case 'solo':
         return solo;
@@ -258,6 +266,7 @@ const RankingPage: NextPage = () => {
         return duo;
     }
   };
+
   return (
     <DefaultLayout>
       <TitleText title='ranking' />
@@ -267,7 +276,7 @@ const RankingPage: NextPage = () => {
             onClick={() => setIsCategory('solo')}
             className={classNames(
               `flex w-[38.47%] rounded-[10px_10px_0_0] px-0`,
-              `${rankingContentsStyle(
+              `${rankingContents(
                 'h-[92.1%] bg-accent-yellow text-main',
                 'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-accent-green border-b-[transparent] bg-main text-accent-green',
               )}`,
@@ -279,7 +288,7 @@ const RankingPage: NextPage = () => {
             onClick={() => setIsCategory('duo')}
             className={classNames(
               `flex w-[38.47%] rounded-[10px_10px_0_0] px-0`,
-              `${rankingContentsStyle(
+              `${rankingContents(
                 'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-accent-green border-b-[transparent] bg-main text-accent-green',
                 'h-[92.1%] bg-accent-yellow text-main ',
               )}`,
@@ -290,38 +299,47 @@ const RankingPage: NextPage = () => {
         </div>
         <div className='z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]'>
           <div className='mx-auto h-[28px] w-fit rounded-[13px] border border-accent-green px-[10px] font-ranking text-[16px] text-accent-green'>
-            {rankingContentsStyle('2 Player Leaders', '1 Player Leaders')}
+            {rankingContents('2 Player Leaders', '1 Player Leaders')}
           </div>
           <div className='shadow-ranking mx-auto mt-[10px] flex h-[38px] w-[301px] items-center rounded-[19px] bg-main p-[5px]'>
-            <form className='flex w-full justify-between rounded-[19px] bg-accent-green  py-[3.3px] pl-[10px] pr-[5px]'>
+            <div className='flex w-full justify-between rounded-[19px] bg-accent-green  py-[3.3px] pl-[10px] pr-[5px]'>
               <input
-                name='userSearch'
+                id='userSearch'
+                type='text'
                 placeholder='ユーザーネームで自分の順位を検索…'
                 className='w-full bg-accent-green font-sub text-[12px] text-base-secondary'
               />
-              <Image src={search} alt='search' width={24} height={24} />
-            </form>
+              <Button
+                onClick={() => setIsUserName(personName!.value)}
+                className='h-fit w-fit min-w-0 bg-accent-green px-0'
+              >
+                <Image src={search} alt='search' width={24} height={24} />
+              </Button>
+            </div>
           </div>
           <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
-            {Object.values(raking).map((rankingContents) => (
-              <li
-                key={rankingContents.ranking}
-                className='shadow-ranking flex w-full items-center rounded-[18px] border border-main bg-accent-green p-[2px] font-main text-[15px]'
-              >
-                <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
-                  {rankingContents.ranking}
-                </div>
-                <p className='ml-[15px] h-[full] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>
-                  {rankingContents.name}
-                </p>
-                <Button className='mr-[10px] h-fit w-fit min-w-0 bg-accent-green px-0'>
-                  <Image src={information} alt='information' width={24} height={24} />
-                </Button>
-                <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
-                  {rankingContents.score}
-                </div>
-              </li>
-            ))}
+            {Object.values(rankingContents(DUO_RANKING_MOCK, SOLO_RANKING_MOCK)).map(
+              (rankingContents) =>
+                (!isUserName || rankingContents.name.includes(isUserName)) && (
+                  <li
+                    key={rankingContents.ranking}
+                    className='shadow-ranking flex w-full items-center rounded-[18px] border border-main bg-accent-green p-[2px] font-main text-[15px]'
+                  >
+                    <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
+                      {rankingContents.ranking}
+                    </div>
+                    <p className='ml-[15px] h-[full] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>
+                      {rankingContents.name}
+                    </p>
+                    <Button className='mr-[10px] h-fit w-fit min-w-0 bg-accent-green px-0'>
+                      <Image src={information} alt='information' width={24} height={24} />
+                    </Button>
+                    <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
+                      {rankingContents.score}
+                    </div>
+                  </li>
+                ),
+            )}
           </ul>
         </div>
       </div>
