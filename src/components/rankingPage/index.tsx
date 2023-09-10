@@ -7,7 +7,15 @@ import search from '../../../public/search.svg';
 import RankingCard from './RankingCard';
 import RankingTab from './RankingTab';
 
-const SOLO_RANKING_MOCK = {
+interface RankingProps {
+  name: string;
+  ranking: string;
+  score: string;
+}
+
+type Ranking = Record<string, RankingProps>;
+
+const SOLO_RANKING_MOCK: Ranking = {
   1: {
     name: 'User Name',
     ranking: '1',
@@ -125,7 +133,7 @@ const SOLO_RANKING_MOCK = {
   },
 };
 
-const DUO_RANKING_MOCK = {
+const DUO_RANKING_MOCK: Ranking = {
   1: {
     name: 'kurakkekamooooooo',
     ranking: '1',
@@ -268,6 +276,7 @@ export const Ranking = (): JSX.Element => {
         return duo;
     }
   };
+  
 
   return (
     <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[392px] flex-col'>
