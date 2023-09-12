@@ -1,4 +1,5 @@
 import { Button } from '@nextui-org/react';
+import classNames from 'classnames';
 import Image from 'next/image';
 
 import information from '../../../public/information.svg';
@@ -7,22 +8,37 @@ interface Props {
   name: string;
   ranking: string;
   score: string;
+  cardType: string;
 }
 
-const RankingCard: ({ name, ranking, score }: Props) => JSX.Element = ({
+const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = ({
+  cardType,
   name,
   ranking,
   score,
 }) => {
+  const cardStyle = (solo: string, duo: string) => {
+    switch (cardType) {
+      case 'solo':
+        return solo;
+      case 'duo':
+        return duo;
+    }
+  };
   return (
-    <div className='shadow-ranking flex w-full items-center rounded-[18px] border border-main bg-accent-green p-[2px] font-main text-[15px]'>
+    <div
+      className={classNames(
+        `shadow-ranking flex w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px]`,
+        `${cardStyle('bg-accent-green', 'bg-accent-yellow')}`,
+      )}
+    >
       <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
         {ranking}
       </div>
       <p className='ml-[15px] h-[full] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>
         {name}
       </p>
-      <Button className='mr-[10px] h-fit w-fit min-w-0 bg-accent-green px-0'>
+      <Button className='mr-[10px] h-fit w-fit min-w-0 bg-[transparent] px-0'>
         <Image src={information} alt='information' width={24} height={24} />
       </Button>
       <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>

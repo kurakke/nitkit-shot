@@ -321,6 +321,7 @@ export const Ranking = (): JSX.Element => {
               (!isSearchUser || rankingContents.name.includes(isSearchUser)) && (
                 <li key={rankingContents.ranking}>
                   <RankingCard
+                    cardType={isSelectedTab}
                     name={rankingContents.name}
                     ranking={rankingContents.ranking}
                     score={rankingContents.score}
