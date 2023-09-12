@@ -28,16 +28,14 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
   return (
     <div
       className={classNames(
-        `shadow-ranking flex w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px]`,
+        `shadow-ranking flex h-[93.6%] w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px]`,
         `${cardStyle('bg-accent-green', 'bg-accent-yellow')}`,
       )}
     >
       <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
         {ranking}
       </div>
-      <p className='ml-[15px] h-[full] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>
-        {name}
-      </p>
+      <p className='ml-[15px] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>{name}</p>
       <Button className='mr-[10px] h-fit w-fit min-w-0 bg-[transparent] px-0'>
         <Image src={information} alt='information' width={24} height={24} />
       </Button>
