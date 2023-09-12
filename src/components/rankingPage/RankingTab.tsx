@@ -12,8 +12,21 @@ const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
   selectedTab,
   tabName,
 }) => {
-  const tabStyle = (inactive: string, active: string) => {
-    return tabName === selectedTab ? active : inactive;
+  const tabStyle = (
+    commonInactive: string,
+    commonActive: string,
+    soloTabInactive: string,
+    soloTabActive: string,
+    duoTabInactive: string,
+    duoTabActive: string,
+  ) => {
+    if (selectedTab === 'solo') {
+      if (tabName === selectedTab) return `${soloTabActive} ${commonActive}`;
+      else if (tabName !== selectedTab) return `${soloTabInactive} ${commonInactive}`;
+    } else if (selectedTab === 'duo') {
+      if (tabName === selectedTab) return `${duoTabActive} ${commonActive}`;
+      else if (tabName !== selectedTab) return `${duoTabInactive} ${commonInactive}`;
+    }
   };
 
   return (
@@ -22,8 +35,12 @@ const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
       className={classNames(
         `flex w-[38.47%] rounded-[10px_10px_0_0] px-0`,
         `${tabStyle(
-          'h-[92.1%] bg-accent-yellow text-main',
-          'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-accent-green border-b-[transparent] bg-main text-accent-green',
+          'h-[92.1%] text-main',
+          'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-b-[transparent] border-b-[transparent] bg-main bg-main',
+          'bg-accent-yellow',
+          'border-accent-green text-accent-green',
+          'bg-accent-green',
+          'border-accent-yellow text-accent-green',
         )}`,
       )}
     >
