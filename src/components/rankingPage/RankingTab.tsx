@@ -15,10 +15,10 @@ const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
   const tabStyle = (
     commonInactive: string,
     commonActive: string,
-    soloTabInactive: string,
-    soloTabActive: string,
     duoTabInactive: string,
     duoTabActive: string,
+    soloTabInactive: string,
+    soloTabActive: string,
   ) => {
     if (selectedTab === 'solo') {
       if (tabName === selectedTab) return `${soloTabActive} ${commonActive}`;
@@ -37,10 +37,10 @@ const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
         `${tabStyle(
           'h-[92.1%] text-main',
           'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-b-[transparent] border-b-[transparent] bg-main bg-main',
-          'bg-accent-yellow',
-          'border-accent-green text-accent-green',
           'bg-accent-green',
           'border-accent-yellow text-accent-green',
+          'bg-accent-yellow',
+          'border-accent-green text-accent-green',
         )}`,
       )}
     >

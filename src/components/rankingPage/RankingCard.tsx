@@ -17,19 +17,19 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
   ranking,
   score,
 }) => {
-  const cardStyle = (solo: string, duo: string) => {
+  const cardStyle = (duo: string, solo: string) => {
     switch (cardType) {
-      case 'solo':
-        return solo;
       case 'duo':
         return duo;
+      case 'solo':
+        return solo;
     }
   };
   return (
     <div
       className={classNames(
         `shadow-ranking flex h-[93.6%] w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px]`,
-        `${cardStyle('bg-accent-green', 'bg-accent-yellow')}`,
+        `${cardStyle('bg-accent-yellow', 'bg-accent-green')}`,
       )}
     >
       <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
