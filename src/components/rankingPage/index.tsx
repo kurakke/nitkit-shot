@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { throttle } from 'lodash';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -268,7 +269,7 @@ export const Ranking = (): JSX.Element => {
     }
   }, [isSearchUser]);
 
-  const setRankingTitle = (duo: string, solo: string) => {
+  const rankingStyle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
       case 'solo':
         return solo;
@@ -300,17 +301,38 @@ export const Ranking = (): JSX.Element => {
           selectedTab={isSelectedTab}
         />
       </div>
-      <div className='z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]'>
-        <div className='mx-auto h-[28px] w-fit rounded-[13px] border border-accent-green px-[10px] font-ranking text-[16px] text-accent-green'>
-          {setRankingTitle('2 Player Leaders', '1 Player Leaders')}
+      <div
+        className={classNames(
+          'z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]',
+          `${rankingStyle('border-accent-yellow', 'border-accent-green')}`,
+        )}
+      >
+        <div
+          className={classNames(
+            `mx-auto h-[28px] w-fit rounded-[13px] border px-[10px] font-ranking text-[16px] text-accent-green`,
+            `${rankingStyle(
+              'border-accent-yellow text-accent-yellow',
+              'border-accent-green text-accent-green',
+            )}`,
+          )}
+        >
+          {rankingStyle('2 Player Leaders', '1 Player Leaders')}
         </div>
         <div className='shadow-ranking mx-auto mt-[10px] flex h-[38px] w-[301px] items-center rounded-[19px] bg-main p-[5px]'>
-          <div className='flex w-full justify-between rounded-[19px] bg-accent-green  py-[3.3px] pl-[10px] pr-[5px]'>
+          <div
+            className={classNames(
+              `flex w-full justify-between rounded-[19px] py-[3.3px] pl-[10px] pr-[5px]`,
+              `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
+            )}
+          >
             <input
               id='userSearch'
               type='text'
               placeholder='ユーザーネームで自分の順位を検索…'
-              className='w-full bg-accent-green font-sub text-[12px] text-base-secondary'
+              className={classNames(
+                `w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
+                `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
+              )}
             />
             <Image src={search} alt='search' width={24} height={24} />
           </div>
