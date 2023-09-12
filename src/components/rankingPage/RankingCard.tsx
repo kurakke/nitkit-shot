@@ -1,6 +1,7 @@
 import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
 import Image from 'next/image';
+import React from 'react';
 
 import information from '../../../public/information.svg';
 
@@ -28,7 +29,7 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
   return (
     <div
       className={classNames(
-        `shadow-ranking flex h-[93.6%] w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px]`,
+        `flex h-[93.6%] w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px] shadow-ranking`,
         `${cardStyle('bg-accent-yellow', 'bg-accent-green')}`,
       )}
     >

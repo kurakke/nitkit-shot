@@ -1,5 +1,6 @@
 import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
+import React from 'react';
 
 interface Props {
   onClick: () => void;
