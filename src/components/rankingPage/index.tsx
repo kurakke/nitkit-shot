@@ -76,24 +76,22 @@ export const Ranking = (): JSX.Element => {
         >
           {rankingStyle('2 Player Leaders', '1 Player Leaders')}
         </div>
-        <div className='mx-auto mt-[10px] flex h-[3.82%] w-[81.4%] items-center rounded-[19px] bg-main p-[5px] shadow-ranking'>
-          <div
+        <div
+          className={classNames(
+            `mx-auto mt-[10px] flex flex h-[4.6%] w-[80.9%] justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
+            `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
+          )}
+        >
+          <input
+            id='userSearch'
+            type='text'
+            placeholder='ユーザーネームで自分の順位を検索…'
             className={classNames(
-              `flex w-full justify-between rounded-[19px] py-[3.3px] pl-[10px] pr-[5px]`,
+              `w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
               `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
             )}
-          >
-            <input
-              id='userSearch'
-              type='text'
-              placeholder='ユーザーネームで自分の順位を検索…'
-              className={classNames(
-                `w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
-                `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
-              )}
-            />
-            <Image src={search} alt='search' width={24} height={24} />
-          </div>
+          />
+          <Image src={search} alt='search' width={24} height={24} />
         </div>
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
           {Object.values(setRankingData(DUO_RANKING_MOCK, SOLO_RANKING_MOCK)).map(

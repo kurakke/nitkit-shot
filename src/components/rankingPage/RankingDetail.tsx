@@ -50,7 +50,14 @@ const RankingDetail: ({
       <ul className='flex h-full flex-col justify-between font-main text-[15px] text-accent-yellow [&>li]:flex [&>li]:w-full [&>li]:justify-between'>
         <li>
           <p>使用アイテム：</p>
-          <p>{userName}</p>
+          {informationType === 'solo' && <p>{userName}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{userName}</p>
+              <p>/</p>
+              <p>{userName}</p>
+            </div>
+          )}
         </li>
         <li>
           <p>クリア時間：</p>
@@ -58,23 +65,58 @@ const RankingDetail: ({
         </li>
         <li>
           <p>ヘッドショット率：</p>
-          <p>{headShot}</p>
+          {informationType === 'solo' && <p>{headShot}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{headShot}</p>
+              <p>/</p>
+              <p>{headShot}</p>
+            </div>
+          )}
         </li>
         <li>
           <p>命中率：</p>
-          <p>{hitRate}</p>
+          {informationType === 'solo' && <p>{hitRate}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{hitRate}</p>
+              <p>/</p>
+              <p>{hitRate}</p>
+            </div>
+          )}
         </li>
         <li>
           <p>使用弾数：</p>
-          <p>{bulletUsed}</p>
+          {informationType === 'solo' && <p>{bulletUsed}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{bulletUsed}</p>
+              <p>/</p>
+              <p>{bulletUsed}</p>
+            </div>
+          )}
         </li>
         <li>
           <p>被弾数：</p>
-          <p>{damage}</p>
+          {informationType === 'solo' && <p>{damage}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{damage}</p>
+              <p>/</p>
+              <p>{damage}</p>
+            </div>
+          )}
         </li>
         <li>
           <p>撃破数：</p>
-          <p>{kill}</p>
+          {informationType === 'solo' && <p>{kill}</p>}
+          {informationType === 'duo' && (
+            <div className='flex gap-[5px]'>
+              <p>{kill}</p>
+              <p>/</p>
+              <p>{kill}</p>
+            </div>
+          )}
         </li>
       </ul>
     </PopoverContent>
