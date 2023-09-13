@@ -46,7 +46,7 @@ export const Ranking = (): JSX.Element => {
   };
 
   return (
-    <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[392px] flex-col'>
+    <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[394px] flex-col'>
       <div className='z-10 flex flex-grow items-end justify-center font-ranking text-[16px]'>
         <RankingTab
           onClick={() => setIsSelectedTab('solo')}

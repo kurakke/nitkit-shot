@@ -125,7 +125,7 @@ export const DUO_RANKING_MOCK: RankingInformation = {
     score: '123456789',
   },
   2: {
-    name: 'User Name',
+    name: 'User Namew',
     ranking: '2',
     score: '123456789',
   },

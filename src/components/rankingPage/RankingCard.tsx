@@ -31,14 +31,23 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
   return (
     <div
       className={classNames(
-        `flex h-[93.6%] w-full items-center rounded-[18px] border border-main p-[2px] font-main text-[15px] shadow-ranking`,
+        `flex h-[38px] w-[372px] items-center rounded-[18px] border border-main p-[3px] font-main text-[15px] shadow-ranking`,
         `${cardStyle('bg-accent-yellow', 'bg-accent-green')}`,
       )}
     >
-      <div className='flex h-full w-[8.24%] items-center justify-center rounded-[15px] bg-main text-light'>
+      <div className='flex aspect-square h-full items-center justify-center rounded-[15px] bg-main text-light'>
         {ranking}
       </div>
-      <p className='ml-[15px] w-[62.6%] truncate whitespace-pre px-[5px] text-main'>{name}</p>
+      <div className='ml-[15px] flex w-[55%] whitespace-pre px-[5px] text-main [&>p]:truncate'>
+        {cardType === 'solo' && <p>{name}</p>}
+        {cardType === 'duo' && (
+          <>
+            <p className='truncate'>{name}</p>
+            <span className='mx-[10px]'>/</span>
+            <p className='truncate'>{name}</p>
+          </>
+        )}
+      </div>
       <Popover placement='bottom'>
         <PopoverTrigger>
           <Button className='mr-[10px] h-fit w-fit min-w-0 bg-[transparent] px-0'>
