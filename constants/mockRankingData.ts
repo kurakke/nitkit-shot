@@ -53,7 +53,7 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
+    playerName: 'User Nameっっっっっっっっっっs',
     ranking: '4',
     score: '123456789',
   },
@@ -314,8 +314,8 @@ export const DUO_RANKING_MOCK: DuoRanking = {
       },
     },
     playerName: {
-      onePlayer: 'User Name',
-      twoPlayer: 'User Name',
+      onePlayer: 'Userrrrrrrrrrrrrrrrr Name',
+      twoPlayer: 'Userrrrrrrrrrrrrrrrr Name',
     },
     ranking: '1',
     score: '123456789',
@@ -349,7 +349,7 @@ export const DUO_RANKING_MOCK: DuoRanking = {
       },
     },
     playerName: {
-      onePlayer: 'yuri',
+      onePlayer: 'kurakke',
       twoPlayer: 'User Name',
     },
     ranking: '2',
