@@ -7,7 +7,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout>
-      <TitleText title='forplayer' />
+      <TitleText title='for player' />
     </DefaultLayout>
   );
 };
