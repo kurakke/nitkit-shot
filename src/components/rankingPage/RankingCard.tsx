@@ -17,14 +17,11 @@ import SoloRankingDetail from './SoloRankingDetail';
 import SoloRankingName from './SoloRankingName';
 
 interface Props {
-  informations: SoloRankingProps | DuoRankingProps;
+  contents: SoloRankingProps | DuoRankingProps;
   cardType: string;
 }
 
-const RankingCard: ({ cardType, informations }: Props) => JSX.Element = ({
-  cardType,
-  informations,
-}) => {
+const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType, contents }) => {
   const cardStyle = (duo: string, solo: string) => {
     switch (cardType) {
       case 'duo':
@@ -41,14 +38,14 @@ const RankingCard: ({ cardType, informations }: Props) => JSX.Element = ({
       )}
     >
       <div className='flex aspect-square h-full items-center justify-center rounded-[15px] bg-main text-light'>
-        {informations.ranking}
+        {contents.ranking}
       </div>
       <div className='ml-[15px] flex w-[55%] whitespace-pre px-[5px] text-main [&>p]:truncate'>
         {cardType === 'solo' && (
-          <SoloRankingName playerName={informations.playerName as SoloRankingProps['playerName']} />
+          <SoloRankingName playerName={contents.playerName as SoloRankingProps['playerName']} />
         )}
         {cardType === 'duo' && (
-          <DuoRankingName playerName={informations.playerName as DuoRankingProps['playerName']} />
+          <DuoRankingName playerName={contents.playerName as DuoRankingProps['playerName']} />
         )}
       </div>
       <Popover placement='bottom'>
@@ -58,14 +55,14 @@ const RankingCard: ({ cardType, informations }: Props) => JSX.Element = ({
           </Button>
         </PopoverTrigger>
         {cardType === 'solo' && (
-          <SoloRankingDetail information={informations.information as SoloRankingInformation} />
+          <SoloRankingDetail information={contents.information as SoloRankingInformation} />
         )}
         {cardType === 'duo' && (
-          <DuoRankingDetail information={informations.information as DuoRankingInformation} />
+          <DuoRankingDetail information={contents.information as DuoRankingInformation} />
         )}
       </Popover>
       <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
-        {informations.score}
+        {contents.score}
       </div>
     </div>
   );

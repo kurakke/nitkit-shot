@@ -89,7 +89,7 @@ export const Ranking = (): JSX.Element => {
               (rankingContents) =>
                 (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
                   <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} informations={rankingContents} />
+                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
                   </li>
                 ),
             )}
@@ -100,7 +100,7 @@ export const Ranking = (): JSX.Element => {
                   rankingContents.playerName.onePlayer.includes(isSearchUser) ||
                   rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
                   <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} informations={rankingContents} />
+                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
                   </li>
                 ),
             )}
