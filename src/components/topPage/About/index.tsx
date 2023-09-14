@@ -62,7 +62,7 @@ export const About = (): JSX.Element => {
           text='プレイする人へ'
           backGroundColor='bg-accent-yellow'
           textColor='text-main'
-          path='forPlayer'
+          path='forplayer'
         />
       </div>
       <div className='mt-[20px] text-center'>
