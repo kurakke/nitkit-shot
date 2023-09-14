@@ -18,7 +18,7 @@ import SoloRankingName from './SoloRankingName';
 
 interface Props {
   contents: SoloRankingProps | DuoRankingProps;
-  cardType: string;
+  cardType: 'solo' | 'duo';
 }
 
 const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType, contents }) => {
