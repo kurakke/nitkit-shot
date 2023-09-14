@@ -4,21 +4,26 @@ import Image from 'next/image';
 import React from 'react';
 
 import information from '../../../public/information.svg';
+import {
+  DuoRankingInformation,
+  DuoRankingProps,
+  SoloRankingInformation,
+  SoloRankingProps,
+} from '../../../types/Ranking';
 
-import RankingDetail from './RankingDetail';
+import DuoRankingDetail from './DouRankingDetail';
+import DuoRankingName from './DuoRankingName';
+import SoloRankingDetail from './SoloRankingDetail';
+import SoloRankingName from './SoloRankingName';
 
 interface Props {
-  name: string;
-  ranking: string;
-  score: string;
+  informations: SoloRankingProps | DuoRankingProps;
   cardType: string;
 }
 
-const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = ({
+const RankingCard: ({ cardType, informations }: Props) => JSX.Element = ({
   cardType,
-  name,
-  ranking,
-  score,
+  informations,
 }) => {
   const cardStyle = (duo: string, solo: string) => {
     switch (cardType) {
@@ -36,16 +41,14 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
       )}
     >
       <div className='flex aspect-square h-full items-center justify-center rounded-[15px] bg-main text-light'>
-        {ranking}
+        {informations.ranking}
       </div>
       <div className='ml-[15px] flex w-[55%] whitespace-pre px-[5px] text-main [&>p]:truncate'>
-        {cardType === 'solo' && <p>{name}</p>}
+        {cardType === 'solo' && (
+          <SoloRankingName playerName={informations.playerName as SoloRankingProps['playerName']} />
+        )}
         {cardType === 'duo' && (
-          <>
-            <p className='truncate'>{name}</p>
-            <span className='mx-[10px]'>/</span>
-            <p className='truncate'>{name}</p>
-          </>
+          <DuoRankingName playerName={informations.playerName as DuoRankingProps['playerName']} />
         )}
       </div>
       <Popover placement='bottom'>
@@ -54,19 +57,15 @@ const RankingCard: ({ cardType, name, ranking, score }: Props) => JSX.Element = 
             <Image src={information} alt='information' width={24} height={24} />
           </Button>
         </PopoverTrigger>
-        <RankingDetail
-          informationType={cardType}
-          bulletUsed='1234'
-          clearTime='1234'
-          damage='1234'
-          headShot='1234'
-          hitRate='1234'
-          kill='1234'
-          userName='1234'
-        />
+        {cardType === 'solo' && (
+          <SoloRankingDetail information={informations.information as SoloRankingInformation} />
+        )}
+        {cardType === 'duo' && (
+          <DuoRankingDetail information={informations.information as DuoRankingInformation} />
+        )}
       </Popover>
       <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
-        {score}
+        {informations.score}
       </div>
     </div>
   );

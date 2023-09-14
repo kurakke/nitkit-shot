@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 import { DUO_RANKING_MOCK, SOLO_RANKING_MOCK } from '../../../constants/mockRankingData';
 import search from '../../../public/search.svg';
-import RankingInformation from '../../../types/RankingInformation';
+import { DuoRanking, SoloRanking } from '../../../types/Ranking';
 
 import RankingCard from './RankingCard';
 import RankingTab from './RankingTab';
@@ -36,7 +36,7 @@ export const Ranking = (): JSX.Element => {
     }
   };
 
-  const setRankingData = (duo: RankingInformation, solo: RankingInformation) => {
+  const setRankingData = (duo: DuoRanking, solo: SoloRanking) => {
     switch (isSelectedTab) {
       case 'solo':
         return solo;
@@ -94,19 +94,26 @@ export const Ranking = (): JSX.Element => {
           <Image src={search} alt='search' width={24} height={24} />
         </div>
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
-          {Object.values(setRankingData(DUO_RANKING_MOCK, SOLO_RANKING_MOCK)).map(
-            (rankingContents) =>
-              (!isSearchUser || rankingContents.name.includes(isSearchUser)) && (
-                <li key={rankingContents.ranking}>
-                  <RankingCard
-                    cardType={isSelectedTab}
-                    name={rankingContents.name}
-                    ranking={rankingContents.ranking}
-                    score={rankingContents.score}
-                  />
-                </li>
-              ),
-          )}
+          {isSelectedTab === 'solo' &&
+            Object.values(SOLO_RANKING_MOCK).map(
+              (rankingContents) =>
+                (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
+                  <li key={rankingContents.ranking}>
+                    <RankingCard cardType={isSelectedTab} informations={rankingContents} />
+                  </li>
+                ),
+            )}
+          {isSelectedTab === 'duo' &&
+            Object.values(DUO_RANKING_MOCK).map(
+              (rankingContents) =>
+                (!isSearchUser ||
+                  rankingContents.playerName.onePlayer.includes(isSearchUser) ||
+                  rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
+                  <li key={rankingContents.ranking}>
+                    <RankingCard cardType={isSelectedTab} informations={rankingContents} />
+                  </li>
+                ),
+            )}
         </ul>
       </div>
     </div>
