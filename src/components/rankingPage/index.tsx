@@ -5,7 +5,6 @@ import React, { useEffect, useState } from 'react';
 
 import { DUO_RANKING_MOCK, SOLO_RANKING_MOCK } from '../../../constants/mockRankingData';
 import search from '../../../public/search.svg';
-import { DuoRanking, SoloRanking } from '../../../types/Ranking';
 
 import RankingCard from './RankingCard';
 import RankingTab from './RankingTab';
@@ -28,15 +27,6 @@ export const Ranking = (): JSX.Element => {
   }, [isSearchUser]);
 
   const rankingStyle = (duo: string, solo: string) => {
-    switch (isSelectedTab) {
-      case 'solo':
-        return solo;
-      case 'duo':
-        return duo;
-    }
-  };
-
-  const setRankingData = (duo: DuoRanking, solo: SoloRanking) => {
     switch (isSelectedTab) {
       case 'solo':
         return solo;
