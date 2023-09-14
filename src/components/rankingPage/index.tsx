@@ -68,7 +68,7 @@ export const Ranking = (): JSX.Element => {
         </div>
         <div
           className={classNames(
-            `mx-auto mt-[10px] flex flex h-[4.6%] w-[80.9%] justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
+            `mx-auto mt-[10px] flex flex h-[3.82%] w-[80.9%] justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
             `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
           )}
         >
