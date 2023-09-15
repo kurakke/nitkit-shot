@@ -3,13 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import allow from '../../../public/allow.svg';
-import { PageId } from '../../../types/PageId';
 
 interface Props {
   text: string;
   backGroundColor: string;
   textColor: string;
-  path: PageId;
+  path: string;
 }
 
 export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props) => JSX.Element = ({
