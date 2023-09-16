@@ -11,7 +11,7 @@ interface Props {
   point: boolean;
 }
 
-const SentenceGenerater: ({ gap, leading, sentence, textSize }: Props) => JSX.Element = ({
+const SentenceGenerater: ({ gap, leading, point, sentence, textSize }: Props) => JSX.Element = ({
   gap,
   leading,
   point,

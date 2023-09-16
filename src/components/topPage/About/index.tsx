@@ -49,6 +49,7 @@ export const About = (): JSX.Element => {
           gap='gap-y-[50px]'
           leading='leading-[30px]'
           textSize='text-[16px]'
+          point={false}
         />
       </div>
       <div className='mx-auto mt-[20px] flex w-fit flex-col gap-y-[20px]'>
@@ -71,6 +72,7 @@ export const About = (): JSX.Element => {
           gap='gap-y-[50px]'
           leading='leading-[30px]'
           textSize='text-[16px]'
+          point={false}
         />
       </div>
     </>
