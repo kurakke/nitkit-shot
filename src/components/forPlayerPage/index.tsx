@@ -97,8 +97,8 @@ const ForPlayer = () => {
           </li>
         ))}
       </div>
-      <div className='mt-[30px] w-[389px]'>
-        <div className='mx-auto mb-[10px] w-fit font-main text-[20px] font-bold text-accent-yellow'>
+      <div className='mt-[30px] flex flex-col items-center w-[389px]'>
+        <div className='mb-[10px] mr-[11px] w-fit font-main text-[20px] font-bold text-accent-yellow'>
           ※注意事項※
         </div>
         <SentenceGenerater
