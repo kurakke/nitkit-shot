@@ -4,7 +4,7 @@ import React from 'react';
 import allow from '../../../public/allow.svg';
 import { ImageContents } from '../../../types/ImageContents';
 import { Sentence } from '../../../types/Sentence';
-import TutotialContents from '../general/ImageContentsGenerater';
+import ImageContentsGenerater from '../general/ImageContentsGenerater';
 import SentenceGenerater from '../general/SentenceGenerater';
 
 const WARNING_MOCK_CONTENTS: Sentence = {
@@ -88,7 +88,7 @@ const ForPlayer = () => {
       <div className='grid gap-y-[30px]'>
         {Object.values(FORPLAYER_MOCK_CONTENTS).map((forPlayerContents) => (
           <li key={forPlayerContents.id}>
-            <TutotialContents
+            <ImageContentsGenerater
               description={forPlayerContents.description}
               image={forPlayerContents.image}
               title={forPlayerContents.title}
@@ -106,6 +106,7 @@ const ForPlayer = () => {
           textSize='text-[13px]'
           leading='leading-[20px]'
           gap='gap-y-[20px]'
+          point
         />
       </div>
     </div>

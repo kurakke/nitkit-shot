@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import React from 'react';
 
 import { Sentence } from '../../../types/Sentence';
@@ -18,10 +19,18 @@ const SentenceGenerater: ({ gap, leading, sentence, textSize }: Props) => JSX.El
   textSize,
 }) => {
   const pointStyle = () => {
-    point ? 'list-disc' : '';
+    return point ? 'list-disc' : '';
   };
   return (
-    <ul className={(`grid font-main ${gap} ${textSize} ${leading} text-light`, `${pointStyle()}`)}>
+    <ul
+      className={classNames(
+        `grid font-main text-light`,
+        `${gap}`,
+        `${textSize}`,
+        `${leading}`,
+        `${pointStyle()}`,
+      )}
+    >
       {Object.values(sentence).map((paragraphs) => (
         <li key={paragraphs.id}>
           {Object.values(paragraphs.lines).map((texts) => (
