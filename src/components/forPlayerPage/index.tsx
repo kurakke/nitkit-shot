@@ -85,7 +85,7 @@ const ForPlayer = () => {
       <div className='mb-[20px] mt-[10px] border-b border-accent-yellow text-[20px] font-bold text-accent-yellow'>
         チュートリアルと遊び方
       </div>
-      <div className='grid gap-y-[30px]'>
+      <ul className='grid gap-y-[30px]'>
         {Object.values(FORPLAYER_MOCK_CONTENTS).map((forPlayerContents) => (
           <li key={forPlayerContents.id}>
             <ImageContentsGenerater
@@ -96,7 +96,7 @@ const ForPlayer = () => {
             />
           </li>
         ))}
-      </div>
+      </ul>
       <div className='mt-[30px] flex w-[389px] flex-col items-center'>
         <div className='mb-[10px] mr-[11px] font-main text-[20px] font-bold text-accent-yellow'>
           ※注意事項※
