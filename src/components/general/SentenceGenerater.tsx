@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Sentence } from '../../../types/Sentence';
 
 interface Props {
@@ -7,7 +9,7 @@ interface Props {
   textSize: string;
 }
 
-export const SentenceGeneration: ({ gap, leading, sentence, textSize }: Props) => JSX.Element = ({
+const SentenceGenerater: ({ gap, leading, sentence, textSize }: Props) => JSX.Element = ({
   gap,
   leading,
   sentence,
@@ -25,3 +27,5 @@ export const SentenceGeneration: ({ gap, leading, sentence, textSize }: Props) =
     </ul>
   );
 };
+
+export default SentenceGenerater;

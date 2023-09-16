@@ -2,8 +2,8 @@
 import React from 'react';
 
 import { Sentence } from '../../../../types/Sentence';
-import { SentenceGeneration } from '../../../components/general/SentenceGeneration';
 import { RedirectButton } from '../../general/RedirectButton';
+import SentenceGenerater from '../../general/SentenceGenerater';
 import { TitleText } from '../../general/TitleText';
 
 const INTRODUCTION_SENTENCE: Sentence = {
@@ -44,7 +44,7 @@ export const About = (): JSX.Element => {
         迫り来るゾンビを撃て！
       </div>
       <div className='mt-[20px] text-center'>
-        <SentenceGeneration
+        <SentenceGenerater
           sentence={INTRODUCTION_SENTENCE}
           gap='gap-y-[50px]'
           leading='leading-[30px]'
@@ -66,7 +66,7 @@ export const About = (): JSX.Element => {
         />
       </div>
       <div className='mt-[20px] text-center'>
-        <SentenceGeneration
+        <SentenceGenerater
           sentence={PS_SENTENCE}
           gap='gap-y-[50px]'
           leading='leading-[30px]'

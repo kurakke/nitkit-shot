@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Sentence } from '../../../types/Sentence';
 
-import { SentenceGeneration } from './SentenceGeneration';
+import SentenceGenerater from './SentenceGenerater';
 
 interface Props {
   description: Sentence;
@@ -28,7 +28,7 @@ const ImageContentsGenerater: ({ description, image, title, type }: Props) => JS
       {type === 'video' && <video src={image} controls className='h-[180px] w-full' />}
       <div className='text-[20px] font-bold text-accent-green'>{title}</div>
       <div className='mr-auto'>
-        <SentenceGeneration sentence={description} gap='' leading='' textSize='text-[16px]' />
+        <SentenceGenerater sentence={description} gap='' leading='' textSize='text-[16px]' />
       </div>
     </div>
   );

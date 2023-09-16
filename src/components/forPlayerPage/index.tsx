@@ -5,7 +5,7 @@ import allow from '../../../public/allow.svg';
 import { ImageContents } from '../../../types/ImageContents';
 import { Sentence } from '../../../types/Sentence';
 import TutotialContents from '../general/ImageContentsGenerater';
-import { SentenceGeneration } from '../general/SentenceGeneration';
+import SentenceGenerater from '../general/SentenceGenerater';
 
 const WARNING_MOCK_CONTENTS: Sentence = {
   firstParagraph: {
@@ -101,7 +101,7 @@ const ForPlayer = () => {
         <div className='mx-auto mb-[10px] w-fit font-main text-[20px] font-bold text-accent-yellow'>
           ※注意事項※
         </div>
-        <SentenceGeneration
+        <SentenceGenerater
           sentence={WARNING_MOCK_CONTENTS}
           textSize='text-[13px]'
           leading='leading-[20px]'
