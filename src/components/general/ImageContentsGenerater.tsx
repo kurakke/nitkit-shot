@@ -19,7 +19,7 @@ const ImageContentsGenerater: ({ description, image, title, type }: Props) => JS
   type,
 }) => {
   return (
-    <div className='mx-auto flex w-[320px] flex-col items-center gap-y-[10px]'>
+    <div className='flex w-[320px] flex-col items-center gap-y-[10px]'>
       {type === 'picture' && (
         <div className='relative h-[180px] w-[320px]'>
           <Image src={image} alt={title} fill />

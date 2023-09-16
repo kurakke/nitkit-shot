@@ -81,8 +81,8 @@ const FORPLAYER_MOCK_CONTENTS: ImageContents = {
 
 const ForPlayer = () => {
   return (
-    <div className='mx-auto flex flex-col items-center'>
-      <div className='mx-auto mb-[20px] mt-[10px] w-fit border-b border-accent-yellow text-[20px] font-bold leading-none text-accent-yellow'>
+    <div className='mx-auto mt-[10px] flex flex-col items-center'>
+      <div className='mb-[20px] mt-[10px] border-b border-accent-yellow text-[20px] font-bold text-accent-yellow'>
         チュートリアルと遊び方
       </div>
       <div className='grid gap-y-[30px]'>
@@ -97,8 +97,8 @@ const ForPlayer = () => {
           </li>
         ))}
       </div>
-      <div className='mt-[30px] flex flex-col items-center w-[389px]'>
-        <div className='mb-[10px] mr-[11px] w-fit font-main text-[20px] font-bold text-accent-yellow'>
+      <div className='mt-[30px] flex w-[389px] flex-col items-center'>
+        <div className='mb-[10px] mr-[11px] font-main text-[20px] font-bold text-accent-yellow'>
           ※注意事項※
         </div>
         <SentenceGenerater
