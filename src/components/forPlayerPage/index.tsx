@@ -1,7 +1,7 @@
 /* eslint-disable sort/object-properties */
 import React from 'react';
 
-import { GAMING_VISUAL_MOCK } from '../../../constants/gamingVisualMock';
+import { GAMING_VISUAL_MOCK } from '../../../constants/gamingVisualDataMock';
 import { GUIDELINES_MOCK } from '../../../constants/guidelinesMock';
 import GamingVisualContents from '../general/GamingVisualContents';
 import SentenceGenerater from '../general/SentenceGenerater';
