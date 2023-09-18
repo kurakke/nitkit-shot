@@ -1,6 +1,6 @@
 import { Sentence } from './Sentence';
 
-export interface ImageContentsProps {
+export interface GamingVisualProps {
   type: 'video' | 'picture';
   id: string;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -9,4 +9,4 @@ export interface ImageContentsProps {
   description: Sentence;
 }
 
-export type ImageContents = Record<string, ImageContentsProps>;
+export type GamingVisual = Record<string, GamingVisualProps>;

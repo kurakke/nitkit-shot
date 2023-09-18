@@ -12,7 +12,7 @@ interface Props {
   type: 'video' | 'picture';
 }
 
-const ImageContentsGenerater: ({ description, source, title, type }: Props) => JSX.Element = ({
+const GamingVisualContents: ({ description, source, title, type }: Props) => JSX.Element = ({
   description,
   source,
   title,
@@ -20,12 +20,16 @@ const ImageContentsGenerater: ({ description, source, title, type }: Props) => J
 }) => {
   return (
     <div className='flex w-[320px] flex-col items-center gap-y-[10px]'>
-      {type === 'picture' && (
-        <div className='relative h-[180px] w-[320px]'>
-          <Image src={source} alt={title} fill />
-        </div>
-      )}
-      {type === 'video' && <video src={source} controls className='h-[180px] w-full' />}
+      <div className='relative h-[180px] w-[320px]'>
+        {type === 'picture' && <Image src={source} alt={title} fill />}
+        {type === 'video' && (
+          <iframe
+            src='https://www.youtube.com/embed/C32HCq4lUl4?si=IUTF3k7Z_pwMqLYW'
+            title='video'
+            allowFullScreen
+          />
+        )}
+      </div>
       <div className='text-[20px] font-bold text-accent-green'>{title}</div>
       <div className='mr-auto'>
         <SentenceGenerater sentence={description} textSize='text-[16px]' point={false} />
@@ -34,4 +38,4 @@ const ImageContentsGenerater: ({ description, source, title, type }: Props) => J
   );
 };
 
-export default ImageContentsGenerater;
+export default GamingVisualContents;
