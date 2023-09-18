@@ -1,0 +1,33 @@
+import allow from '../public/allow.svg';
+import { GamingVisual } from '../types/GamingVisual';
+
+export const GAMING_VISUAL_MOCK: GamingVisual = {
+  hostel: {
+    description: {
+      firstParagraph: {
+        id: 'firstParagraph',
+        lines: [
+          'ゾンビ（英語: zombie）は、何らかの力で死体のまま蘇った人間の総称である。 多くはホラーやファンタジー作品などに登場し、「腐った死体が歩き回る」という描写が多くなされる架空の存在である。',
+        ],
+      },
+    },
+    id: 'hostel',
+    source: 'hostel.mp4',
+    title: 'ゾンビ',
+    type: 'video',
+  },
+  hostel2: {
+    description: {
+      firstParagraph: {
+        id: 'firstParagraph',
+        lines: [
+          'もともと鳥猟や小型の動物の狩猟用だが、大きな弾丸や一発弾なども使用でき、大型獣の狩猟にも用いられるようになった。 また、散弾銃を警備用として軍隊や警察で用いている国もある。',
+        ],
+      },
+    },
+    id: 'hostel2',
+    source: allow,
+    title: '散弾銃',
+    type: 'picture',
+  },
+};
