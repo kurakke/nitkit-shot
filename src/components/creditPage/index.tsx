@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { CREDIT_MOCK } from '../../../constants/credit';
+import { CREDIT_MOCK } from '../../../constants/creditMock';
 
 import CreditContents from './CreditContents';
 
