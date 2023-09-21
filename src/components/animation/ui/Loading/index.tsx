@@ -12,7 +12,7 @@ const Loading = () => {
       ref={ref}
       className={classNames(
         `fixed z-50 flex h-full w-screen items-center justify-center bg-main`,
-        `transition-all delay-[2000ms] ${
+        `transition-all delay-[1500ms] duration-300 ease-in-out ${
           isIntersected ? 'invisible opacity-0' : 'visible opacity-100'
         }`,
       )}
@@ -20,7 +20,7 @@ const Loading = () => {
       <div
         className={classNames(
           `relative h-[153.5px] w-[430px]`,
-          `transition-opacity delay-1000 ${isIntersected ? 'opacity-100' : 'opacity-0'}`,
+          `transition-opacity delay-300 ${isIntersected ? 'opacity-100' : 'opacity-0'}`,
         )}
       >
         <Image src={logo} alt={logo} fill />
