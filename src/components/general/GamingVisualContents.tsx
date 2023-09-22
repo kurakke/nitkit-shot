@@ -1,18 +1,11 @@
 import Image from 'next/image';
 import React from 'react';
 
-import { Sentence } from '../../../types/Sentence';
+import { GamingVisualProps } from '../../../types/GamingVisual';
 
 import SentenceGenerator from './SentenceGenerator';
 
-interface Props {
-  description: Sentence;
-  source: string;
-  title: string;
-  type: 'video' | 'picture';
-}
-
-const GamingVisualContents: ({ description, source, title, type }: Props) => JSX.Element = ({
+const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Element = ({
   description,
   source,
   title,

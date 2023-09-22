@@ -15,12 +15,7 @@ const ForPlayer = () => {
       <ul className='grid gap-y-[30px]'>
         {Object.values(GAMING_VISUAL_MOCK).map((forPlayerContents) => (
           <li key={forPlayerContents.id}>
-            <GamingVisualContents
-              description={forPlayerContents.description}
-              source={forPlayerContents.source}
-              title={forPlayerContents.title}
-              type={forPlayerContents.type}
-            />
+            <GamingVisualContents {...forPlayerContents} />
           </li>
         ))}
       </ul>
