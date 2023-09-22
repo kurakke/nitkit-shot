@@ -5,7 +5,7 @@ interface Props {
   rotate: string;
 }
 
-const KeepOutTeep: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
+const KeepOutTape: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
   const [wordCount, setWordCount] = useState<number>(0);
 
   //パソコンで見られることを想定し、画面幅が変わったときのための処理、パフォーマンスを考えるとなくてもいい
@@ -34,4 +34,4 @@ const KeepOutTeep: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
   );
 };
 
-export default KeepOutTeep;
+export default KeepOutTape;

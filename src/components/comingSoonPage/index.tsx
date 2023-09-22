@@ -1,21 +1,21 @@
 import React from 'react';
 
-import KeepOutTeep from './KeepOutTeep';
+import KeepOutTape from './KeepOutTape';
 
 const ComingSoon = (): JSX.Element => {
   return (
     <>
-      <div className='flex min-h-screen h-fit w-screen flex-col items-center justify-evenly mb-[13.5%]'>
-        <KeepOutTeep rotate='rotate-[-7.413deg]' />
-        <KeepOutTeep rotate='rotate-[15.461deg]' />
-        <KeepOutTeep rotate='rotate-[-14.036deg]' />
-        <KeepOutTeep rotate='rotate-[9.976deg]' />
-        <KeepOutTeep rotate='rotate-[27.996deg]' />
-        <KeepOutTeep rotate='rotate-[-9.445deg]' />
-        <KeepOutTeep rotate='rotate-[27.996deg]' />
-        <KeepOutTeep rotate='rotate-[-26.881deg]' />
-        <KeepOutTeep rotate='rotate-[8.774deg]' />
-        <KeepOutTeep rotate='rotate-[-8.678deg]' />
+      <div className='mb-[13.5%] flex h-fit min-h-screen w-screen flex-col items-center justify-evenly'>
+        <KeepOutTape rotate='rotate-[-7.413deg]' />
+        <KeepOutTape rotate='rotate-[15.461deg]' />
+        <KeepOutTape rotate='rotate-[-14.036deg]' />
+        <KeepOutTape rotate='rotate-[9.976deg]' />
+        <KeepOutTape rotate='rotate-[27.996deg]' />
+        <KeepOutTape rotate='rotate-[-9.445deg]' />
+        <KeepOutTape rotate='rotate-[27.996deg]' />
+        <KeepOutTape rotate='rotate-[-26.881deg]' />
+        <KeepOutTape rotate='rotate-[8.774deg]' />
+        <KeepOutTape rotate='rotate-[-8.678deg]' />
       </div>
     </>
   );
