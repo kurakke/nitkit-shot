@@ -8,4 +8,5 @@ export type TitleId =
   | 'for player'
   | 'movie'
   | 'q&a'
-  | 'credit';
+  | 'credit'
+  | 'coming soon';
