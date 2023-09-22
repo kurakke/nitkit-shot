@@ -4,9 +4,9 @@ import SentenceGenerater from '../general/SentenceGenerater';
 const Introduction = (): JSX.Element => {
   return (
     <div className='mx-auto mt-[10px] w-[370px]'>
-      <div className='mb-[20px] w-fit border-b-[2px] border-accent-yellow font-menu-english text-[56px] leading-[40px] text-accent-yellow'>
-        Story
-        <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>ストーリー</span>
+      <div className='mb-[20px] inline-flex w-fit items-end border-b-[2px] border-accent-yellow text-accent-yellow'>
+        <p className='font-menu-english text-[56px] leading-[40px]'>Story</p>
+        <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>ストーリー</p>
       </div>
       <div className='mx-auto w-fit'>
         <SentenceGenerater
