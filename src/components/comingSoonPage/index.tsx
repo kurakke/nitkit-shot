@@ -5,7 +5,7 @@ import KeepOutTeep from './KeepOutTeep';
 const ComingSoon = (): JSX.Element => {
   return (
     <>
-      <div className='w-screen flex h-screen flex-col items-center justify-evenly overflow-hidden'>
+      <div className='flex min-h-screen h-fit w-screen flex-col items-center justify-evenly mb-[13.5%]'>
         <KeepOutTeep rotate='rotate-[-7.413deg]' />
         <KeepOutTeep rotate='rotate-[15.461deg]' />
         <KeepOutTeep rotate='rotate-[-14.036deg]' />
