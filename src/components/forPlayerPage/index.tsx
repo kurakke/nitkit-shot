@@ -4,7 +4,7 @@ import React from 'react';
 import { GAMING_VISUAL_MOCK } from '../../../constants/gamingVisualDataMock';
 import { GUIDELINES_MOCK } from '../../../constants/guidelinesMock';
 import GamingVisualContents from '../general/GamingVisualContents';
-import SentenceGenerater from '../general/SentenceGenerater';
+import SentenceGenerator from '../general/SentenceGenerator';
 
 const ForPlayer = () => {
   return (
@@ -29,7 +29,7 @@ const ForPlayer = () => {
           ※注意事項※
         </div>
         <div>
-          <SentenceGenerater
+          <SentenceGenerator
             sentence={GUIDELINES_MOCK}
             textSize='text-[13px]'
             leading='leading-[20px]'

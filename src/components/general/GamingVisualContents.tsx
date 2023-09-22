@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Sentence } from '../../../types/Sentence';
 
-import SentenceGenerater from './SentenceGenerater';
+import SentenceGenerator from './SentenceGenerator';
 
 interface Props {
   description: Sentence;
@@ -28,7 +28,7 @@ const GamingVisualContents: ({ description, source, title, type }: Props) => JSX
       {type === 'video' && <video src={source} controls className='h-[180px] w-full' />}
       <div className='text-[20px] font-bold text-accent-green'>{title}</div>
       <div className='mr-auto'>
-        <SentenceGenerater sentence={description} textSize='text-[16px]' point={false} />
+        <SentenceGenerator sentence={description} textSize='text-[16px]' point={false} />
       </div>
     </div>
   );
