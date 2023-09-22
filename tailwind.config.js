@@ -18,6 +18,9 @@ module.exports = {
   plugins: [nextui({})],
   theme: {
     extend: {
+      boxShadow: {
+        'keep-out-teep': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+      },
       colors: {
         'accent-green': {
           DEFAULT: 'rgba(165, 208, 64, 1)', // Theme Color/Light Green
