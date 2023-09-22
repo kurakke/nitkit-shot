@@ -10,7 +10,7 @@ interface Props {
 
 export const DefaultLayout: ({ children }: Props) => JSX.Element = ({ children }) => {
   return (
-    <div className='inline-block h-full w-full bg-base px-[15px] min-w-max'>
+    <div className='inline-block h-full w-full min-w-max bg-base'>
       <HeaderBar />
       <main className='mt-[110px] h-full min-h-screen w-full '>
         {children}
