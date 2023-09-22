@@ -2,7 +2,8 @@ import allow from '../public/allow.svg';
 import { GamingVisual } from '../types/GamingVisual';
 
 export const GAMING_VISUAL_MOCK: GamingVisual = {
-  hostel: {
+  // eslint-disable-next-line sort/object-properties
+  zombie: {
     description: {
       firstParagraph: {
         id: 'firstParagraph',
@@ -16,7 +17,7 @@ export const GAMING_VISUAL_MOCK: GamingVisual = {
     title: 'ゾンビ',
     type: 'video',
   },
-  hostel2: {
+  gun: {
     description: {
       firstParagraph: {
         id: 'firstParagraph',
