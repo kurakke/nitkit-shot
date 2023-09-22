@@ -23,10 +23,10 @@ const KeepOutTeep: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
 
   return (
     <div
-      className={`shadow-keep-out-teep flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow ${rotate}`}
+      className={`flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow shadow-keep-out-teep ${rotate}`}
     >
-      {Array.from({ length: wordCount }).map((index) => (
-        <p key={index as number} className='font-ranking text-[16px]'>
+      {Array.from({ length: wordCount }).map((_, index) => (
+        <p key={index} className='font-ranking text-[16px]'>
           keep out
         </p>
       ))}
