@@ -1,5 +1,5 @@
 import { STORY_SENTENCE_MOCK } from '../../../constants/storySentenceMock';
-import SentenceGenerater from '../general/SentenceGenerater';
+import SentenceGenerator from '../general/SentenceGenerator';
 
 const Introduction = (): JSX.Element => {
   return (
@@ -9,7 +9,7 @@ const Introduction = (): JSX.Element => {
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>ストーリー</p>
       </div>
       <div className='mx-auto w-fit'>
-        <SentenceGenerater
+        <SentenceGenerator
           sentence={STORY_SENTENCE_MOCK}
           gap='gap-y-[30px]'
           leading='leading-[30px]'
