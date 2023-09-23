@@ -7,12 +7,12 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const ComingSoonPage: NextPage = () => {
   return (
-    <DefaultLayout>
-      <div className='overflow-hidden'>
+    <div className='overflow-hidden [&<main]:px-0'>
+      <DefaultLayout>
         <TitleText title='coming soon' />
         <ComingSoon />
-      </div>
-    </DefaultLayout>
+      </DefaultLayout>
+    </div>
   );
 };
 
