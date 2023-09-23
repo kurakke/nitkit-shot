@@ -5,7 +5,7 @@ import KeepOutTape from './KeepOutTape';
 const ComingSoon = (): JSX.Element => {
   return (
     <>
-      <div className='mb-[13.5%] flex h-fit min-h-screen w-screen flex-col items-center justify-evenly'>
+      <div className='mx-auto mb-[13.5%] flex h-screen w-[calc(100vw-30px)] flex-col items-center justify-evenly'>
         <KeepOutTape rotate='rotate-[-7.413deg]' />
         <KeepOutTape rotate='rotate-[15.461deg]' />
         <KeepOutTape rotate='rotate-[-14.036deg]' />
