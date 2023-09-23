@@ -53,7 +53,7 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   },
   reservation: {
     id: 'reservation',
-    path: '/',
+    path: '/comingsoon',
     englishName: 'Reservation',
     japaneseName: '予約用LINEbotへ',
   },
