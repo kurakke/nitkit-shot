@@ -6,7 +6,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const RankingPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout metaDescription='ゲームのランキングを表示するページです。'>
       <TitleText title='ranking' />
     </DefaultLayout>
   );

@@ -7,7 +7,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const ForPlayerPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout metaDescription='遊ぶ方へ向けたチュートリアルや注意喚起を表示するページです。'>
       <TitleText title='for player' />
       <ForPlayer />
     </DefaultLayout>

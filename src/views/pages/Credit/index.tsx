@@ -7,7 +7,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const CreditPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout metaDescription='制作スタッフの一覧を表示するページです。'>
       <TitleText title='credit' />
       <Credit />
     </DefaultLayout>

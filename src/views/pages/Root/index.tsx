@@ -16,7 +16,7 @@ const RootPage: NextPage = () => {
   return (
     <>
       <Loading />
-      <DefaultLayout>
+      <DefaultLayout metaDescription='サイトのトップページです。'>
         <ScrollRevealOnce>
           <About />
         </ScrollRevealOnce>

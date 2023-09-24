@@ -6,7 +6,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const QAndAPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout metaDescription='よくある質問に対する回答を載せたページです。'>
       <TitleText title='q&a' />
     </DefaultLayout>
   );
