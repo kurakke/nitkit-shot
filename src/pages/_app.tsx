@@ -13,7 +13,10 @@ function MyApp({
   return (
     <NextUIProvider>
       <Component {...pageProps} />
-      <Script src='https://kit.fontawesome.com/6c2b9a1b1f.js' strategy='beforeInteractive' />
+      <Script
+        src='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap'
+        strategy='beforeInteractive'
+      />
     </NextUIProvider>
   );
 }
