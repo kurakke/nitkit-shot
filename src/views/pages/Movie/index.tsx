@@ -6,7 +6,10 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const MoviePage: NextPage = () => {
   return (
-    <DefaultLayout metaDescription='ゲームのプレイ動画やプレイ画像を表示するページです。'>
+    <DefaultLayout
+      metaDescription='ゲームのプレイ動画やプレイ画像を表示するページです。'
+      pageTitle='ムービー'
+    >
       <TitleText title='movie' />
     </DefaultLayout>
   );
