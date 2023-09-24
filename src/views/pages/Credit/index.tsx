@@ -7,7 +7,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const CreditPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='クレジット'>
       <TitleText title='credit' />
       <Credit />
     </DefaultLayout>

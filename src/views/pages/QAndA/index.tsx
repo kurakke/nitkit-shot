@@ -6,7 +6,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const QAndAPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='Q&A'>
       <TitleText title='q&a' />
     </DefaultLayout>
   );

@@ -6,7 +6,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const MoviePage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='ムービー'>
       <TitleText title='movie' />
     </DefaultLayout>
   );
