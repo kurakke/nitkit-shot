@@ -8,7 +8,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const ComingSoonPage: NextPage = () => {
   return (
     <div className='overflow-hidden [&<main]:px-0'>
-      <DefaultLayout pageTitle='カミングスーン'>
+      <DefaultLayout pageTitle='準備中'>
         <TitleText title='coming soon' />
         <ComingSoon />
       </DefaultLayout>
