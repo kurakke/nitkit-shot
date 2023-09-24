@@ -13,10 +13,7 @@ function MyApp({
   return (
     <NextUIProvider>
       <Component {...pageProps} />
-      <Script
-        src='https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.map'
-        strategy='beforeInteractive'
-      />
+      <Script src='https://kit.fontawesome.com/6c2b9a1b1f.js' strategy='beforeInteractive' />
     </NextUIProvider>
   );
 }
