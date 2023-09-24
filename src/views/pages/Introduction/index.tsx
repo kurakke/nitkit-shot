@@ -7,7 +7,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const IntroductionPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='イントロダクション'>
       <TitleText title='introduction' />
       <Introduction />
     </DefaultLayout>

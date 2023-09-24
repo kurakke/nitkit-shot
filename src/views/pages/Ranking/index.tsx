@@ -7,7 +7,7 @@ import { Ranking } from '../../../components/rankingPage/index';
 
 const RankingPage: NextPage = () => {
   return (
-    <DefaultLayout>
+    <DefaultLayout pageTitle='ランキング'>
       <TitleText title='ranking' />
       <Ranking />
     </DefaultLayout>
