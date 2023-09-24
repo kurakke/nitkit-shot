@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React, { ReactNode } from 'react';
 
 import { Footer } from './Footer';
@@ -6,17 +7,26 @@ import { ScrollToTopButton } from './ScrollToTopButton';
 
 interface Props {
   children: ReactNode;
+  pageTitle: string;
 }
 
-export const DefaultLayout: ({ children }: Props) => JSX.Element = ({ children }) => {
+export const DefaultLayout: ({ children, pageTitle }: Props) => JSX.Element = ({
+  children,
+  pageTitle,
+}) => {
   return (
-    <div className='inline-block h-full w-full min-w-max bg-base'>
-      <HeaderBar />
-      <main className='mt-[110px] h-full min-h-screen w-full px-[15px]'>
-        {children}
-        <ScrollToTopButton />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Head>
+        <title>{pageTitle}</title>
+      </Head>
+      <div className='inline-block h-full w-full min-w-max bg-base'>
+        <HeaderBar />
+        <main className='mt-[110px] h-full min-h-screen w-full px-[15px]'>
+          {children}
+          <ScrollToTopButton />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
