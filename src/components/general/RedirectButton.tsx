@@ -1,6 +1,8 @@
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 
+import AllowShape from './AllowShape';
+
 interface Props {
   text: string;
   backGroundColor: string;
@@ -19,6 +21,9 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
       <Link className='contents' href={`/${path}`}>
         <div className={`${textColor} leading-none`}>
           <div className='font-sub text-[20px] font-semibold'>{text}</div>
+        </div>
+        <div className='absolute right-[13px]'>
+          <AllowShape />
         </div>
       </Link>
     </Button>
