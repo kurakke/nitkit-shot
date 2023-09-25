@@ -1,4 +1,4 @@
-import allow from '../public/allow.svg';
+import logo from '../public/logo.svg';
 import { GamingVisual } from '../types/GamingVisual';
 
 export const GAMING_VISUAL_MOCK: GamingVisual = {
@@ -27,7 +27,7 @@ export const GAMING_VISUAL_MOCK: GamingVisual = {
       },
     },
     id: 'gun',
-    source: allow,
+    source: logo,
     title: '散弾銃',
     type: 'picture',
   },
