@@ -22,7 +22,7 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
         <div className={`${textColor} leading-none`}>
           <div className='font-sub text-[20px] font-semibold'>{text}</div>
         </div>
-        <div className='absolute right-[13px]'>
+        <div className='absolute right-[12px]'>
           <AllowShape />
         </div>
       </Link>

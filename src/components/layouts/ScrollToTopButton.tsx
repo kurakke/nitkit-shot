@@ -7,7 +7,7 @@ import AllowShape from '../general/AllowShape';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const visibleHeight: number = 500;
+  const visibleHeight: number = 100;
 
   const toTopButoonStyle = (visible: string, inVisible: string): string => {
     return isVisible ? visible : inVisible;
@@ -46,7 +46,7 @@ export const ScrollToTopButton = (): JSX.Element => {
         )}
         aria-label='Scroll to top'
       >
-        <div className='rotate-[-90deg]'>
+        <div className='relative rotate-[-90deg] mt-[7.5px]'>
           <AllowShape />
         </div>
       </Button>
