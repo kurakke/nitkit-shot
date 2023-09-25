@@ -1,6 +1,6 @@
 const AllowShape = (): JSX.Element => {
   return (
-    <div className='relative flex h-[20px] w-[13px] [&>div]:absolute [&>div]:inline-block [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main [&>div]:bg-main'>
+    <div className='relative h-[20px] w-[12.5px] [&>div]:absolute [&>div]:inline-block [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main [&>div]:bg-main'>
       <div className='left-0 top-[4px] rotate-[45deg]' />
       <div className='bottom-[4px] left-0 rotate-[-45deg]' />
     </div>
