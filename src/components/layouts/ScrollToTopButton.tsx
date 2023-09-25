@@ -1,10 +1,7 @@
 import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
 import { throttle } from 'lodash';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
-import allow from '../../../public/allow.svg';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -47,7 +44,6 @@ export const ScrollToTopButton = (): JSX.Element => {
         )}
         aria-label='Scroll to top'
       >
-        <Image src={allow} alt={'allow'} layout='fill' />
       </Button>
     </>
   );
