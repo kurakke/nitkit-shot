@@ -46,8 +46,8 @@ export const ScrollToTopButton = (): JSX.Element => {
         )}
         aria-label='Scroll to top'
       >
-        <div className='relative rotate-[-90deg] mt-[7.5px]'>
-          <AllowShape />
+        <div className='relative mt-[7.5px]'>
+          <AllowShape direction='top' />
         </div>
       </Button>
     </>
