@@ -1,7 +1,7 @@
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
 
-import AllowShape from './AllowShape';
+import ArrowShape from './ArrowShape';
 
 interface Props {
   text: string;
@@ -23,7 +23,7 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
           <div className='font-sub text-[20px] font-semibold'>{text}</div>
         </div>
         <div className='absolute right-[12px]'>
-          <AllowShape direction='right' />
+          <ArrowShape direction='right' />
         </div>
       </Link>
     </Button>

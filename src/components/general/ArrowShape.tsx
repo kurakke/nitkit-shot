@@ -4,8 +4,8 @@ interface Props {
   direction: 'top' | 'right' | 'bottom' | 'left';
 }
 
-const AllowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
-  const allowDirection = () => {
+const ArrowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
+  const arrowDirection = () => {
     switch (direction) {
       case 'top':
         return 'rotate-[-45deg]';
@@ -22,7 +22,7 @@ const AllowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
     <div
       className={classNames(
         `relative flex h-[15px] w-[15px] rotate-45 justify-center [&>div]:absolute [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main`,
-        `${allowDirection()}`,
+        `${arrowDirection()}`,
       )}
     >
       <div />
@@ -31,4 +31,4 @@ const AllowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
   );
 };
 
-export default AllowShape;
+export default ArrowShape;

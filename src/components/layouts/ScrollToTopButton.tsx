@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { throttle } from 'lodash';
 import { useEffect, useState } from 'react';
 
-import AllowShape from '../general/AllowShape';
+import ArrowShape from '../general/ArrowShape';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -47,7 +47,7 @@ export const ScrollToTopButton = (): JSX.Element => {
         aria-label='Scroll to top'
       >
         <div className='mt-[7.5px]'>
-          <AllowShape direction='top' />
+          <ArrowShape direction='top' />
         </div>
       </Button>
     </>
