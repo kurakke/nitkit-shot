@@ -10,7 +10,7 @@ const ArrowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
       case 'top':
         return 'rotate-[-45deg]';
       case 'right':
-        return 'rotate-0';
+        return 'rotate-45';
       case 'bottom':
         return 'rotate-[135deg]';
       case 'left':
