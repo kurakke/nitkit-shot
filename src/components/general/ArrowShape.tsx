@@ -21,7 +21,7 @@ const ArrowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
   return (
     <div
       className={classNames(
-        `relative flex h-[15px] w-[15px] rotate-45 justify-center [&>div]:absolute [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main`,
+        `relative flex h-[15px] w-[15px] justify-center [&>div]:absolute [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main`,
         `${arrowDirection()}`,
       )}
     >
