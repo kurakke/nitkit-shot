@@ -40,7 +40,7 @@ export interface SoloRankingProps {
   playerName: string;
   ranking: string;
   score: string;
-  information: SoloRankingInformation;
+  rankingInformation: SoloRankingInformation;
 }
 
 export interface DuoRankingProps {
@@ -50,7 +50,7 @@ export interface DuoRankingProps {
   };
   ranking: string;
   score: string;
-  information: DuoRankingInformation;
+  rankingInformation: DuoRankingInformation;
 }
 
 export type SoloRanking = Record<string, SoloRankingProps>;

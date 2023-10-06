@@ -55,10 +55,10 @@ const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType,
           </Button>
         </PopoverTrigger>
         {cardType === 'solo' && (
-          <SoloRankingDetail information={contents.information as SoloRankingInformation} />
+          <SoloRankingDetail information={contents.rankingInformation as SoloRankingInformation} />
         )}
         {cardType === 'duo' && (
-          <DuoRankingDetail information={contents.information as DuoRankingInformation} />
+          <DuoRankingDetail information={contents.rankingInformation as DuoRankingInformation} />
         )}
       </Popover>
       <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
