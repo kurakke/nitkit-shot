@@ -2,7 +2,9 @@ import { DuoRanking, SoloRanking } from '../types/Ranking';
 
 export const SOLO_RANKING_MOCK: SoloRanking = {
   1: {
-    information: {
+    playerName: 'User Name',
+    ranking: '1',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -11,12 +13,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '1',
     score: '123456789',
   },
   2: {
-    information: {
+    playerName: 'User Name',
+    ranking: '2',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -25,12 +27,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '2',
     score: '123456789',
   },
   3: {
-    information: {
+    playerName: 'User Name',
+    ranking: '3',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -39,12 +41,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '3',
     score: '123456789',
   },
   4: {
-    information: {
+    playerName: 'User Nameっっっっっっっっっっs',
+    ranking: '4',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -53,12 +55,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Nameっっっっっっっっっっs',
-    ranking: '4',
     score: '123456789',
   },
   5: {
-    information: {
+    playerName: 'User Name',
+    ranking: '5',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -67,12 +69,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '5',
     score: '123456789',
   },
   6: {
-    information: {
+    playerName: 'User Name',
+    ranking: '6',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -81,12 +83,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '6',
     score: '123456789',
   },
   7: {
-    information: {
+    playerName: 'User Name',
+    ranking: '7',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -95,12 +97,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '7',
     score: '123456789',
   },
   8: {
-    information: {
+    playerName: 'User Name',
+    ranking: '8',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -109,12 +111,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '8',
     score: '123456789',
   },
   9: {
-    information: {
+    playerName: 'User Name',
+    ranking: '9',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -123,12 +125,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '9',
     score: '123456789',
   },
   10: {
-    information: {
+    playerName: 'User Name',
+    ranking: '10',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -137,12 +139,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '10',
     score: '123456789',
   },
   11: {
-    information: {
+    playerName: 'User Name',
+    ranking: '11',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -151,13 +153,13 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '11',
     score: '123456789',
   },
 
   12: {
-    information: {
+    playerName: 'User Name',
+    ranking: '12',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -166,12 +168,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '12',
     score: '123456789',
   },
   13: {
-    information: {
+    playerName: 'User Name',
+    ranking: '13',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -180,12 +182,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '13',
     score: '123456789',
   },
   14: {
-    information: {
+    playerName: 'User Name',
+    ranking: '14',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -194,12 +196,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '14',
     score: '123456789',
   },
   15: {
-    information: {
+    playerName: 'User Name',
+    ranking: '15',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -208,12 +210,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '15',
     score: '123456789',
   },
   16: {
-    information: {
+    playerName: 'User Name',
+    ranking: '16',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -222,12 +224,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '16',
     score: '123456789',
   },
   17: {
-    information: {
+    playerName: 'User Name',
+    ranking: '17',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -236,12 +238,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '17',
     score: '123456789',
   },
   18: {
-    information: {
+    playerName: 'User Name',
+    ranking: '18',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -250,12 +252,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '18',
     score: '123456789',
   },
   19: {
-    information: {
+    playerName: 'User Name',
+    ranking: '19',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -264,12 +266,12 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '19',
     score: '123456789',
   },
   20: {
-    information: {
+    playerName: 'User Name',
+    ranking: '20',
+    rankingInformation: {
       bulletUsed: '123456789',
       clearTime: '12:34:56',
       damage: '123456789',
@@ -278,50 +280,18 @@ export const SOLO_RANKING_MOCK: SoloRanking = {
       itemName: 'Item Name',
       kill: '123456789',
     },
-    playerName: 'User Name',
-    ranking: '20',
     score: '123456789',
   },
 };
 
 export const DUO_RANKING_MOCK: DuoRanking = {
   1: {
-    information: {
-      bulletUsed: {
-        onePlayer: '123456789',
-        twoPlayer: '123456789',
-      },
-      clearTime: '12:34:56',
-      damage: {
-        onePlayer: '123456789',
-        twoPlayer: '123456789',
-      },
-      headShot: {
-        onePlayer: '0.123',
-        twoPlayer: '0.123',
-      },
-      hitRate: {
-        onePlayer: '0.123',
-        twoPlayer: '0.123',
-      },
-      itemName: {
-        onePlayer: 'Item Name',
-        twoPlayer: 'Item Name',
-      },
-      kill: {
-        onePlayer: '123456789',
-        twoPlayer: '123456789',
-      },
-    },
     playerName: {
       onePlayer: 'Userrrrrrrrrrrrrrrrr Name',
       twoPlayer: 'Userrrrrrrrrrrrrrrrr Name',
     },
     ranking: '1',
-    score: '123456789',
-  },
-  2: {
-    information: {
+    rankingInformation: {
       bulletUsed: {
         onePlayer: '123456789',
         twoPlayer: '123456789',
@@ -348,15 +318,15 @@ export const DUO_RANKING_MOCK: DuoRanking = {
         twoPlayer: '123456789',
       },
     },
+    score: '123456789',
+  },
+  2: {
     playerName: {
       onePlayer: 'kurakke',
       twoPlayer: 'User Name',
     },
     ranking: '2',
-    score: '123456789',
-  },
-  3: {
-    information: {
+    rankingInformation: {
       bulletUsed: {
         onePlayer: '123456789',
         twoPlayer: '123456789',
@@ -383,11 +353,41 @@ export const DUO_RANKING_MOCK: DuoRanking = {
         twoPlayer: '123456789',
       },
     },
+    score: '123456789',
+  },
+  3: {
     playerName: {
       onePlayer: 'User Name',
       twoPlayer: 'User Name',
     },
     ranking: '3',
+    rankingInformation: {
+      bulletUsed: {
+        onePlayer: '123456789',
+        twoPlayer: '123456789',
+      },
+      clearTime: '12:34:56',
+      damage: {
+        onePlayer: '123456789',
+        twoPlayer: '123456789',
+      },
+      headShot: {
+        onePlayer: '0.123',
+        twoPlayer: '0.123',
+      },
+      hitRate: {
+        onePlayer: '0.123',
+        twoPlayer: '0.123',
+      },
+      itemName: {
+        onePlayer: 'Item Name',
+        twoPlayer: 'Item Name',
+      },
+      kill: {
+        onePlayer: '123456789',
+        twoPlayer: '123456789',
+      },
+    },
     score: '123456789',
   },
 };
