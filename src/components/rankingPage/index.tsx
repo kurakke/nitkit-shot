@@ -1,7 +1,6 @@
 import classNames from 'classnames';
-import { throttle } from 'lodash';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { DUO_RANKING_MOCK, SOLO_RANKING_MOCK } from '../../../constants/mockRankingData';
 import search from '../../../public/search.svg';
@@ -12,19 +11,6 @@ import RankingTab from './RankingTab';
 export const Ranking = (): JSX.Element => {
   const [isSelectedTab, setIsSelectedTab] = useState<'solo' | 'duo'>('solo');
   const [isSearchUser, setIsSearchUser] = useState<string>('');
-
-  useEffect(() => {
-    if (typeof document !== 'undefined') {
-      const userSearch = throttle(() => {
-        const searchUser = document.getElementById('userSearch') as HTMLInputElement;
-        if (isSearchUser !== searchUser.value) {
-          setIsSearchUser(searchUser.value);
-        }
-      }, 400);
-      window.addEventListener('input', userSearch);
-      return () => window.removeEventListener('input', userSearch);
-    }
-  }, [isSearchUser]);
 
   const rankingStyle = (duo: string, solo: string) => {
     switch (isSelectedTab) {
@@ -73,8 +59,10 @@ export const Ranking = (): JSX.Element => {
           )}
         >
           <input
-            id='userSearch'
+            value={isSearchUser}
+            onChange={(e) => setIsSearchUser(e.target.value)}
             type='text'
+            id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
             className={classNames(
               `w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
