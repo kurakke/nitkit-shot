@@ -1,3 +1,4 @@
+import { Button } from '@nextui-org/react';
 import classNames from 'classnames';
 import Image from 'next/image';
 import React, { useState } from 'react';
@@ -54,22 +55,25 @@ export const Ranking = (): JSX.Element => {
         </div>
         <div
           className={classNames(
-            `mx-auto mt-[10px] flex flex h-[3.82%] w-[80.9%] justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
+            `mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
             `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
           )}
         >
           <input
-            value={isSearchUser}
-            onChange={(e) => setIsSearchUser(e.target.value)}
             type='text'
             id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
-            className={classNames(
-              `w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
-              `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
-            )}
-          />
-          <Image src={search} alt='search' width={24} height={24} />
+                className={classNames(
+                  `w-full bg-accent-green h-full font-sub text-[12px] text-base-secondary`,
+                  `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
+                )}
+              />
+              <Button
+                onClick={() => setIsSearchUser((document.getElementById('userSearch') as HTMLInputElement)?.value)}
+            className='h-fit min-h-0 w-fit min-w-0 bg-transparent p-0'
+          >
+            <Image src={search} alt='search' width={24} height={24} />
+          </Button>
         </div>
         <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
           {isSelectedTab === 'solo' &&
