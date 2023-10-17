@@ -57,9 +57,7 @@ export const QANDA_MOCK: QandA = {
       },
       thirdAnswer: {
         id: 'thirdAnswer',
-        lines: [
-          '銃を扱うため推奨年齢を10歳以上に設定しています。しかしあくまでも推奨なのでプレイ自体は誰でも可能です。',
-        ],
+        lines: ['銃を扱うため推奨年齢を10歳以上に設定しています。しかしあくまでも推奨なのでプレイ自体は誰でも可能です。'],
       },
       forthAnswer: {
         id: 'forthAnswer',
@@ -67,15 +65,11 @@ export const QANDA_MOCK: QandA = {
       },
       fifthAnswer: {
         id: 'fifthAnswer',
-        lines: [
-          'どこかにあるQRコードを読み込むことで持ち込めるアイテムです。これがあると攻略が楽かも・・・',
-        ],
+        lines: ['どこかにあるQRコードを読み込むことで持ち込めるアイテムです。これがあると攻略が楽かも・・・'],
       },
       sixthAnswer: {
         id: 'sixthAnswer',
-        lines: [
-          '打ち切った場合のみ自動で行われます。マガジンに残った状態でリロードする場合はリロードボタンを押すことでリロードできます。',
-        ],
+        lines: ['打ち切った場合のみ自動で行われます。マガジンに残った状態でリロードする場合はリロードボタンを押すことでリロードできます。'],
       },
       eighthAnswer: {
         id: 'eighthAnswer',
@@ -105,12 +99,4 @@ export const QANDA_MOCK: QandA = {
       },
     },
   },
-  // gamContent: {
-  //   firsQuestion: {
-  //     id: 'firstQuestion',
-  //     lines: ['どのようにしたらスコアが高くなりますか?'],
-  //   },
-  // },
 };
-
-
