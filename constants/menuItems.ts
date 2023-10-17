@@ -41,7 +41,7 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   },
   qAndA: {
     id: 'qAndA',
-    path: '/comingsoon',
+    path: '/qanda',
     englishName: 'Q&A',
     japaneseName: 'よくある質問',
   },
