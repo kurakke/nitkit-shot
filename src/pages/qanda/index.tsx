@@ -1,3 +1,3 @@
-import QAndAPage from '../../views/pages/QAndA';
+import QandAPage from '../../views/pages/QandA';
 
-export default QAndAPage;
+export default QandAPage;
