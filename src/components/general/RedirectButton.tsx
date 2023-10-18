@@ -1,8 +1,7 @@
 import { Button } from '@nextui-org/react';
-import Image from 'next/image';
 import Link from 'next/link';
 
-import allow from '../../../public/allow.svg';
+import ArrowShape from './ArrowShape';
 
 interface Props {
   text: string;
@@ -23,13 +22,9 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
         <div className={`${textColor} leading-none`}>
           <div className='font-sub text-[20px] font-semibold'>{text}</div>
         </div>
-        <Image
-          className='absolute right-0 rotate-90'
-          src={allow}
-          alt={'allow'}
-          width={36}
-          height={36}
-        />
+        <div className='absolute right-[12px]'>
+          <ArrowShape direction='right' />
+        </div>
       </Link>
     </Button>
   );

@@ -29,19 +29,19 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   },
   ranking: {
     id: 'ranking',
-    path: '/ranking',
+    path: '/comingsoon',
     englishName: 'Ranking',
     japaneseName: 'ランキング',
   },
   movie: {
     id: 'movie',
-    path: '/movie',
+    path: '/comingsoon',
     englishName: 'Movie',
     japaneseName: '動画',
   },
   qAndA: {
     id: 'qAndA',
-    path: '/qanda',
+    path: '/comingsoon',
     englishName: 'Q&A',
     japaneseName: 'よくある質問',
   },
