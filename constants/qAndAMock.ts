@@ -1,5 +1,4 @@
 import { QAndA } from '../types/QAndA';
-import logo from '../public/logo.svg';
 
 export const GAMECONTENT_MOCK: QAndA = {
   firstQAndA: {
