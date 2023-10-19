@@ -1,13 +1,13 @@
-import { GAMECONTENT_MOCK, OTHER_MOCK, RESERVATION_MOCK } from '../../../constants/qAndaMock';
+import { GAMECONTENT_MOCK, OTHER_MOCK, RESERVATION_MOCK } from '../../../constants/qAndAMock';
 
-import QAndACard from './QandACard';
+import QAndACard from './QAndACard';
 
 const QAndA = () => {
   return (
     <div className=''>
-      <QAndACard qAndaTitle='Game Content' qAndaTitlejp='ゲーム内容' qAnda={GAMECONTENT_MOCK} />
-      <QAndACard qAndaTitle='Reservation' qAndaTitlejp='予約' qAnda={RESERVATION_MOCK} />
-      <QAndACard qAndaTitle='Other' qAndaTitlejp='その他' qAnda={OTHER_MOCK} />
+      <QAndACard qAndATitle='Game Content' qAndATitlejp='ゲーム内容' qAndA={GAMECONTENT_MOCK} />
+      <QAndACard qAndATitle='Reservation' qAndATitlejp='予約' qAndA={RESERVATION_MOCK} />
+      <QAndACard qAndATitle='Other' qAndATitlejp='その他' qAndA={OTHER_MOCK} />
     </div>
   );
 };
