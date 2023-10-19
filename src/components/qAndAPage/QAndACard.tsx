@@ -1,21 +1,21 @@
 import { QAndA } from '../../../types/QAndA';
 
 interface Props {
-  qAndATitle: string;
-  qAndATitlejp: string;
+  qAndATitleEn: string;
+  qAndATitleJp: string;
   qAndA: QAndA;
 }
 
-const QAndACard: ({ qAndA, qAndATitle, qAndATitlejp }: Props) => JSX.Element = ({
+const QAndACard: ({ qAndA, qAndATitleEn, qAndATitleJp }: Props) => JSX.Element = ({
   qAndA,
-  qAndATitle,
-  qAndATitlejp,
+  qAndATitleEn,
+  qAndATitleJp,
 }) => {
   return (
     <div className='m-[20px] mx-auto w-[390px] rounded-[15px] border-[1px] border-accent-green bg-main p-[15px]'>
       <div className='inline-flex w-fit items-end border-b-[2px] border-accent-yellow text-accent-yellow'>
-        <p className='font-menu-english text-[56px] leading-[40px]'>{qAndATitle}</p>
-        <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{qAndATitlejp}</p>
+        <p className='font-menu-english text-[56px] leading-[40px]'>{qAndATitleEn}</p>
+        <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{qAndATitleJp}</p>
       </div>
       <ul>
         {Object.values(qAndA).map((qAndACard) => (

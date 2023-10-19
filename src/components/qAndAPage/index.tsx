@@ -5,9 +5,9 @@ import QAndACard from './QAndACard';
 const QAndA = () => {
   return (
     <div className=''>
-      <QAndACard qAndATitle='Game Content' qAndATitlejp='ゲーム内容' qAndA={GAMECONTENT_MOCK} />
-      <QAndACard qAndATitle='Reservation' qAndATitlejp='予約' qAndA={RESERVATION_MOCK} />
-      <QAndACard qAndATitle='Other' qAndATitlejp='その他' qAndA={OTHER_MOCK} />
+      <QAndACard qAndATitleEn='Game Content' qAndATitleJp='ゲーム内容' qAndA={GAMECONTENT_MOCK} />
+      <QAndACard qAndATitleEn='Reservation' qAndATitleJp='予約' qAndA={RESERVATION_MOCK} />
+      <QAndACard qAndATitleEn='Other' qAndATitleJp='その他' qAndA={OTHER_MOCK} />
     </div>
   );
 };
