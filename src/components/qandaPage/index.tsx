@@ -1,15 +1,17 @@
-import { QANDA_MOCK } from '../../../constants/qandaMock';
+import { GAMECONTENT_MOCK } from "constants/qandaMock";
+import { RESERVATION_MOCK } from "constants/qandaMock";
+import { OTHER_MOCK } from 'constants/qandaMock';
+import QandACard from "./QandACard";
 
 
 const QandA = () => {
   return (
-    <div className='mt-[10px] flex flex-col items-center'>
-      <div className='mb-[20px] inline-flex w-fit items-end border-b-[2px] border-accent-yellow text-accent-yellow'>
-        <p className='font-menu-english text-[56px] leading-[40px]'>Game Content</p>
-        <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>ゲーム内容</p>
+      <div className=''>
+        <QandACard qandaTitle='Game Content' qandaTitlejp='ゲーム内容' qanda={GAMECONTENT_MOCK} />
+        <QandACard qandaTitle='Reservation' qandaTitlejp='予約' qanda={RESERVATION_MOCK} />
+        <QandACard qandaTitle='Other' qandaTitlejp='その他' qanda={OTHER_MOCK} />
       </div>
-    </div>
   );
-}
+};
 
 export default QandA;
