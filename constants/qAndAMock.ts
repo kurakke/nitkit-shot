@@ -34,9 +34,6 @@ export const GAMECONTENT_MOCK: QAndA = {
     question: 'リロードは自動ですか？',
     answer:
       '打ち切った場合のみ自動で行われます。マガジンに残った状態でリロードする場合はリロードボタンを押すことでリロードできます。',
-    source: logo,
-    title: '実写の銃のリロードボタンを強調した写真',
-    type: 'picture',
   },
   seventhQAndA: {
     id: 'seventhQAndA',
