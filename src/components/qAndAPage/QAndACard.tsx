@@ -20,8 +20,12 @@ const QAndACard: ({ englishQAndATitle, japaneseQAndATitle, qAndA }: Props) => JS
       <ul className='mt-[20px] grid gap-y-[30px]'>
         {Object.values(qAndA).map((qAndAContents) => (
           <li key={qAndAContents.id} className='mx-[5px] font-main '>
-            <p className='text-[16px] text-accent-green'>Q. {qAndAContents.question}</p>
-            <p className='mt-[5px] text-[14px] text-accent-yellow'>A. {qAndAContents.answer}</p>
+            <div className='flex text-[16px] text-accent-green'>
+              <p className='mr-[10px]'>Q.</p> <p>{qAndAContents.question}</p>
+            </div>
+            <div className='mt-[5px] flex text-[14px] text-accent-yellow'>
+              <p className='mr-[10px]'>A.</p> <p>{qAndAContents.answer}</p>
+            </div>
           </li>
         ))}
       </ul>
