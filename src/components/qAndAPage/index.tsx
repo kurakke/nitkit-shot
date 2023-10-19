@@ -4,7 +4,7 @@ import QAndACard from './QAndACard';
 
 const QAndA = () => {
   return (
-    <div className='mt-[40px] grid gap-y-[30px]'>
+    <div className='mt-[40px] grid gap-y-[30px] whitespace-pre-line'>
       <QAndACard
         englishQAndATitle='Game Content'
         japaneseQAndATitle='ゲーム内容'

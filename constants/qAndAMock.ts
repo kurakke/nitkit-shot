@@ -51,7 +51,7 @@ export const GAMECONTENT_MOCK: QAndA = {
       '銃を画面に向かって動かすだけの簡単な操作性なので、ゲームが苦手な人でも楽しめると思います。',
   },
   tenthQAndA: {
-    id: 'tenthQuestion',
+    id: 'tenthQAndA',
     question: 'ランキングはどこで見れますか？',
     answer: 'ホームページから確認できます。',
   },
@@ -82,7 +82,7 @@ export const RESERVATION_MOCK: QAndA = {
     id: 'firstQAndA',
     question: '予約はどのように行いますか？',
     answer:
-      '予約はLINEbotで行います。まずはLINEbotを友だち登録して、予約管理ボタンを押し、案内に従って下さい。予約には1分もかからないのでお気軽に予約して下さい。',
+      '予約はLINEbotで行います。まずはLINEbotを友だち登録して、予約管理ボタンを押し、案内に従って下さい。\n予約には1分もかからないのでお気軽に予約して下さい。',
   },
   secondQAndA: {
     id: 'secondQAndA',
@@ -110,7 +110,7 @@ export const RESERVATION_MOCK: QAndA = {
     id: 'sixthQAndA',
     question: '3人以上で参加したいのですがどうすればいいですか？',
     answer:
-      '3人の場合、2人の枠と1人の枠（計2枠）で予約して下さい。また、4人の場合は2人の枠を2つ予約して下さい。一つの予約枠でのプレイ回数は一回となりますので、2人毎での予約をお願いします。',
+      '3人の場合、2人の枠と1人の枠（計2枠）で予約して下さい。また、4人の場合は2人の枠を2つ予約して下さい。\n一つの予約枠でのプレイ回数は一回となりますので、2人毎での予約をお願いします。',
   },
   seventhQAndA: {
     id: 'seventhQAndA',
@@ -129,12 +129,14 @@ export const OTHER_MOCK: QAndA = {
   firstQAndA: {
     id: 'firstQAndA',
     question: '友達がプレイしているところの動画を撮ってもいいですか？',
-    answer: '',
+    answer:
+      '申し訳ありませんが、ゲームに登場するキャラクターは実在の人物を元に作成しており、プライバシー保護のためプレイ画面の撮影は禁止となっております。\nただし、プレイ画面を写さず、同行者がプレイしている様子のみを撮影する場合は撮影可能です。ご理解とご協力の程よろしくお願いします。',
   },
   secondQAndA: {
     id: 'secondQAndA',
     question: 'プレイした時の写真等をSNSにあげてもいいですか？',
-    answer: '',
+    answer:
+      '申し訳ありませんが、ゲームに登場するキャラクターは実在の人物を元に作成しており、プライバシー保護のため、プレイ画面をSNSへ掲載することは禁止となっております。\nただし、プレイ画面を写していない同行者のゲームプレイの様子のみSNSへの掲載が可能です。SNSへの掲載による問題は4Iは一切責任を持ちませんので、各自で管理をお願いいたします。',
   },
   thirdQAndA: {
     id: 'thirdQAndA',
