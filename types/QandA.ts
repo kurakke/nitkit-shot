@@ -1,9 +1,10 @@
-import { Sentence } from "./Sentence";
-
 interface QandAProps {
-  question: Sentence;
-  answer: Sentence;
+  id: string;
+  question: string;
+  answer: string;
   type?: 'video' | 'picture';
+  source?: string;
+  title?: string;
 }
 
-export type QandA =Record<string, QandAProps>;
+export type QandA = Record<string, QandAProps>;
