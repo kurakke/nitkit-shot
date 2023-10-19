@@ -17,9 +17,9 @@ const QAndACard: ({ qAndA, qAndATitleEn, qAndATitleJp }: Props) => JSX.Element =
         <p className='font-menu-english text-[56px] leading-[40px]'>{qAndATitleEn}</p>
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{qAndATitleJp}</p>
       </div>
-      <ul>
+      <ul className='mt-[20px] grid gap-y-[30px]'>
         {Object.values(qAndA).map((qAndAContents) => (
-          <li key={qAndAContents.id} className='mx-[5px] my-[20px] font-main '>
+          <li key={qAndAContents.id} className='mx-[5px] font-main '>
             <p className='text-[16px] text-accent-green'>Q. {qAndAContents.question}</p>
             <p className='mt-[5px] text-[14px] text-accent-yellow'>A. {qAndAContents.answer}</p>
           </li>
