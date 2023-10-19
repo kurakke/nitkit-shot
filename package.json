@@ -12,12 +12,11 @@
   "dependencies": {
     "@fontsource/cuprum": "^5.0.11",
     "@fontsource/dotgothic16": "^5.0.10",
-    "@fontsource/inter": "^5.0.8",
     "@fontsource/nosifer": "^5.0.11",
     "@fontsource/road-rage": "^5.0.11",
     "@nextui-org/react": "^2.1.7",
     "@types/node": "18.16.0",
-    "@types/react": "18.0.38",
+    "@types/react": "^18.0.38",
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",

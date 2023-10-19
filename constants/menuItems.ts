@@ -29,13 +29,13 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
   },
   ranking: {
     id: 'ranking',
-    path: '/comingsoon',
+    path: '/ranking',
     englishName: 'Ranking',
     japaneseName: 'ランキング',
   },
   movie: {
     id: 'movie',
-    path: '/comingsoon',
+    path: '/movie',
     englishName: 'Movie',
     japaneseName: '動画',
   },

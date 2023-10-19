@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'keep-out-teep': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        ranking: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
       },
       colors: {
         'accent-green': {
