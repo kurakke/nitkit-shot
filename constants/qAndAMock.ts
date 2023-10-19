@@ -102,7 +102,7 @@ export const RESERVATION_MOCK: QAndA = {
   fourthQAndA: {
     id: 'fourthQAndA',
     question: '予約するためのLINEbotはどこで追加することができますか？',
-    answer: 'E教室の受付、ホームページにて追加のためのリンクがあります。',
+    answer: '5E教室の受付、ホームページにて追加のためのリンクがあります。',
   },
   fifthQAndA: {
     id: 'fifthQAndA',
