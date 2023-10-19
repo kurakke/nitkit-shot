@@ -18,10 +18,10 @@ const QAndACard: ({ qAndA, qAndATitleEn, qAndATitleJp }: Props) => JSX.Element =
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{qAndATitleJp}</p>
       </div>
       <ul>
-        {Object.values(qAndA).map((qAndACard) => (
-          <li key={qAndACard.id} className='mx-[5px] my-[20px] font-main '>
-            <p className='text-[16px] text-accent-green'>Q. {qAndACard.question}</p>
-            <p className='mt-[5px] text-[14px] text-accent-yellow'>A. {qAndACard.answer}</p>
+        {Object.values(qAndA).map((qAndAContents) => (
+          <li key={qAndAContents.id} className='mx-[5px] my-[20px] font-main '>
+            <p className='text-[16px] text-accent-green'>Q. {qAndAContents.question}</p>
+            <p className='mt-[5px] text-[14px] text-accent-yellow'>A. {qAndAContents.answer}</p>
           </li>
         ))}
       </ul>
