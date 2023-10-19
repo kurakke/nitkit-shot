@@ -12,7 +12,7 @@ const QAndACard: ({ qAndA, qAndATitleEn, qAndATitleJp }: Props) => JSX.Element =
   qAndATitleJp,
 }) => {
   return (
-    <div className='mx-auto w-[390px] rounded-[15px] border-[1px] border-accent-green bg-main p-[15px]'>
+    <div className='mx-auto w-[390px] rounded-[15px] border border-accent-green bg-main p-[15px]'>
       <div className='inline-flex w-fit items-end border-b-[2px] border-accent-yellow text-accent-yellow'>
         <p className='font-menu-english text-[56px] leading-[40px]'>{qAndATitleEn}</p>
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{qAndATitleJp}</p>
