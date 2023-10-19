@@ -6,7 +6,7 @@ interface Props {
   qAndA: QAndA;
 }
 
-const QnadACard: ({ qAndA, qAndATitle, qAndATitlejp }: Props) => JSX.Element = ({
+const QAndACard: ({ qAndA, qAndATitle, qAndATitlejp }: Props) => JSX.Element = ({
   qAndA,
   qAndATitle,
   qAndATitlejp,
@@ -29,4 +29,4 @@ const QnadACard: ({ qAndA, qAndATitle, qAndATitlejp }: Props) => JSX.Element = (
   );
 };
 
-export default QnadACard;
+export default QAndACard;
