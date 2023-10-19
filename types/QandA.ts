@@ -1,4 +1,4 @@
-interface QandAProps {
+interface QAndAProps {
   id: string;
   question: string;
   answer: string;
@@ -7,4 +7,4 @@ interface QandAProps {
   title?: string;
 }
 
-export type QandA = Record<string, QandAProps>;
+export type QAndA = Record<string, QAndAProps>;
