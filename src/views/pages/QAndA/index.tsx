@@ -3,7 +3,7 @@ import React from 'react';
 
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
-import QAndA from '../../../components/qAndAPage';
+import QAndA from '../../../components/QAndAPage';
 
 const QAndAPage: NextPage = () => {
   return (
