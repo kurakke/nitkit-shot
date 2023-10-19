@@ -1,9 +1,9 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-import QAndA from '../../../components/QAndAPage';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
+import QAndA from '../../../components/qAndAPage';
 
 const QAndAPage: NextPage = () => {
   return (
