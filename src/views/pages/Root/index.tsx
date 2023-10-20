@@ -6,7 +6,7 @@ import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce'
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 import { About } from '../../../components/topPage/About';
 import Access from '../../../components/topPage/Access';
-import Information from '../../../components/topPage/information';
+import Information from '../../../components/topPage/information/index';
 
 
 const RootPage: NextPage = () => {
