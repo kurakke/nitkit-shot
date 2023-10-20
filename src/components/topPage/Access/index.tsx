@@ -1,4 +1,5 @@
 import Image from "next/image";
+import React from "react";
 
 import map from '../../../../public/map.svg';
 import { TitleText } from "../../../components/general/TitleText";
