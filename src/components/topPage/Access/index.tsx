@@ -1,6 +1,14 @@
+import Image from "next/image";
+
+import map from '../../../../public/map.svg';
+import { TitleText } from "../../../components/general/TitleText";
+
 const Access = (): JSX.Element => {
     return (
-        <div><p>s</p></div>
+        <div className="mx-auto w-fit">
+            <TitleText title='access' />
+            <Image className="mt-[10px]" src={map} alt='map' width={320} height={180} />
+        </div>
     );
 };
 
