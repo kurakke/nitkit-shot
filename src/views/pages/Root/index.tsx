@@ -3,14 +3,11 @@ import React from 'react';
 
 import Loading from '../../../components/animation/ui/Loading';
 import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce';
-//eslint-disable-next-line import/no-unresolved
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
-//eslint-disable-next-line import/no-unresolved
 import { About } from '../../../components/topPage/About';
-//eslint-disable-next-line import/no-unresolved
 import Access from '../../../components/topPage/Access';
 // eslint-disable-next-line import/no-unresolved
-import Information from '../../../components/topPage/information/index';
+import Information from '../../../components/topPage/Information/index';
 
 
 const RootPage: NextPage = () => {
