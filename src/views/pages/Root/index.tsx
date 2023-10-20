@@ -21,9 +21,6 @@ const RootPage: NextPage = () => {
           <Information />
         </ScrollRevealOnce>
         <ScrollRevealOnce>
-          <Information />
-        </ScrollRevealOnce>
-        <ScrollRevealOnce>
           <Access />
         </ScrollRevealOnce>
       </DefaultLayout>
