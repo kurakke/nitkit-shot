@@ -6,6 +6,7 @@ import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce'
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 import { About } from '../../../components/topPage/About';
 import Access from '../../../components/topPage/Access';
+// eslint-disable-next-line import/no-unresolved
 import Information from '../../../components/topPage/information/index';
 
 
