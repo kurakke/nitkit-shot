@@ -15,15 +15,17 @@ const RootPage: NextPage = () => {
     <>
       <Loading />
       <DefaultLayout metaDescription='サイトのトップページです。' pageTitle='トップ'>
-        <ScrollRevealOnce>
-          <About />
-        </ScrollRevealOnce>
-        <ScrollRevealOnce>
-          <Information />
-        </ScrollRevealOnce>
-        <ScrollRevealOnce>
-          <Access />
-        </ScrollRevealOnce>
+        <div className='grid gap-y-[35px]'>
+          <ScrollRevealOnce>
+            <About />
+          </ScrollRevealOnce>
+          <ScrollRevealOnce>
+            <Information />
+          </ScrollRevealOnce>
+          <ScrollRevealOnce>
+            <Access />
+          </ScrollRevealOnce>
+        </div>
       </DefaultLayout>
     </>
   );
