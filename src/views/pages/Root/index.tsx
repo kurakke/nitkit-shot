@@ -12,6 +12,8 @@ import { About } from '../../../components/topPage/About';
 // eslint-disable-next-line import/no-unresolved
 import Information from '../../../components/topPage/Information/index';
 
+import Reservation from '@/components/topPage/Reservation';
+
 const RootPage: NextPage = () => {
   return (
     <>
@@ -22,6 +24,9 @@ const RootPage: NextPage = () => {
         </ScrollRevealOnce>
         <ScrollRevealOnce>
           <Information />
+        </ScrollRevealOnce>
+        <ScrollRevealOnce>
+          <Reservation />
         </ScrollRevealOnce>
       </DefaultLayout>
     </>
