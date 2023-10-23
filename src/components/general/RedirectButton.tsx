@@ -18,12 +18,12 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
 }) => {
   return (
     <Button className={`${backGroundColor} h-[54px] w-[230px] p-0`}>
-      <Link className='w-full h-full items-center flex justify-center' href={`/${path}`}>
+      <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
         <div className={`${textColor} leading-none`}>
           <p className='font-sub text-[20px] font-semibold'>{text}</p>
         </div>
         <div className='absolute right-[12px]'>
-          <ArrowShape direction='right' />
+          <ArrowShape direction='right' color='bg-main' />
         </div>
       </Link>
     </Button>

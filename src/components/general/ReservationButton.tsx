@@ -32,8 +32,8 @@ export const ReservationButton: ({
                 {subText}
               </p>
             </div>
-            <div className='absolute right-[26px] scale-125 [&>div]:bg-accent-yellow'>
-              <ArrowShape direction='right' />
+            <div className='absolute right-[26px] scale-125'>
+              <ArrowShape direction='right' color='bg-accent-yellow' />
             </div>
           </Link>
         </Button>
