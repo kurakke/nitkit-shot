@@ -9,7 +9,7 @@ import Access from '../../../components/topPage/Access';
 // eslint-disable-next-line import/no-unresolved
 import Information from '../../../components/topPage/Information/index';
 
-import Reservation from '@/components/topPage/Reservation';
+import Reservation from '../../../components/topPage/Reservation/index';
 
 const RootPage: NextPage = () => {
   return (
