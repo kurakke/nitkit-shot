@@ -6,8 +6,8 @@ export const STORY_SENTENCE_MOCK: Sentence = {
     id: 'firstParagraph',
     lines: [
       '何の変哲も無いある日の授業のこと。',
-      '「主人公を誰かに決める」はいつものように',
-      '居眠りをしてしまう。',
+      '懸命に眠気と闘っていた坂田だが、耐えきれず',
+      'いつものように居眠りをしてしまう。',
     ],
   },
   fourthParagraph: {
@@ -47,8 +47,7 @@ export const STORY_SENTENCE_MOCK: Sentence = {
     id: 'seventhParagraph',
     lines: [
       '半ば信じがたい状況だが、',
-      '先生から銃を受け取った「主人公を誰かに決め',
-      'る」は',
+      '先生から銃を受け取った坂田は意を決して',
       'ゾンビ達の救済に向かうのであった…',
     ],
   },
