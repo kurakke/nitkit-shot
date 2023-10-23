@@ -5,7 +5,7 @@ interface Props {
   color: string;
 }
 
-const ArrowShape: ({ direction, color }: Props) => JSX.Element = ({ direction, color }) => {
+const ArrowShape: ({ color, direction }: Props) => JSX.Element = ({ color, direction }) => {
   const arrowDirection = () => {
     switch (direction) {
       case 'top':
