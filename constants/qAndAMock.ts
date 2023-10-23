@@ -1,4 +1,4 @@
-import { QAndA } from '../types/QAndA';
+import { QAndA } from '../types/QandA';
 
 export const GAMECONTENT_MOCK: QAndA = {
   firstQAndA: {
