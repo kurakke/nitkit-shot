@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved
-import { QAndA } from '../../../types/QandA';
+import { QAndA } from '../../../types/QAndA';
 
 interface Props {
   englishQAndATitle: string;

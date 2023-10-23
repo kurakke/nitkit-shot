@@ -7,7 +7,6 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 import { About } from '../../../components/topPage/About';
 import Access from '../../../components/topPage/Access';
 import Information from '../../../components/topPage/Information/index';
-
 import Reservation from '../../../components/topPage/Reservation/index';
 
 const RootPage: NextPage = () => {
