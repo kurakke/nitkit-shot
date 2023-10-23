@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { ReservationButton } from '../../general/ReservationButton';
 import { TitleText } from '../../general/TitleText';
 
-import { ReservationButton } from '../../general/ReservationButton';
 const Reservation = (): JSX.Element => {
   return (
     <>
