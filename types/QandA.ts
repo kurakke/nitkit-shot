@@ -1,4 +1,4 @@
-interface QAndAProps {
+type QAndAProps = {
   id: string;
   question: string;
   answer: string;
@@ -6,6 +6,6 @@ interface QAndAProps {
   // type?: 'video' | 'picture';
   // source?: string;
   // title?: string;
-}
+};
 
 export type QAndA = Record<string, QAndAProps>;
