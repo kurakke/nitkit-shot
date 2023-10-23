@@ -7,7 +7,7 @@ import ArrowShape from '../general/ArrowShape';
 
 export const ScrollToTopButton = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const visibleHeight: number = 500;
+  const visibleHeight: number = 1;
 
   const toTopButoonStyle = (visible: string, inVisible: string): string => {
     return isVisible ? visible : inVisible;
