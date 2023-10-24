@@ -27,6 +27,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Cuprum&family=DotGothic16&family=Frijole&family=Inter:wght@400;500;600;700;800&family=Nosifer&family=Road+Rage&display=swap"
             rel="preload"
             as="style"
+            crossOrigin="anonymous"
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Cuprum&family=DotGothic16&family=Frijole&family=Inter:wght@400;500;600;700;800&family=Nosifer&family=Road+Rage&display=swap"
