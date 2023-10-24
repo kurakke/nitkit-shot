@@ -1,11 +1,9 @@
-import { Sentence } from './Sentence';
-
 export interface GamingVisualProps {
   type: 'video' | 'picture';
   id: string;
   source: string;
   title: string;
-  description: Sentence;
+  description: string;
 }
 
 export type GamingVisual = Record<string, GamingVisualProps>;
