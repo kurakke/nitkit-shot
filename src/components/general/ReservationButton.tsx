@@ -23,7 +23,6 @@ export const ReservationButton: ({
   return (
     <>
       <div className='relative mt-[6px]'>
-        <div className=''>{waitTime}</div>
         <Button className={`${backGroundColor} h-[108px] w-[330px] p-0`}>
           <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
             <div className={`${textColor} leading-none`}>
