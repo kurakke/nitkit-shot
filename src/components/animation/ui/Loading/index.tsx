@@ -11,7 +11,7 @@ const Loading = () => {
     <div
       ref={ref}
       className={classNames(
-        `fixed z-50 flex h-full w-screen items-center justify-center bg-main`,
+        `fixed z-50 flex h-full w-full items-center justify-center bg-main`,
         `transition-all delay-[1500ms] duration-300 ease-in-out ${
           isIntersected ? 'invisible opacity-0' : 'visible opacity-100'
         }`,
