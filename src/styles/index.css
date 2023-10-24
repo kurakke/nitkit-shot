@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-  src: url('./fonts/road-rage.woff') format('woff');
-  font-family: 'Road Rage';
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   src: url('./fonts/cuprum.woff') format('woff');
   font-family: 'Cuprum';
   font-style: normal;
@@ -26,6 +19,20 @@
 @font-face {
   src: url('./fonts/frijole.woff') format('woff');
   font-family: 'Frijole';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/nosifer.woff') format('woff');
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/road-rage.woff') format('woff');
+  font-family: 'Road Rage';
   font-style: normal;
   font-display: swap;
 }
