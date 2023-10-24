@@ -1,6 +1,6 @@
-interface SentenceProps {
+type SentenceProps = {
   id: string;
-  lines: string[];
-}
+  sentence: string;
+};
 
 export type Sentence = Record<string, SentenceProps>;
