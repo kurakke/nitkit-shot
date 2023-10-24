@@ -15,3 +15,38 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  src: url('./fonts/dotgothic16.woff') format('woff');
+  font-family: 'DotGothic16';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/frijole.woff') format('woff');
+  font-family: 'Frijole';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/inter/regular.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/inter/semibold.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('./fonts/inter/bold.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+}
