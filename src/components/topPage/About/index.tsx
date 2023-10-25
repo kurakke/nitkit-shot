@@ -9,30 +9,30 @@ import { TitleText } from '../../general/TitleText';
 const INTRODUCTION_SENTENCE: Sentence = {
   firstParagraph: {
     id: 'firstParagraph',
-    lines: ['ある日突然北九州高専に', '現れたゾンビたち！！！！！！！！'],
+    sentence: 'ある日突然北九州高専に\n現れたゾンビたち！！！！！！！！',
   },
   secondParagraph: {
     id: 'secondParagraph',
-    lines: ['その正体は高専生と先生であった!?'],
+    sentence: 'その正体は高専生と先生であった!?',
   },
   thirdParagraph: {
     id: 'thirdParagraph',
-    lines: ['ゾンビを元の姿に戻すため、4号館の奥へと', '歩みを進めていくのだが……'],
+    sentence: 'ゾンビを元の姿に戻すため4号館の奥へと\n歩みを進めていくのだが……',
   },
   fourthParagraph: {
     id: 'fourthParagraph',
-    lines: ['4I完全自作の', 'ハチャメチャゾンビシューティング！！！！'],
+    sentence: '4I完全自作の\nハチャメチャゾンビシューティング！！！！',
   },
 };
 
 // const PS_SENTENCE: Sentence = {
-//   firstSetence: {
+//   firstParagraph: {
 //     id: 'firstParagraph',
-//     lines: ['P.S.'],
+//     sentence: 'P.S.',
 //   },
 //   secondParagraph: {
 //     id: 'secondParagraph',
-//     lines: ['QRコードを読み取ってからプレイすると', 'いいことがあるかも…?'],
+//     sentence: 'QRコードを読み取ってからプレイすると\nいいことがあるかも…?',
 //   },
 // };
 
