@@ -5,7 +5,7 @@ export const STORY_SENTENCE_MOCK: Sentence = {
   firstParagraph: {
     id: 'firstParagraph',
     sentence:
-      '何の変哲も無いある日の授業のこと。\n「坂田知宏」はいつものように居眠りをしてしまう。',
+      '何の変哲も無いある日の授業のこと。\n「坂田知宏」はいつものように居眠りを\nしてしまう。',
   },
   fourthParagraph: {
     id: 'fourthParagraph',
