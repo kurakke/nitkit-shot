@@ -10,11 +10,10 @@ const Information = (): JSX.Element => {
         <TitleText title='information' />
         <ul className='mt-[10px] gap-y-[10px] flex h-[150px] w-[380px] flex-col items-center overflow-y-scroll rounded-[10px] border-[1px] border-accent-yellow px-[15px] py-[10px]'>
           {INFORMATION_DATA.map((text) => (
-            <li className='flex w-full whitespace-pre text-sm'
-            
-            key={text.id}>
+            <li className='flex w-full text-sm'
+              key={text.id}>
               <p className='font-main text-accent-yellow'>{text.date}</p>
-              <p className='ml-[5px] w-[280px] whitespace-pre-wrap break-words font-sub text-white'>
+              <p className='ml-[5px] w-[280px] whitespace-pre-wrap font-sub text-white'>
                 {text.text}
               </p>
             </li>
