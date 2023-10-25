@@ -27,7 +27,9 @@ export const HeaderBar = (): JSX.Element => {
       className='fixed mx-[15px] mt-[15px] h-[48px] w-auto justify-between rounded-[5px] bg-main pl-[15px] pr-[10.5px] [&>header]:max-w-full [&>header]:px-0'
     >
       <NavbarBrand>
-        <Image src={logo} alt={'Logo'} width={120} height={39} />
+        <Link href='/'>
+          <Image src={logo} alt={'Logo'} width={120} height={39} />
+        </Link>
       </NavbarBrand>
       <NavbarMenuToggle
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
