@@ -35,7 +35,7 @@ export const HeaderBar = (): JSX.Element => {
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         className='text-light'
       />
-      <NavbarMenu className='ml-auto mr-[15px] mt-[15px] max-h-[624px] w-fit gap-y-[20px] overflow-hidden overflow-x-hidden rounded-[5px] bg-main-secondary px-[15px] py-[10px]'>
+      <NavbarMenu className='mb-auto ml-auto mr-[15px] mt-[15px] max-h-[624px] w-fit gap-y-[20px] overflow-hidden rounded-[5px] bg-main-secondary px-[15px] py-[10px]'>
         {Object.values(MENUS_ITEMS).map((menuItems) => (
           <NavbarItem
             key={menuItems.id}
@@ -65,7 +65,7 @@ export const HeaderBar = (): JSX.Element => {
             </Link>
           </NavbarItem>
         ))}
-        <NavbarBrand className='ml-auto flex-grow-0'>
+        <NavbarBrand className='ml-auto'>
           <Image src={logo} alt={'Logo'} width={200} height={72} />
         </NavbarBrand>
       </NavbarMenu>
