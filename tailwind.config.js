@@ -45,12 +45,12 @@ module.exports = {
         },
       },
       fontFamily: {
-        main: ['DotGothic16'],
-        'menu-english': ['Road Rage'],
-        'menu-japanese': ['Cuprum'],
-        ranking: ['Frijole'],
-        sub: ['Inter'],
-        title: ['Nosifer'],
+        main: ['var(--font-dotGothic16)'],
+        'menu-english': ['var(--font-roadRage)'],
+        'menu-japanese': ['var(--font-cuprum)'],
+        ranking: ['var(--font-frijole)'],
+        sub: ['var(--font-inter)'],
+        title: ['var(--font-nosifer)'],
       },
       lineHeight: {
         basic: '1.17',
