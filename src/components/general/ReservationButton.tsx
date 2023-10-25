@@ -4,31 +4,23 @@ import Link from 'next/link';
 import ArrowShape from './ArrowShape';
 
 interface Props {
-  text: string;
-  subText: string;
-  backGroundColor: string;
-  textColor: string;
   path: string;
   waitTime: string;
 }
 
-export const ReservationButton: ({
-  backGroundColor,
+export const ReservationButton: ({ path, waitTime }: Props) => JSX.Element = ({
   path,
-  subText,
-  text,
-  textColor,
   waitTime,
-}: Props) => JSX.Element = ({ backGroundColor, path, subText, text, textColor, waitTime }) => {
+}) => {
   return (
     <>
       <div className='relative mt-[24px]'>
-        <Button className={`${backGroundColor} h-[108px] w-[330px] p-0`}>
+        <Button className='h-[108px] w-[330px] bg-main p-0'>
           <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
-            <div className={`${textColor} leading-none`}>
-              <p className='font-sub text-[24px] font-semibold'>{text}</p>
+            <div className='leading-none text-accent-yellow'>
+              <p className='font-sub text-[24px] font-semibold'>予約はこちらから</p>
               <p className='mt-[6px] border-b border-accent-yellow font-menu-japanese text-[12px]'>
-                {subText}
+                予約用LINEbotの友達追加を行います
               </p>
             </div>
             <div className='absolute right-[26px] scale-125'>
