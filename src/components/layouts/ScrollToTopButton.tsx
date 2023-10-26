@@ -47,7 +47,7 @@ export const ScrollToTopButton = (): JSX.Element => {
         aria-label='Scroll to top'
       >
         <div className='mt-[7.5px] scale-125'>
-          <ArrowShape direction='top' />
+          <ArrowShape direction='top' color='bg-main' />
         </div>
       </Button>
     </>

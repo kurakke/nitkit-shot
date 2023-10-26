@@ -2,9 +2,10 @@ import classNames from 'classnames';
 
 interface Props {
   direction: 'top' | 'right' | 'bottom' | 'left';
+  color: string;
 }
 
-const ArrowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
+const ArrowShape: ({ color, direction }: Props) => JSX.Element = ({ color, direction }) => {
   const arrowDirection = () => {
     switch (direction) {
       case 'top':
@@ -21,12 +22,12 @@ const ArrowShape: ({ direction }: Props) => JSX.Element = ({ direction }) => {
   return (
     <div
       className={classNames(
-        `relative flex h-[15px] w-[15px] justify-center [&>div]:absolute [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px] [&>div]:bg-main`,
+        `relative flex h-[15px] w-[15px] justify-center [&>div]:absolute [&>div]:h-[3px] [&>div]:w-[15px] [&>div]:rounded-[2px]`,
         `${arrowDirection()}`,
       )}
     >
-      <div />
-      <div className='right-[3px] origin-top-right rotate-[-90deg]' />
+      <div className={classNames(`${color}`)} />
+      <div className={`right-[3px] origin-top-right rotate-[-90deg] ${color}`} />
     </div>
   );
 };
