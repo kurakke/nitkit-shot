@@ -32,7 +32,7 @@ const SentenceGenerator: ({ gap, leading, point, sentence, textSize }: Props) =>
       )}
     >
       {Object.values(sentence).map((paragraphs) => (
-        <li key={paragraphs.id} className='whitespace-pre'>
+        <li key={paragraphs.id} className='whitespace-pre-wrap'>
           {paragraphs.sentence}
         </li>
       ))}

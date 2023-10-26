@@ -5,7 +5,7 @@ export const STORY_SENTENCE_MOCK: Sentence = {
   firstParagraph: {
     id: 'firstParagraph',
     sentence:
-      '何の変哲も無いある日の授業のこと。\n「主人公を誰かに決める」はいつものように居眠りをしてしまう。',
+      '何の変哲も無いある日の授業のこと。\n「さかた」はいつものように居眠りをして\nしまう。',
   },
   fourthParagraph: {
     id: 'fourthParagraph',
@@ -33,6 +33,6 @@ export const STORY_SENTENCE_MOCK: Sentence = {
   seventhParagraph: {
     id: 'seventhParagraph',
     sentence:
-      '半ば信じがたい状況だが、\n先生から銃を受け取った「主人公を誰かに決める」は\nゾンビ達の救済に向かうのであった…',
+      '半ば信じがたい状況だが、\n先生から銃を受け取った「さかた」は\nゾンビ達の救済に向かうのであった…',
   },
 };

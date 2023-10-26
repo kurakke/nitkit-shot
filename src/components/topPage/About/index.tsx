@@ -17,7 +17,7 @@ const INTRODUCTION_SENTENCE: Sentence = {
   },
   thirdParagraph: {
     id: 'thirdParagraph',
-    sentence: 'ゾンビを元の姿に戻すため4号館の奥へと歩み\n進めていくのだが……',
+    sentence: 'ゾンビを元の姿に戻すため4号館の奥へと\n歩みを進めていくのだが……',
   },
   fourthParagraph: {
     id: 'fourthParagraph',
@@ -25,16 +25,16 @@ const INTRODUCTION_SENTENCE: Sentence = {
   },
 };
 
-const PS_SENTENCE: Sentence = {
-  firstParagraph: {
-    id: 'firstParagraph',
-    sentence: 'P.S.',
-  },
-  secondParagraph: {
-    id: 'secondParagraph',
-    sentence: 'QRコードを読み取ってからプレイすると\nいいことがあるかも…?',
-  },
-};
+// const PS_SENTENCE: Sentence = {
+//   firstParagraph: {
+//     id: 'firstParagraph',
+//     sentence: 'P.S.',
+//   },
+//   secondParagraph: {
+//     id: 'secondParagraph',
+//     sentence: 'QRコードを読み取ってからプレイすると\nいいことがあるかも…?',
+//   },
+// };
 
 export const About = (): JSX.Element => {
   return (
@@ -66,7 +66,7 @@ export const About = (): JSX.Element => {
           path='forplayer'
         />
       </div>
-      <div className='mt-[20px] text-center'>
+      {/* <div className='mt-[20px] text-center'>
         <SentenceGenerator
           sentence={PS_SENTENCE}
           gap='gap-y-[50px]'
@@ -74,7 +74,7 @@ export const About = (): JSX.Element => {
           textSize='text-[16px]'
           point={false}
         />
-      </div>
+      </div> */}
     </>
   );
 };
