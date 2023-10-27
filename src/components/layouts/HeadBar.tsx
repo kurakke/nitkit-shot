@@ -24,7 +24,7 @@ export const HeaderBar = (): JSX.Element => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className='fixed mx-[15px] mt-[15px] h-[48px] w-auto justify-between rounded-[5px] bg-main pl-[15px] pr-[10.5px] [&>header]:max-w-full [&>header]:px-0'
+      className='fixed mx-[15px] mt-[15px] h-[48px] w-auto justify-between rounded-[5px] bg-main pl-[15px] pr-[10.5px] shadow-xl [&>header]:max-w-full [&>header]:px-0'
     >
       <NavbarBrand>
         <Link href='/'>
