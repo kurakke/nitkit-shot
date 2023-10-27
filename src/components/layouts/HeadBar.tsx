@@ -35,7 +35,7 @@ export const HeaderBar = (): JSX.Element => {
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         className='text-light'
       />
-      <NavbarMenu className='mb-auto ml-auto mr-[15px] mt-[15px] max-h-[584px] w-fit gap-y-[15px] overflow-hidden rounded-[5px] bg-main-secondary px-[15px] py-[10px] shadow-xl'>
+      <NavbarMenu className='mb-auto ml-auto mr-[15px] mt-[15px] max-h-[604px] w-fit gap-y-[18px] overflow-hidden rounded-[5px] bg-main-secondary px-[15px] py-[10px] shadow-xl'>
         {Object.values(MENUS_ITEMS).map((menuItems) => (
           <NavbarItem
             key={menuItems.id}
@@ -44,7 +44,7 @@ export const HeaderBar = (): JSX.Element => {
               `${setNavItemStyle(
                 menuItems.id,
                 'border-accent-yellow', //通常のスタイル
-                'mt-[45px] border-accent-green', //reservationのスタイル
+                'mt-[42px] border-accent-green', //reservationのスタイル
               )}`,
             )}
           >
