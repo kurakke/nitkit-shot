@@ -3,53 +3,58 @@ import { Credit } from '../types/Credit';
 export const SOFTWARE_CREDIT: Credit = {
   1: {
     id: 1,
-    name: 'まめつぶ',
-    post: 'リーダー',
+    name: "まめつぶ",
+    post: "リーダー"
   },
   2: {
     id: 2,
-    name: 'たやけま',
-    post: 'ボス戦とか',
+    name: "たやけま",
+    post: "プログラム担当"
   },
   3: {
     id: 3,
-    name: '謎の美少女X',
-    post: '敵作成',
+    name: "knge",
+    post: "ボス戦とか"
   },
   4: {
     id: 4,
-    name: 'ゆきだるま',
-    post: '敵生成',
+    name: "謎の美少女X",
+    post: "敵作成"
   },
   5: {
     id: 5,
-    name: 'ずんだもち',
-    post: 'ロゴデザイン',
+    name: "ゆきだるま",
+    post: "敵生成"
   },
   6: {
     id: 6,
-    name: 'もりもり',
-    post: 'ステージモデリング',
+    name: "ずんだもち",
+    post: "ロゴデザイン"
   },
   7: {
     id: 7,
-    name: '2012年',
-    post: '小物配置',
+    name: "もりもり",
+    post: "ステージモデリング"
   },
   8: {
     id: 8,
-    name: 'える',
-    post: '小物配置',
+    name: "2012年",
+    post: "小物配置"
   },
   9: {
     id: 9,
-    name: 'SR',
-    post: '小物配置',
+    name: "える",
+    post: "小物配置"
   },
   10: {
     id: 10,
-    name: 'みけねこ',
-    post: 'Vfaker',
+    name: "SR",
+    post: "小物配置"
+  },
+  11: {
+    id: 11,
+    name: "みけねこ",
+    post: "Vfaker"
   },
 };
 
