@@ -56,7 +56,7 @@ module.exports = {
         basic: '1.17',
       },
       boxShadow: {
-        org: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
+        header: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
       },
     },
   },
