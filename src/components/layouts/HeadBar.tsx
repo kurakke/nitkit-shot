@@ -35,7 +35,7 @@ export const HeaderBar = (): JSX.Element => {
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
         className='text-light'
       />
-      <NavbarMenu className='ml-auto mr-[15px] w-[291px] gap-y-[40px] overflow-x-hidden rounded-[5px] bg-main-secondary p-[10px]'>
+      <NavbarMenu className='mb-auto ml-auto mr-[15px] mt-[15px] max-h-[604px] w-fit gap-y-[18px] overflow-auto overscroll-y-contain rounded-[5px] bg-main-secondary px-[15px] py-[10px] shadow-xl'>
         {Object.values(MENUS_ITEMS).map((menuItems) => (
           <NavbarItem
             key={menuItems.id}
@@ -44,7 +44,7 @@ export const HeaderBar = (): JSX.Element => {
               `${setNavItemStyle(
                 menuItems.id,
                 'border-accent-yellow', //通常のスタイル
-                'mt-[45px] border-accent-green', //reservationのスタイル
+                'mt-[42px] border-accent-green', //reservationのスタイル
               )}`,
             )}
           >
@@ -56,17 +56,17 @@ export const HeaderBar = (): JSX.Element => {
                 'text-accent-green', //reservationのスタイル
               )}`}
             >
-              <div className='font-menu-english text-[56px] leading-[40px]'>
+              <div className='font-menu-english text-[48px] leading-[44px]'>
                 {menuItems.englishName}
-                <span className='ml-[5px] font-menu-japanese text-[14px] leading-none'>
+                <span className='ml-[4px] font-menu-japanese text-[12px] leading-none'>
                   {menuItems.japaneseName}
                 </span>
               </div>
             </Link>
           </NavbarItem>
         ))}
-        <NavbarBrand className='ml-auto mt-[-10px]'>
-          <Image src={logo} alt={'Logo'} width={150} height={54} />
+        <NavbarBrand className='ml-auto flex-grow-0'>
+          <Image src={logo} alt={'Logo'} width={200} height={72} />
         </NavbarBrand>
       </NavbarMenu>
     </Navbar>
