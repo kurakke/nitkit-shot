@@ -1,10 +1,9 @@
 import { NextPage } from 'next';
 import React from 'react';
 
+import ComingSoon from '../../../components/general/ComingSoon';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
-import { Ranking } from '../../../components/rankingPage/index';
-import ComingSoon from '@/components/general/ComingSoon';
 
 const RankingPage: NextPage = () => {
   return (
