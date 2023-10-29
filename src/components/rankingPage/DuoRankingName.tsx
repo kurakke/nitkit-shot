@@ -6,7 +6,7 @@ interface Props {
 
 const DuoRankingName: ({ playerName }: Props) => JSX.Element = ({ playerName }) => {
   return (
-    <div className='flex w-full gap-x-[10px] [&>p]:truncate'>
+    <div className='flex w-[13em] gap-x-[10px] md:w-full [&>p]:truncate'>
       <p>{playerName.onePlayer}</p>
       <span>/</span>
       <p>{playerName.twoPlayer}</p>
