@@ -9,7 +9,7 @@ const PreparingReservation = (): JSX.Element => {
             <TitleText title="coming soon" />
             <p className='text-center text-[20px] text-accent-green font-sub'>間もなく、案内を開始いたします。<br />いましばらくお待ちください。</p>
             <RedirectButton
-                path='/'
+                path=''
                 text='ページトップへ'
                 backGroundColor='bg-accent-yellow'
                 textColor='text-main'
