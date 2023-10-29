@@ -1,32 +1,17 @@
 import { Button } from '@nextui-org/react';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 import ArrowShape from './ArrowShape';
 
 interface Props {
   path: string;
+  waitingTime: number;
 }
 
-export const ReservationButton: ({ path }: Props) => JSX.Element = ({
-  path
+export const ReservationButton: ({ path, waitingTime }: Props) => JSX.Element = ({
+  path,
+  waitingTime
 }) => {
-  const [waitingTime, setWaitingTime] = useState<number | null | undefined>(null);
-
-
-  useEffect(() => {
-    const getWaitTime = async () => {
-      try {
-        const res = await fetch('api/waitingTime');
-        const data = await res.json();
-        setWaitingTime(data.waitingTime);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    getWaitTime();
-  });
-
   return (
     <>
       <div className='relative mt-[24px]'>
