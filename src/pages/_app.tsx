@@ -1,6 +1,8 @@
 import { NextUIProvider } from '@nextui-org/react';
-
 import '../styles/index.css';
+// eslint-disable-next-line import/no-unresolved
+import { Analytics } from '@vercel/analytics/react';
+
 import { cuprum, dotGothic16, frijole, inter, nosifer, roadRage } from '../styles/fonts';
 
 
@@ -27,6 +29,7 @@ function MyApp({
           }
         `}
       </style>
+      <Analytics />
     </NextUIProvider>
   );
 }

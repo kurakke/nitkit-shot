@@ -37,7 +37,7 @@ const RankingTab: ({ onClick, selectedTab, tabName }: Props) => JSX.Element = ({
         `flex w-[38.47%] rounded-[10px_10px_0_0] px-0`,
         `${tabStyle(
           'h-[92.1%] text-main',
-          'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-b-[transparent] border-b-[transparent] bg-main bg-main',
+          'mb-[-2px] h-[calc(100%+5px)] border-[1px] border-b-[2px] border-b-[transparent] bg-main',
           'bg-accent-green',
           'border-accent-yellow text-accent-green',
           'bg-accent-yellow',
