@@ -33,14 +33,14 @@ const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType,
   return (
     <div
       className={classNames(
-        `flex h-[38px] w-[372px] items-center rounded-[18px] border border-main p-[3px] font-main text-[15px] shadow-ranking`,
+        `shadow-ranking flex h-[38px] w-[100%] items-center rounded-[18px] border border-main p-[3px] font-main text-[15px]`,
         `${cardStyle('bg-accent-yellow', 'bg-accent-green')}`,
       )}
     >
       <div className='flex aspect-square h-full items-center justify-center rounded-[15px] bg-main text-light'>
         {contents.ranking}
       </div>
-      <div className='ml-[15px] flex w-[55%] whitespace-pre px-[5px] text-main [&>p]:truncate'>
+      <div className='ml-[15px] flex w-[55%] whitespace-pre text-main md:w-[75%] xl:w-[85%] [&>p]:truncate'>
         {cardType === 'solo' && (
           <SoloRankingName playerName={contents.playerName as SoloRankingProps['playerName']} />
         )}
@@ -61,7 +61,7 @@ const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType,
           <DuoRankingDetail information={contents.rankingInformation as DuoRankingInformation} />
         )}
       </Popover>
-      <div className='ronuded-[15px] ml-auto flex h-full w-[22%] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
+      <div className='ml-auto flex h-full w-[80px] items-center justify-end rounded-[15px] bg-main p-[5px] text-light'>
         {contents.score}
       </div>
     </div>

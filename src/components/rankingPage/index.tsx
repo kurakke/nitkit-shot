@@ -23,7 +23,7 @@ export const Ranking = (): JSX.Element => {
   };
 
   return (
-    <div className='mx-auto mb-[75px] mt-[10px] flex h-[1054px] w-[394px] flex-col'>
+    <div className='mx-auto mb-[75px] mt-[10px] flex h-[1104px] w-[390px] flex-col md:w-[640px] xl:w-[1000px]'>
       <div className='z-10 flex flex-grow items-end justify-center font-ranking text-[16px]'>
         <RankingTab
           onClick={() => setIsSelectedTab('solo')}
@@ -55,7 +55,7 @@ export const Ranking = (): JSX.Element => {
         </div>
         <div
           className={classNames(
-            `mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking`,
+            `shadow-ranking mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] md:w-[65%] xl:w-[50%]`,
             `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
           )}
         >
@@ -63,19 +63,21 @@ export const Ranking = (): JSX.Element => {
             type='text'
             id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
-                className={classNames(
-                  `w-full bg-accent-green h-full font-sub text-[12px] text-base-secondary`,
-                  `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
-                )}
-              />
-              <Button
-                onClick={() => setIsSearchUser((document.getElementById('userSearch') as HTMLInputElement)?.value)}
+            className={classNames(
+              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
+              `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
+            )}
+          />
+          <Button
+            onClick={() =>
+              setIsSearchUser((document.getElementById('userSearch') as HTMLInputElement)?.value)
+            }
             className='h-fit min-h-0 w-fit min-w-0 bg-transparent p-0'
           >
             <Image src={search} alt='search' width={24} height={24} />
           </Button>
         </div>
-        <ul className='mt-[10px] grid gap-y-[10px] overflow-y-scroll'>
+        <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-scroll'>
           {isSelectedTab === 'solo' &&
             Object.values(SOLO_RANKING_MOCK).map(
               (rankingContents) =>
