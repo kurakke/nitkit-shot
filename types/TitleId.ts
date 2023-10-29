@@ -9,4 +9,4 @@ export type TitleId =
   | 'movie'
   | 'q&a'
   | 'credit'
-  | 'coming soon';
+  | 'official line';
