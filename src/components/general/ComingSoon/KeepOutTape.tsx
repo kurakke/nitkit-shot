@@ -23,11 +23,11 @@ const KeepOutTape: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
 
   return (
     <div
-      className={`flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow shadow-keep-out-teep ${rotate}`}
+      className={`shadow-keep-out-teep flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow ${rotate}`}
     >
       {Array.from({ length: wordCount }).map((_, index) => (
         <p key={index} className='font-ranking text-[16px]'>
-          keep out
+          coming soon
         </p>
       ))}
     </div>
