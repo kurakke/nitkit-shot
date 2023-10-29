@@ -1,6 +1,6 @@
 import React from 'react';
 
-import KeepOutTape from './KeepOutTape';
+import KeepOutTape from './ComingSoonTape';
 
 const KEEP_OUT_TAPE_ROTATE: string[] = [
   'rotate-[-7.413deg]',
