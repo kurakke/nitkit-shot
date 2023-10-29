@@ -1,6 +1,6 @@
 import React from 'react';
 
-import KeepOutTape from './ComingSoonTape';
+import ComingSoonTape from './ComingSoonTape';
 
 const KEEP_OUT_TAPE_ROTATE: string[] = [
   'rotate-[-7.413deg]',
@@ -19,7 +19,7 @@ const ComingSoon = (): JSX.Element => {
   return (
     <div className='mx-auto mb-[13.5%] flex h-screen w-[calc(100vw-30px)] flex-col items-center justify-evenly'>
       {KEEP_OUT_TAPE_ROTATE.map((tapeRotate, index) => (
-        <KeepOutTape key={index} rotate={tapeRotate} />
+        <ComingSoonTape key={index} rotate={tapeRotate} />
       ))}
     </div>
   );
