@@ -40,7 +40,7 @@ export const About = (): JSX.Element => {
   return (
     <>
       <TitleText title='about' />
-      <div className='mx-auto mt-[10px] w-fit border-b border-accent-yellow text-[20px] leading-none text-accent-yellow'>
+      <div className='mx-auto mt-[10px] w-fit border-b border-accent-yellow text-[20px] font-bold leading-none text-accent-yellow md:text-[24px]'>
         迫り来るゾンビを撃て！
       </div>
       <div className='mt-[20px] text-center'>
@@ -52,7 +52,7 @@ export const About = (): JSX.Element => {
           point={false}
         />
       </div>
-      <div className='mx-auto mt-[20px] flex w-fit flex-col gap-y-[20px]'>
+      <div className='mx-auto mt-[20px] flex w-fit flex-col gap-x-[40px] gap-y-[20px] md:flex-row'>
         <RedirectButton
           text='もっと詳しく'
           backGroundColor='bg-accent-green'
