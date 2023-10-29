@@ -7,7 +7,7 @@ const PreparingReservation = (): JSX.Element => {
     return (
         <div className='flex flex-col items-center gap-y-[25px]'>
             <TitleText title="official line" />
-            <p className='text-center text-[20px] text-light font-sub'>間もなく、案内を開始いたします。<br />いましばらくお待ちください。</p>
+            <p className='text-center text-[20px] text-light font-sub'>公式Lineは準備中です。<br />お待ちください。</p>
             <RedirectButton
                 path=''
                 text='ページトップへ'
