@@ -10,8 +10,7 @@ const RankingPage: NextPage = () => {
   return (
     <div className='overflow-hidden [&<main]:px-0'>
       <DefaultLayout
-        metaDescription='ゲームのランキングを表示するページです。'
-        pageTitle='ランキング'
+        metaDescription='nit-kit-shotのランキング'
       >
         <ScrollRevealOnce>
           <TitleText title='ranking' />

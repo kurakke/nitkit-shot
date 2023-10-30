@@ -9,8 +9,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const CreditPage: NextPage = () => {
   return (
     <DefaultLayout
-      metaDescription='制作スタッフの一覧を表示するページです。'
-      pageTitle='クレジット'
+      metaDescription='nit-kit-shotの制作者たち'
     >
       <ScrollRevealOnce>
         <TitleText title='credit' />

@@ -10,8 +10,7 @@ const MoviePage: NextPage = () => {
   return (
     <div className='overflow-hidden [&<main]:px-0'>
       <DefaultLayout
-        metaDescription='ゲームのプレイ動画やプレイ画像を表示するページです。'
-        pageTitle='ムービー'
+        metaDescription='nit-kit-shotの各種映像'
       >
         <ScrollRevealOnce>
           <TitleText title='movie' />

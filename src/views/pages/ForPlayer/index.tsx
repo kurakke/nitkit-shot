@@ -6,12 +6,10 @@ import ForPlayer from '../../../components/forPlayerPage';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
-
 const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout
-      metaDescription='遊ぶ方へ向けたチュートリアルや注意喚起を表示するページです。'
-      pageTitle='遊ぶ人へ'
+      metaDescription='nit-kit-shotを遊ぶ前にご確認下さい。'
     >
       <ScrollRevealOnce>
         <TitleText title='for player' />
