@@ -33,7 +33,7 @@ const RankingCard: ({ cardType, contents }: Props) => JSX.Element = ({ cardType,
   return (
     <div
       className={classNames(
-        `shadow-ranking flex h-[38px] w-[100%] items-center rounded-[18px] border border-main p-[3px] font-main text-[15px]`,
+        `flex h-[38px] w-full items-center rounded-[18px] border border-main p-[3px] font-main text-[15px] shadow-ranking`,
         `${cardStyle('bg-accent-yellow', 'bg-accent-green')}`,
       )}
     >
