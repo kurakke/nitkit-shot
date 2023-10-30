@@ -19,7 +19,7 @@ const ForPlayer = () => {
           </li>
         ))}
       </ul>
-      <div className='ml-[12px] mt-[30px] flex w-[377px] flex-col items-center'>
+      <div className='ml-[12px] mt-[30px] flex w-[377px] flex-col items-center md:w-full'>
         <div className='mb-[10px] mr-[12px] font-sub text-[20px] font-bold text-accent-yellow'>
           ※注意事項※
         </div>
