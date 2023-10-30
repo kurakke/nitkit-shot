@@ -10,7 +10,6 @@ const IntroductionPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotのゲーム紹介'
-      pageTitle='イントロダクション'
     >
       <ScrollRevealOnce>
         <TitleText title='introduction' />

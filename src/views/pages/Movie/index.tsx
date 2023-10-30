@@ -11,7 +11,6 @@ const MoviePage: NextPage = () => {
     <div className='overflow-hidden [&<main]:px-0'>
       <DefaultLayout
         metaDescription='nit-kit-shotの各種映像'
-        pageTitle='ムービー'
       >
         <ScrollRevealOnce>
           <TitleText title='movie' />
