@@ -13,7 +13,7 @@ export const beautifulLog = () => {
   const kurakkeMessage = `%c'kurakke' took charge of both the frontend and backend, as well as the reservation system.`;
   const shiromashiMessage = `%c'shiromashi' dedicated himself to frontend development.`;
   const sakatanMessage = `%c'sakatan' contributed with his design flair and frontend skills.\n\n`;
-  const contactMessage = `%cIf you wish to get in touch:\n- kurakke: Twitter @kurakke | Email: k20061kk@apps.kct.ac.jp`;
+  const contactMessage = `%cIf you wish to get in touch:\n- kurakke: Twitter https://twitter.com/kurakke\n    Email: k20061kk@apps.kct.ac.jp`;
 
   console.log(
     `${firstDevider}${title}${secondDevider}${welcomeMessage}${collaborationMessage}${kurakkeMessage}${shiromashiMessage}${sakatanMessage}${contactMessage}`,
