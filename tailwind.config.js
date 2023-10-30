@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'coming-soon-teep': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        header: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
         ranking: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
       },
       colors: {
@@ -54,9 +55,6 @@ module.exports = {
       },
       lineHeight: {
         basic: '1.17',
-      },
-      boxShadow: {
-        header: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
       },
     },
   },

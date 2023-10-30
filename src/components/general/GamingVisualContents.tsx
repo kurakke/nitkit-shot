@@ -16,9 +16,9 @@ const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Elemen
           <Image src={source} alt={title} fill />
         </div>
       )}
-      {type === 'video' && <video src={source} controls className='h-[180px] w-full' />}
+      {type === 'video' && <iframe src={source} width={320} height={180} allow="fullscreen" />}
       <div className='text-[20px] font-bold text-accent-green'>{title}</div>
-      <p className='font-main text-light text-[16px]'>{description}</p>
+      <p className='font-main text-light text-[16px] whitespace-pre'>{description}</p>
     </div>
   );
 };
