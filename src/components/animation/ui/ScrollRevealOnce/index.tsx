@@ -11,7 +11,10 @@ const ScrollRevealOnce: React.FC<ScrollRevealOnceProps> = ({ children }) => {
   const { isIntersected, ref } = useIntersectionOnce<HTMLDivElement>();
 
   return (
-    <div ref={ref} className={`transition-opacity ${isIntersected ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      ref={ref}
+      className={`duration-500 ease-in ${isIntersected ? 'opacity-100' : 'opacity-0'}`}
+    >
       {children}
     </div>
   );
