@@ -7,13 +7,15 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
 const RankingPage: NextPage = () => {
   return (
-    <DefaultLayout
-      metaDescription='ゲームのランキングを表示するページです。'
-      pageTitle='ランキング'
-    >
-      <TitleText title='ranking' />
-      <ComingSoon />
-    </DefaultLayout>
+    <div className='overflow-hidden [&<main]:px-0'>
+      <DefaultLayout
+        metaDescription='ゲームのランキングを表示するページです。'
+        pageTitle='ランキング'
+      >
+        <TitleText title='ranking' />
+        <ComingSoon />
+      </DefaultLayout>
+    </div>
   );
 };
 
