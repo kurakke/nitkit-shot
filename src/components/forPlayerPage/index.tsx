@@ -1,7 +1,7 @@
 /* eslint-disable sort/object-properties */
 import React from 'react';
 
-import { GAMING_VISUAL_MOCK } from '../../../constants/gamingVisualDataMock';
+import { GAMING_VISUAL } from '../../../constants/gamingVisual';
 import { GUIDELINES_MOCK } from '../../../constants/guidelinesMock';
 import GamingVisualContents from '../general/GamingVisualContents';
 import SentenceGenerator from '../general/SentenceGenerator';
@@ -13,7 +13,7 @@ const ForPlayer = () => {
         チュートリアルと遊び方
       </div>
       <ul className='grid gap-y-[30px]'>
-        {Object.values(GAMING_VISUAL_MOCK).map((forPlayerContents) => (
+        {Object.values(GAMING_VISUAL).map((forPlayerContents) => (
           <li key={forPlayerContents.id}>
             <GamingVisualContents {...forPlayerContents} />
           </li>
