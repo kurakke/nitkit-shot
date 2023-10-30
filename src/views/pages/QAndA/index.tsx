@@ -8,7 +8,7 @@ import QAndA from '../../../components/qAndAPage';
 
 const QAndAPage: NextPage = () => {
   return (
-    <DefaultLayout metaDescription='よくある質問に対する回答を載せたページです。' pageTitle='Q&A'>
+    <DefaultLayout metaDescription='nit-kit-shotのよくある質問' pageTitle='Q&A'>
       <ScrollRevealOnce>
         <TitleText title='q&a' />
       </ScrollRevealOnce>

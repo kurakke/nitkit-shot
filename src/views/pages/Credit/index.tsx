@@ -9,7 +9,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const CreditPage: NextPage = () => {
   return (
     <DefaultLayout
-      metaDescription='制作スタッフの一覧を表示するページです。'
+      metaDescription=' nit-kit-shotの制作者たち'
       pageTitle='クレジット'
     >
       <ScrollRevealOnce>
