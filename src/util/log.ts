@@ -1,10 +1,10 @@
 export const beautifulLog = () => {
   const titleStyle = ['font-size: 30px'].join(';');
   const textStyle = ['font-size: 12px'].join(';');
-  const nostyle = [''].join(';');
+  const nostyle = [].join(';');
 
   const firstDevider = '%c=======================================\n';
-  const secondDevider = '%c====================================\n\n';
+  const secondDevider = '%c=======================================\n\n';
   const title = '%cNit-Kit-Shot\n';
   const welcomeMessage =
     '%cWelcome to our gaming site, handcrafted by the 4I team from Kitakyushu Technical College.\n\n';
@@ -19,9 +19,9 @@ export const beautifulLog = () => {
     `${firstDevider}${title}${secondDevider}${welcomeMessage}${collaborationMessage}${kurakkeMessage}${shiromashiMessage}${sakatanMessage}${contactMessage}`,
     nostyle,
     titleStyle,
-    textStyle,
-    textStyle,
     nostyle,
+    textStyle,
+    textStyle,
     textStyle,
     textStyle,
     textStyle,
