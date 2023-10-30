@@ -10,7 +10,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout
-      metaDescription='遊ぶ方へ向けたチュートリアルや注意喚起を表示するページです。'
+      metaDescription='nit-kit-shotを遊ぶ前にご確認下さい。'
       pageTitle='遊ぶ人へ'
     >
       <ScrollRevealOnce>

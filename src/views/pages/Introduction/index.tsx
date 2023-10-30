@@ -9,7 +9,7 @@ import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 const IntroductionPage: NextPage = () => {
   return (
     <DefaultLayout
-      metaDescription='ゲームの設定などを表示するページです。'
+      metaDescription='nit-kit-shotのゲーム紹介'
       pageTitle='イントロダクション'
     >
       <ScrollRevealOnce>

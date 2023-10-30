@@ -8,7 +8,7 @@ import PreparingReservation from '../../../components/preparingReservationPage';
 const PreparingReservationPage: NextPage = () => {
   return (
     <DefaultLayout
-        metaDescription='LINE Botの予約受付が準備中であることを知らせるページです。'
+        metaDescription='LINE Botの予約受付が準備中であることを知らせるページ'
         pageTitle='受付準備中'
     >
       <ScrollRevealOnce>
