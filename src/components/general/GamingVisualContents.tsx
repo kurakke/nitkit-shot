@@ -25,8 +25,10 @@ const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Elemen
           className=' md:my-[24px] md:scale-125 xl:my-[48px] xl:scale-150'
         />
       )}
-      <div className='text-[20px] font-bold text-accent-green'>{title}</div>
-      <p className='whitespace-pre font-main text-[16px] text-light'>{description}</p>
+      <div className='text-[20px] font-bold text-accent-green md:text-[24px]'>{title}</div>
+      <p className='whitespace-pre font-main text-[16px] text-light md:text-[18px]'>
+        {description}
+      </p>
     </div>
   );
 };
