@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 
+import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce';
 import ComingSoon from '../../../components/general/ComingSoon';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
@@ -12,8 +13,10 @@ const MoviePage: NextPage = () => {
         metaDescription='ゲームのプレイ動画やプレイ画像を表示するページです。'
         pageTitle='ムービー'
       >
-        <TitleText title='movie' />
-        <ComingSoon />
+        <ScrollRevealOnce>
+          <TitleText title='movie' />
+          <ComingSoon />
+        </ScrollRevealOnce>
       </DefaultLayout>
     </div>
   );
