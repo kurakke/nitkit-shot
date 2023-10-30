@@ -1,9 +1,10 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-import ComingSoon from '../../../components/general/ComingSoon';
+import ForPlayer from '../../../components/forPlayerPage';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
+
 
 const ForPlayerPage: NextPage = () => {
   return (
@@ -13,7 +14,7 @@ const ForPlayerPage: NextPage = () => {
         pageTitle='遊ぶ人へ'
       >
         <TitleText title='for player' />
-        <ComingSoon />
+        <ForPlayer />
       </DefaultLayout>
     </div>
   );
