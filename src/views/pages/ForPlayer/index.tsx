@@ -6,7 +6,6 @@ import ForPlayer from '../../../components/forPlayerPage';
 import { TitleText } from '../../../components/general/TitleText';
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 
-
 const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout
