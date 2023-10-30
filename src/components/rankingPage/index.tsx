@@ -55,7 +55,7 @@ export const Ranking = (): JSX.Element => {
         </div>
         <div
           className={classNames(
-            `shadow-ranking mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] md:w-[65%] xl:w-[50%]`,
+            `mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking md:w-[65%] xl:w-[50%]`,
             `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
           )}
         >
@@ -77,7 +77,7 @@ export const Ranking = (): JSX.Element => {
             <Image src={search} alt='search' width={24} height={24} />
           </Button>
         </div>
-        <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-scroll'>
+        <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-hidden'>
           {isSelectedTab === 'solo' &&
             Object.values(SOLO_RANKING_MOCK).map(
               (rankingContents) =>
