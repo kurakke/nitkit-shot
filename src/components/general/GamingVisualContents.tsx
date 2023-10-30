@@ -12,7 +12,7 @@ const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Elemen
   return (
     <div className='flex w-[320px] flex-col items-center gap-y-[10px]'>
       {type === 'picture' && (
-        <div className='relative h-[180px] w-[320px] md:my-[24px] md:scale-125'>
+        <div className='relative h-[180px] w-[320px] md:my-[24px] md:scale-125 xl:my-[48px] xl:scale-150'>
           <Image src={source} alt={title} fill />
         </div>
       )}
@@ -22,7 +22,7 @@ const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Elemen
           width={320}
           height={180}
           allow='fullscreen'
-          className=' md:my-[24px] md:scale-125'
+          className=' md:my-[24px] md:scale-125 xl:my-[48px] xl:scale-150'
         />
       )}
       <div className='text-[20px] font-bold text-accent-green'>{title}</div>
