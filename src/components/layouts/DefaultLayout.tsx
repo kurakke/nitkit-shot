@@ -23,7 +23,7 @@ export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Elemen
       </Head>
       <div className='inline-block h-full w-full min-w-max bg-base'>
         <HeaderBar />
-        <main className='mt-[110px] h-full min-h-screen w-full px-[15px]'>
+        <main className='mt-[110px] h-full min-h-[calc(100vh_-_233px)] w-full px-[15px]'>
           {children}
           <ScrollToTopButton />
         </main>
