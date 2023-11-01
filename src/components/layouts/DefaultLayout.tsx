@@ -8,15 +8,24 @@ import { ScrollToTopButton } from './ScrollToTopButton';
 interface Props {
   children: ReactNode;
   metaDescription: string;
+  url: string;
+  topPage: boolean;
 }
 
 export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Element = ({
   children,
   metaDescription,
+  topPage,
+  url
 }) => {
   return (
     <>
       <Head>
+        <meta property="og:prefix" content="https://ogp.me/ns#" />
+        <meta property="og:site_name" content="nit-kit-shot" />
+        <meta property="og:url" content={url} />
+        <meta property='og:description' content={metaDescription} />
+        <meta property='og:type' content={topPage ? 'website' : 'article'} />
         <meta name='theme-color' content='004a2e' />
         <meta name='description' content={metaDescription} />
         <title>nit-kit-shot</title>
