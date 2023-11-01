@@ -12,7 +12,7 @@ import { useState } from 'react';
 
 import { MENUS_ITEMS } from '../../../constants/menuItems';
 import logo from '../../../public/logo.svg';
-import ogp from '../../../public/ogp.png';
+import ogp from '../../../public/ogp.jpg';
 import { PageId } from '../../../types/PageId';
 
 export const HeaderBar = (): JSX.Element => {
