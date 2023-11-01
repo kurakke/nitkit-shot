@@ -11,7 +11,8 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { MENUS_ITEMS } from '../../../constants/menuItems';
-import logo from '../../../public/logo.png';
+import logo from '../../../public/logo.svg';
+import ogp from '../../../public/ogp.png';
 import { PageId } from '../../../types/PageId';
 
 export const HeaderBar = (): JSX.Element => {
@@ -29,6 +30,7 @@ export const HeaderBar = (): JSX.Element => {
       <NavbarBrand>
         <Link href='/'>
           <Image src={logo} alt={'Logo'} width={120} height={39} />
+          <Image src={ogp} alt={'Logo'} width={0} height={0} />
         </Link>
       </NavbarBrand>
       <NavbarMenuToggle
