@@ -22,6 +22,7 @@ export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Elemen
     <>
       <Head>
         <meta property="og:prefix" content="https://ogp.me/ns#" />
+        <meta name="twitter:summary" content="sasasasasa" />
         <meta property="og:site_name" content="nit-kit-shot" />
         <meta property="og:url" content={url} />
         <meta property='og:description' content={metaDescription} />
