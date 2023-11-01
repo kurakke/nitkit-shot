@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:title" content="nit-kit-shot" />
-          <meta property="og:image" content="https://nitkit-shot-bzwm81d6y-kurakke.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fopg.c0eb3b4e.png&w=3840&q=75" />
+          <meta property="og:image" content="https://drive.google.com/file/d/1wxPPjNDmSvrNig2n1x722lGWujOYbKoW/preview" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
