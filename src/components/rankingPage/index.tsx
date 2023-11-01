@@ -64,7 +64,7 @@ export const Ranking = (): JSX.Element => {
             id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
             className={classNames(
-              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
+              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary placeholder-base-thirdry`,
               `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
             )}
           />
@@ -79,25 +79,41 @@ export const Ranking = (): JSX.Element => {
         </div>
         <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-hidden'>
           {isSelectedTab === 'solo' &&
-            Object.values(SOLO_RANKING_MOCK).map(
-              (rankingContents) =>
-                (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
-                  <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
-                  </li>
-                ),
-            )}
+            (Object.values(SOLO_RANKING_MOCK).length === 0 ? (
+              <div className='mt-[80px] text-center font-main text-accent-green opacity-60 md:text-[18px] xl:text-[20px]'>
+                ゲームをプレイすると
+                <br />
+                ここにランキングが表示されます！
+              </div>
+            ) : (
+              Object.values(SOLO_RANKING_MOCK).map(
+                (rankingContents) =>
+                  (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
+                    <li key={rankingContents.ranking}>
+                      <RankingCard cardType={isSelectedTab} contents={rankingContents} />
+                    </li>
+                  ),
+              )
+            ))}
           {isSelectedTab === 'duo' &&
-            Object.values(DUO_RANKING_MOCK).map(
-              (rankingContents) =>
-                (!isSearchUser ||
-                  rankingContents.playerName.onePlayer.includes(isSearchUser) ||
-                  rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
-                  <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
-                  </li>
-                ),
-            )}
+            (Object.values(DUO_RANKING_MOCK).length === 0 ? (
+              <div className='mt-[80px] text-center font-main text-accent-yellow opacity-60 md:text-[18px] xl:text-[20px]'>
+                ゲームをプレイすると
+                <br />
+                ここにランキングが表示されます！
+              </div>
+            ) : (
+              Object.values(DUO_RANKING_MOCK).map(
+                (rankingContents) =>
+                  (!isSearchUser ||
+                    rankingContents.playerName.onePlayer.includes(isSearchUser) ||
+                    rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
+                    <li key={rankingContents.ranking}>
+                      <RankingCard cardType={isSelectedTab} contents={rankingContents} />
+                    </li>
+                  ),
+              )
+            ))}
         </ul>
       </div>
     </div>
