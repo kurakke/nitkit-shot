@@ -29,13 +29,13 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:title" content="nit-kit-shot" />
+          <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:image" content="https://nitkit-shot-optdxvj3f-kurakke.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fogp.c0eb3b4e.png&w=3840&q=75" />
-          <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="nit-kit-shot" />
-          <meta property="og:site_name" content="nit-kit-shot" />
           <meta name='theme-color' content='004a2e' />
         </Head>
         <body>
