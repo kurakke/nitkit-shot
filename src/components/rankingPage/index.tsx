@@ -80,7 +80,7 @@ export const Ranking = (): JSX.Element => {
         <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-hidden'>
           {isSelectedTab === 'solo' &&
             (Object.values(SOLO_RANKING_MOCK).length === 0 ? (
-              <div className='mt-[80px] text-center font-main text-accent-green'>
+              <div className='mt-[80px] text-center font-main text-accent-green opacity-60 md:text-[18px] xl:text-[20px]'>
                 ゲームをプレイすると
                 <br />
                 ここにランキングが表示されます！
@@ -97,7 +97,7 @@ export const Ranking = (): JSX.Element => {
             ))}
           {isSelectedTab === 'duo' &&
             (Object.values(DUO_RANKING_MOCK).length === 0 ? (
-              <div className='mt-[80px] text-center font-main text-accent-yellow'>
+              <div className='mt-[80px] text-center font-main text-accent-yellow opacity-60 md:text-[18px] xl:text-[20px]'>
                 ゲームをプレイすると
                 <br />
                 ここにランキングが表示されます！
