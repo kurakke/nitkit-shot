@@ -14,7 +14,11 @@ const RootPage: NextPage = () => {
   return (
     <>
       <Loading />
-      <DefaultLayout metaDescription='nit-kit-shotのホームページ'>
+      <DefaultLayout
+        metaDescription='nit-kit-shotのホームページ'
+        url='https://nitkit-shot.vercel.app/'
+        topPage
+      >
         <div className='grid gap-y-[35px]'>
           <ScrollRevealOnce>
             <About />

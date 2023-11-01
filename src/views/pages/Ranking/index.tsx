@@ -10,6 +10,8 @@ const RankingPage: NextPage = () => {
     <div className='overflow-hidden [&<main]:px-0'>
       <DefaultLayout
         metaDescription='nit-kit-shotのランキング'
+        url='https://nitkit-shot.vercel.app/ranking'
+        topPage={false}
       >
         <TitleText title='ranking' />
         <ComingSoon />

@@ -10,6 +10,8 @@ const IntroductionPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotのゲーム紹介'
+      url='https://nitkit-shot.vercel.app/introduction'
+      topPage={false}
     >
       <ScrollRevealOnce>
         <TitleText title='introduction' />

@@ -10,6 +10,8 @@ const CreditPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotの制作者たち'
+      url='https://nitkit-shot.vercel.app/credit'
+      topPage={false}
     >
       <ScrollRevealOnce>
         <TitleText title='credit' />

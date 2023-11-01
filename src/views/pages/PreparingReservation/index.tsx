@@ -9,6 +9,8 @@ const PreparingReservationPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='LINE Botの予約受付が準備中であることを知らせるページ'
+      url='https://nitkit-shot.vercel.app/preparingreservation'
+      topPage={false}
     >
       <ScrollRevealOnce>
         <PreparingReservation />
