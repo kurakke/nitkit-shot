@@ -36,11 +36,6 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@nit_kit_shot" />
-          <meta name="twitter:title" content="nit-kit-shot" />
-          <meta name="twitter:description" content="nit-kit-shotの公式サイトです。" />
-          <meta name="twitter:image" content="/public/logo.png" />
-          <meta name="twitter:url" content="https://nitkit-shot.vercel.app/" />
-          <meta name="twitter:creator" content="@nit_kit_shot" />
         </Head>
         <body>
           <Main />
