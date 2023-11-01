@@ -11,6 +11,8 @@ interface Props {
   isTopPage: boolean;
 }
 
+export const dynamic = "force-dynamic";
+
 export const DefaultLayout: ({ children, isTopPage, metaDescription }: Props) => JSX.Element = ({
   children,
   isTopPage,
