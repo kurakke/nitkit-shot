@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import { MENUS_ITEMS } from '../../../constants/menuItems';
-import logo from '../../../public/logo.svg';
+import logo from '../../../public/logo.png';
 import { PageId } from '../../../types/PageId';
 
 export const HeaderBar = (): JSX.Element => {

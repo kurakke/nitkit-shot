@@ -30,7 +30,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:title" content="nit-kit-shot" />
-          <meta property="og:image" content="https://nitkit-shot.vercel.app/logo.png" />
+          <meta property="og:image" content="https://nitkit-shot.vercel.app/_next/static/media/logo.4bd32b9.png" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
