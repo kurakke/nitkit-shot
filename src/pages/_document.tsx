@@ -20,7 +20,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head>
+        <Head prefix='og: https://ogp.me/ns#'>
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -28,6 +28,19 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <meta property="og:site_name" content="nit-kit-shot" />
+          <meta property="og:title" content="nit-kit-shot" />
+          <meta property="og:description" content="nit-kit-shotの公式サイトです。" />
+          <meta property="og:image" content="https://nitkit-shot.vercel.app/ogp.png" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@nit_kit_shot" />
+          <meta name="twitter:title" content="nit-kit-shot" />
+          <meta name="twitter:description" content="nit-kit-shotの公式サイトです。" />
+          <meta name="twitter:image" content="https://nitkit-shot.vercel.app/ogp.png" />
+          <meta name="twitter:url" content="https://nitkit-shot.vercel.app/" />
+          <meta name="twitter:creator" content="@nit_kit_shot" />
         </Head>
         <body>
           <Main />
