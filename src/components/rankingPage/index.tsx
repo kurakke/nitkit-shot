@@ -79,25 +79,41 @@ export const Ranking = (): JSX.Element => {
         </div>
         <ul className='mt-[10px] grid items-center gap-y-[10px] overflow-y-hidden'>
           {isSelectedTab === 'solo' &&
-            Object.values(SOLO_RANKING_MOCK).map(
-              (rankingContents) =>
-                (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
-                  <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
-                  </li>
-                ),
-            )}
+            (Object.values(SOLO_RANKING_MOCK).length === 0 ? (
+              <div className='mt-[80px] text-center font-main text-accent-green'>
+                ゲームをプレイすると
+                <br />
+                ここにランキングが表示されます！
+              </div>
+            ) : (
+              Object.values(SOLO_RANKING_MOCK).map(
+                (rankingContents) =>
+                  (!isSearchUser || rankingContents.playerName.includes(isSearchUser)) && (
+                    <li key={rankingContents.ranking}>
+                      <RankingCard cardType={isSelectedTab} contents={rankingContents} />
+                    </li>
+                  ),
+              )
+            ))}
           {isSelectedTab === 'duo' &&
-            Object.values(DUO_RANKING_MOCK).map(
-              (rankingContents) =>
-                (!isSearchUser ||
-                  rankingContents.playerName.onePlayer.includes(isSearchUser) ||
-                  rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
-                  <li key={rankingContents.ranking}>
-                    <RankingCard cardType={isSelectedTab} contents={rankingContents} />
-                  </li>
-                ),
-            )}
+            (Object.values(DUO_RANKING_MOCK).length === 0 ? (
+              <div className='mt-[80px] text-center font-main text-accent-yellow'>
+                ゲームをプレイすると
+                <br />
+                ここにランキングが表示されます！
+              </div>
+            ) : (
+              Object.values(DUO_RANKING_MOCK).map(
+                (rankingContents) =>
+                  (!isSearchUser ||
+                    rankingContents.playerName.onePlayer.includes(isSearchUser) ||
+                    rankingContents.playerName.twoPlayer.includes(isSearchUser)) && (
+                    <li key={rankingContents.ranking}>
+                      <RankingCard cardType={isSelectedTab} contents={rankingContents} />
+                    </li>
+                  ),
+              )
+            ))}
         </ul>
       </div>
     </div>
