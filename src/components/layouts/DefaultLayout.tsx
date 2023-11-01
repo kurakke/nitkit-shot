@@ -17,7 +17,7 @@ export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Elemen
   return (
     <>
       <Head>
-        <meta name='description' content={metaDescription} />
+        <meta name='og:description' content={metaDescription} />
       </Head>
       <div className='inline-block h-full w-full min-w-max bg-base'>
         <HeaderBar />
