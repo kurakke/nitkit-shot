@@ -7,12 +7,10 @@ import { Ranking } from '../../../components/rankingPage';
 
 const RankingPage: NextPage = () => {
   return (
-    <div className='overflow-hidden [&<main]:px-0'>
-      <DefaultLayout metaDescription='nit-kit-shotのランキング'>
-        <TitleText title='ranking' />
-        <Ranking />
-      </DefaultLayout>
-    </div>
+    <DefaultLayout metaDescription='nit-kit-shotのランキング'>
+      <TitleText title='ranking' />
+      <Ranking />
+    </DefaultLayout>
   );
 };
 
