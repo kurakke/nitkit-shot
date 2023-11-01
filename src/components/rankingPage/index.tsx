@@ -64,7 +64,7 @@ export const Ranking = (): JSX.Element => {
             id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
             className={classNames(
-              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary`,
+              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary placeholder-base-thirdry`,
               `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
             )}
           />
