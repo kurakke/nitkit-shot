@@ -21,7 +21,6 @@ class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head prefix='og: https://ogp.me/ns#'>
-          <title>nit-kit-shot</title>
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -31,7 +30,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:title" content="nit-kit-shot" />
-          <meta property="og:image" content="https://nitkit-shot-optdxvj3f-kurakke.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fogp.c0eb3b4e.png&w=3840&q=75" />
+          <meta property="og:image" content="https://nitkit-shot.vercel.app/ogp.png" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="nit-kit-shot" />
