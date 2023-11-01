@@ -11,8 +11,6 @@ const MoviePage: NextPage = () => {
     <div className='overflow-hidden [&<main]:px-0'>
       <DefaultLayout
         metaDescription='nit-kit-shotの各種映像'
-        url='https://nitkit-shot.vercel.app/movie'
-        topPage={false}
       >
         <ScrollRevealOnce>
           <TitleText title='movie' />

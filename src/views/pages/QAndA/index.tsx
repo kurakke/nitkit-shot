@@ -8,10 +8,8 @@ import QAndA from '../../../components/qAndAPage';
 
 const QAndAPage: NextPage = () => {
   return (
-    <DefaultLayout 
-    metaDescription='nit-kit-shotのよくある質問'
-    url='https://nitkit-shot.vercel.app/qanda'
-    topPage={false}
+    <DefaultLayout
+      metaDescription='nit-kit-shotのよくある質問'
     >
       <ScrollRevealOnce>
         <TitleText title='q&a' />

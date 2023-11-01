@@ -10,8 +10,6 @@ const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotを遊ぶ前にご確認下さい。'
-      url='https://nitkit-shot.vercel.app/forplayer'
-      topPage={false}
     >
       <ScrollRevealOnce>
         <TitleText title='for player' />
