@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React, { ReactNode } from 'react';
 
-import opg from '../../../public/ogp1.png';
+import opg from '../../../public/opg1.png';
 
 import { Footer } from './Footer';
 import { HeaderBar } from './HeadBar';
