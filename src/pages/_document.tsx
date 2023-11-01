@@ -8,6 +8,8 @@ import Document, {
 } from 'next/document';
 import React from 'react';
 
+export const dynamic = "force-dynamic";
+
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
     const initialProps = await Document.getInitialProps(ctx);
