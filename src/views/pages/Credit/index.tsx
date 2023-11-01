@@ -10,6 +10,7 @@ const CreditPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotの制作者たち'
+      isTopPage={false}
     >
       <ScrollRevealOnce>
         <TitleText title='credit' />

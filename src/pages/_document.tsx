@@ -32,7 +32,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:title" content="nit-kit-shot" />
-          <meta property="og:type" content="website" />
           <meta property="og:image" content="http://drive.google.com/uc?export=view&id=1wxPPjNDmSvrNig2n1x722lGWujOYbKoW" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />

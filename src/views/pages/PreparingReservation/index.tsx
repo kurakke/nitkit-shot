@@ -9,6 +9,7 @@ const PreparingReservationPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='LINE Botの予約受付が準備中であることを知らせるページ'
+      isTopPage={false}
     >
       <ScrollRevealOnce>
         <PreparingReservation />
