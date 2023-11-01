@@ -34,7 +34,6 @@ class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:site" content="@nit_kit_shot" />
           <meta name="twitter:title" content="nit-kit-shot" />
         </Head>
         <body>
