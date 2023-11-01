@@ -22,10 +22,10 @@ export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Elemen
         <title>nit-kit-shot</title>
         <meta property="og:site_name" content="nit-kit-shot" />
         <meta property="og:title" content="nit-kit-shot" />
-        <meta property="og:image" content="https://nitkit-shot-26p1s7pky-kurakke.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffavicon.62ca6e00.png&w=100&q=78" color="#5bbad5" />
+        <meta property="og:image" content="https://nitkit-shot-5qcb5jkxg-kurakke.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fogp.28ff1766.jpg&w=640&q=75" color="#5bbad5" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="nit-kit-shot" />
       </Head>
       <div className='inline-block h-full w-full min-w-max bg-base'>
