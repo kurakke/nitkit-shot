@@ -35,6 +35,7 @@ class MyDocument extends Document {
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="nit-kit-shot" />
+          <meta name="twitter:description" content="Twitterユーザーの皆様へ！ビタミンラッシュの開発で監修者としてご協力いただいているPLUMさんで頭皮診断・ヘッドスパをうけてきました。" />
         </Head>
         <body>
           <Main />
