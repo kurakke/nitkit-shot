@@ -24,6 +24,7 @@ export const DefaultLayout: ({ children, isTopPage, metaDescription }: Props) =>
         <title>nit-kit-shot</title>
         <meta name='description' content={metaDescription} />
         <meta property="og:type" content={isTopPage ? "website" : "article"} />
+        <meta property='og:description' content={metaDescription} />
       </Head>
       <div className='inline-block h-full w-full min-w-max bg-base'>
         <HeaderBar />
