@@ -31,14 +31,14 @@ class MyDocument extends Document {
           <meta property="og:site_name" content="nit-kit-shot" />
           <meta property="og:title" content="nit-kit-shot" />
           <meta property="og:description" content="nit-kit-shotの公式サイトです。" />
-          <meta property="og:image" content="https://nitkit-shot.vercel.app/logo.png" />
+          <meta property="og:image" content="https://nitkit-shot.vercel.app/public/logo.png" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@nit_kit_shot" />
           <meta name="twitter:title" content="nit-kit-shot" />
           <meta name="twitter:description" content="nit-kit-shotの公式サイトです。" />
-          <meta name="twitter:image" content="https://nitkit-shot.vercel.app/logo.png" />
+          <meta name="twitter:image" content="https://nitkit-shot.vercel.app/public/logo.png" />
           <meta name="twitter:url" content="https://nitkit-shot.vercel.app/" />
           <meta name="twitter:creator" content="@nit_kit_shot" />
         </Head>
