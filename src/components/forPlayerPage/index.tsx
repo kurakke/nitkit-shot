@@ -9,10 +9,7 @@ import SentenceGenerator from '../general/SentenceGenerator';
 const ForPlayer = () => {
   return (
     <div className='flex flex-col items-center'>
-      <div className='mb-[20px] mt-[10px] border-b border-accent-yellow text-[20px] font-bold leading-none text-accent-yellow md:text-[24px]'>
-        チュートリアルと遊び方
-      </div>
-      <ul className='grid gap-y-[30px]'>
+      <ul className='mt-[20px] grid gap-y-[30px]'>
         {Object.values(GAMING_VISUAL).map((forPlayerContents) => (
           <li key={forPlayerContents.id}>
             <GamingVisualContents {...forPlayerContents} />
