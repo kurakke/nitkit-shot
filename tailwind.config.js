@@ -32,7 +32,8 @@ module.exports = {
         },
         base: {
           DEFAULT: 'rgba(30, 30, 30, 1)', // Theme Color/Dark
-          secondary: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
+          secondary: 'rgba(30, 30, 30, 0.75)', // Theme Color/Dark 75%
+          thirdry: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
         },
         light: {
           DEFAULT: 'rgba(241, 241, 241, 1)', // Theme Color/Light
