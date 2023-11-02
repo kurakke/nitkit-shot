@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 import { cuprum, dotGothic16, frijole, inter, nosifer, roadRage } from '../styles/fonts';
 
+export const dynamic = "force-dynamic";
 
 // HACK: AppPropsを使用するとエラーが発生していたため、独自で型定義をしました。
 function MyApp({
