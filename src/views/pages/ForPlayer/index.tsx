@@ -10,6 +10,7 @@ const ForPlayerPage: NextPage = () => {
   return (
     <DefaultLayout
       metaDescription='nit-kit-shotを遊ぶ前にご確認下さい。'
+      isTopPage={false}
     >
       <ScrollRevealOnce>
         <TitleText title='for player' />

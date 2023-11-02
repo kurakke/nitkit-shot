@@ -7,7 +7,10 @@ import { Ranking } from '../../../components/rankingPage';
 
 const RankingPage: NextPage = () => {
   return (
-    <DefaultLayout metaDescription='nit-kit-shotのランキング'>
+    <DefaultLayout
+      metaDescription='nit-kit-shotのランキング'
+      isTopPage={false}
+    >
       <TitleText title='ranking' />
       <Ranking />
     </DefaultLayout>

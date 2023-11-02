@@ -8,10 +8,12 @@ import { ScrollToTopButton } from './ScrollToTopButton';
 interface Props {
   children: ReactNode;
   metaDescription: string;
+  isTopPage: boolean;
 }
 
-export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Element = ({
+export const DefaultLayout: ({ children, isTopPage, metaDescription }: Props) => JSX.Element = ({
   children,
+  isTopPage,
   metaDescription,
 }) => {
   return (
@@ -19,6 +21,8 @@ export const DefaultLayout: ({ children, metaDescription }: Props) => JSX.Elemen
       <Head>
         <title>nit-kit-shot</title>
         <meta name='description' content={metaDescription} />
+        <meta property="og:type" content={isTopPage ? "website" : "article"} />
+        <meta property='og:description' content={metaDescription} />
       </Head>
       <div className='inline-block h-full w-full min-w-max bg-base'>
         <HeaderBar />
