@@ -14,10 +14,7 @@ const RootPage: NextPage = () => {
   return (
     <>
       <Loading />
-      <DefaultLayout
-       metaDescription='nit-kit-shotのホームページ'
-       isTopPage
-       >
+      <DefaultLayout metaDescription='nit-kit-shotのホームページ' isTopPage>
         <div className='grid gap-y-[35px]'>
           <ScrollRevealOnce>
             <About />
