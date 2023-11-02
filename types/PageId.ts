@@ -2,7 +2,7 @@ export type PageId =
   | 'top'
   | 'introduction'
   | 'forPlayer'
-  | 'ranking'
+  | 'comment'
   | 'movie'
   | 'qAndA'
   | 'credit'

@@ -27,11 +27,11 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'For Player',
     japaneseName: 'プレイする人へ',
   },
-  ranking: {
-    id: 'ranking',
-    path: '/ranking',
-    englishName: 'Ranking',
-    japaneseName: 'ランキング',
+  comment: {
+    id: 'comment',
+    path: '/comment',
+    englishName: 'Comment',
+    japaneseName: '開発者の声',
   },
   movie: {
     id: 'movie',

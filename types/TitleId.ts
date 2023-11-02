@@ -2,7 +2,7 @@ export type TitleId =
   | 'about'
   | 'information'
   | 'reservation'
-  | 'ranking'
+  | 'comment'
   | 'access'
   | 'introduction'
   | 'for player'
