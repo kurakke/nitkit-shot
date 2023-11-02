@@ -9,7 +9,7 @@ const Access = (): JSX.Element => {
     <div className='mx-auto w-fit'>
       <TitleText title='access' />
       <Image
-        className='mt-[10px] rounded-[12px] md:mb-[32px] md:mt-[44px] md:scale-125'
+        className='mt-[10px] rounded-[12px] md:mb-[64px] md:mt-[80px] md:scale-150'
         src={map}
         alt='map'
         width={320}
