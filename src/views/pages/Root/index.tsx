@@ -6,8 +6,8 @@ import ScrollRevealOnce from '../../../components/animation/ui/ScrollRevealOnce'
 import { DefaultLayout } from '../../../components/layouts/DefaultLayout';
 import { About } from '../../../components/topPage/About';
 import Access from '../../../components/topPage/Access';
+import Information from '../../../components/topPage/Information/index';
 import Reservation from '../../../components/topPage/Reservation/index';
-import Information from '../../../components/topPage/information/index';
 import { beautifulLog } from '../../../util/log';
 const RootPage: NextPage = () => {
   beautifulLog();
