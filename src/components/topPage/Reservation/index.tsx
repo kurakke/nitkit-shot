@@ -24,7 +24,7 @@ const Reservation = (): JSX.Element => {
       <TitleText title='reservation' />
       <div className='mx-auto mt-[20px] flex w-fit md:pb-[20px]'>
         <ReservationButton
-          path='preparingreservation' //ここにLINEbotへのリンクを貼る
+          path='https://lin.ee/x1vcKvq' //ここにLINEbotへのリンクを貼る
           waitingTime={waitingTime as number}
         />
       </div>
