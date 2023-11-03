@@ -19,15 +19,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'coming-soon-tape': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
-        header: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
-        footer: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
-        button: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
-        scrolltopbutton: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
-        access: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
-        forplayer: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
-        ranking: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
-        qanda: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        regular: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        thin: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
+        bar: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
       },
       colors: {
         'accent-green': {
@@ -39,7 +33,7 @@ module.exports = {
         base: {
           DEFAULT: 'rgba(30, 30, 30, 1)', // Theme Color/Dark
           secondary: 'rgba(30, 30, 30, 0.75)', // Theme Color/Dark 75%
-          thirdry: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
+          thirdly: 'rgba(30, 30, 30, 0.50)', // Theme Color/Dark 50%
         },
         light: {
           DEFAULT: 'rgba(241, 241, 241, 1)', // Theme Color/Light

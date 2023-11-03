@@ -47,7 +47,7 @@ const SoloRankingDetail: ({ information }: Props) => JSX.Element = ({
   ];
 
   return (
-    <PopoverContent className='block h-[216px] w-[272px] items-start justify-start rounded-[10px] border border-accent-green bg-main p-[15px] shadow-ranking'>
+    <PopoverContent className='block h-[216px] w-[272px] items-start justify-start rounded-[10px] border border-accent-green bg-main p-[15px] shadow-thin'>
       <ul className='flex h-full flex-col justify-between font-main text-[15px] text-accent-yellow [&>li]:flex [&>li]:w-full [&>li]:justify-between'>
         {RANKING_DETAIL_CONTENTS.map(({ content, title }, index) => (
           <li key={index}>

@@ -5,7 +5,7 @@ import logo from '../../../public/logo.svg';
 
 export const Footer = (): JSX.Element => {
   return (
-    <div className='relative z-30 m-[15px] mt-[60px] flex h-[48px] w-auto justify-between rounded-[5px] bg-main py-[2px] pl-[15px] pr-[5px] shadow-footer'>
+    <div className='relative z-30 m-[15px] mt-[60px] flex h-[48px] w-auto justify-between rounded-[5px] bg-main py-[2px] pl-[15px] pr-[5px] shadow-bar'>
       <a
         href='/'
         onClick={(e) => {
