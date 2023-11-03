@@ -38,7 +38,7 @@ export const Ranking = (): JSX.Element => {
       </div>
       <div
         className={classNames(
-          'z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]',
+          'z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px] shadow-button',
           `${rankingStyle('border-accent-yellow', 'border-accent-green')}`,
         )}
       >
