@@ -1,5 +1,4 @@
 type QAndAProps = {
-  id: string;
   question: string;
   answer: string;
   // 写真や動画を追加する場合、以下の変数を使用します。
