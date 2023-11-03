@@ -17,7 +17,7 @@ export const RedirectButton: ({ backGroundColor, path, text, textColor }: Props)
   textColor,
 }) => {
   return (
-    <Button className={`${backGroundColor} h-[54px] w-[230px] p-0`}>
+    <Button className={`${backGroundColor} h-[54px] w-[230px] p-0 shadow-thin`}>
       <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
         <div className={`${textColor} leading-none`}>
           <p className='font-sub text-[20px] font-semibold'>{text}</p>

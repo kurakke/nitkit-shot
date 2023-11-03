@@ -10,12 +10,12 @@ interface Props {
 
 export const ReservationButton: ({ path, waitingTime }: Props) => JSX.Element = ({
   path,
-  waitingTime
+  waitingTime,
 }) => {
   return (
     <>
       <div className='relative mt-[24px] md:mt-[50px] md:scale-125'>
-        <Button className='h-[108px] w-[330px] bg-main'>
+        <Button className='h-[108px] w-[330px] bg-main shadow-thin'>
           <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
             <div className='leading-none text-accent-yellow'>
               <p className='font-sub text-[24px] font-semibold'>予約はこちらから</p>

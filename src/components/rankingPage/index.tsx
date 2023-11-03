@@ -38,7 +38,7 @@ export const Ranking = (): JSX.Element => {
       </div>
       <div
         className={classNames(
-          'z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px]',
+          'z-0 flex h-[96.4%] flex-col rounded-[15px] border-[1px] border-accent-green bg-main p-[10px] shadow-thin',
           `${rankingStyle('border-accent-yellow', 'border-accent-green')}`,
         )}
       >
@@ -55,7 +55,7 @@ export const Ranking = (): JSX.Element => {
         </div>
         <div
           className={classNames(
-            `mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-ranking md:w-[65%] xl:w-[50%]`,
+            `mx-auto mt-[10px] flex h-[3.82%] w-[80.9%] items-center justify-between rounded-[19px] border-[5px] border-main pl-[10px] pr-[5px] shadow-thin md:w-[65%] xl:w-[50%]`,
             `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
           )}
         >
@@ -64,7 +64,7 @@ export const Ranking = (): JSX.Element => {
             id='userSearch'
             placeholder='ユーザーネームで自分の順位を検索…'
             className={classNames(
-              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary placeholder-base-thirdry`,
+              `h-full w-full bg-accent-green font-sub text-[12px] text-base-secondary placeholder-base-thirdly`,
               `${rankingStyle('bg-accent-yellow', 'bg-accent-green')}`,
             )}
           />
