@@ -13,7 +13,7 @@ const QAndACard: ({ englishQAndATitle, japaneseQAndATitle, qAndA }: Props) => JS
   qAndA,
 }) => {
   return (
-    <div className='mx-auto w-[390px] rounded-[15px] border border-accent-green bg-main p-[15px] pb-[25px] md:w-[738px]'>
+    <div className='shadow-qanda mx-auto w-[390px] rounded-[15px] border border-accent-green bg-main p-[15px] pb-[25px] md:w-[738px]'>
       <div className='inline-flex w-fit items-end border-b-[2px] border-accent-yellow text-accent-yellow'>
         <p className='font-menu-english text-[56px] leading-[40px]'>{englishQAndATitle}</p>
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{japaneseQAndATitle}</p>
