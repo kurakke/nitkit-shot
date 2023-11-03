@@ -1,3 +1,3 @@
-import RankingPage from '../../views/pages/Ranking';
+// import RankingPage from '../../views/pages/Ranking';
 
-export default RankingPage;
+// export default RankingPage;
