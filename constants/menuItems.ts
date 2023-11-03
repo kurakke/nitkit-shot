@@ -45,6 +45,12 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'Q&A',
     japaneseName: 'よくある質問',
   },
+  //   comment: {
+  //   id: 'comment',
+  //   path: '/comment',
+  //   englishName: 'Comment',
+  //   japaneseName: '開発者の声',
+  // },
   credit: {
     id: 'credit',
     path: '/credit',

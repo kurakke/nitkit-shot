@@ -2,11 +2,12 @@ export type TitleId =
   | 'about'
   | 'information'
   | 'reservation'
-  | 'ranking'
+  | 'comment'
   | 'access'
   | 'introduction'
   | 'for player'
   | 'movie'
   | 'q&a'
   | 'credit'
-  | 'official line';
+  | 'official line'
+  | 'ranking';
