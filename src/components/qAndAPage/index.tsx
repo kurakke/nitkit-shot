@@ -1,4 +1,4 @@
-import { GAME_CONTENT_MOCK, OTHER_MOCK, RESERVATION_MOCK } from '../../../constants/qAndAMock';
+import { GAME_CONTENT, OTHER, RESERVATION } from '../../../constants/qAndA';
 import ScrollRevealOnce from '../animation/ui/ScrollRevealOnce';
 
 import QAndACard from './QAndACard';
@@ -8,17 +8,17 @@ const QAndA = () => {
     {
       englishQAndATitle: 'Game Content',
       japaneseQAndATitle: 'ゲーム内容',
-      qAndA: GAME_CONTENT_MOCK,
+      qAndA: GAME_CONTENT,
     },
     {
       englishQAndATitle: 'Reservation',
       japaneseQAndATitle: '予約',
-      qAndA: RESERVATION_MOCK,
+      qAndA: RESERVATION,
     },
     {
       englishQAndATitle: 'Other',
       japaneseQAndATitle: 'その他',
-      qAndA: OTHER_MOCK,
+      qAndA: OTHER,
     },
   ];
   return (

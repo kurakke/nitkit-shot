@@ -1,4 +1,4 @@
-import { STORY_SENTENCE_MOCK } from '../../../constants/storySentenceMock';
+import { STORY_SENTENCE } from '../../../constants/storySentence';
 import SentenceGenerator from '../general/SentenceGenerator';
 
 const Introduction = (): JSX.Element => {
@@ -10,7 +10,7 @@ const Introduction = (): JSX.Element => {
       </div>
       <div className='mx-auto w-fit'>
         <SentenceGenerator
-          sentence={STORY_SENTENCE_MOCK}
+          sentence={STORY_SENTENCE}
           gap='gap-y-[30px]'
           leading='leading-[30px]'
           textSize='text-[16px]'

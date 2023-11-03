@@ -1,4 +1,4 @@
-export const STORY_SENTENCE_MOCK: string[] = [
+export const STORY_SENTENCE: string[] = [
   '何の変哲も無いある日の授業のこと。\n「さかた」はいつものように居眠りをして\nしまう。',
   '体を揺さぶられ目を覚ますと、\nそこには銃を持った北園先生の姿と\n倒れているゾンビの姿が…!!',
   '訳の分からない状況に呆然としていると、\n先生が状況を説明してくれた。',
