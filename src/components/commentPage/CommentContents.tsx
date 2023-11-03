@@ -28,7 +28,7 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({ af
             <p className="text-white font-main text-center text-[16px] mb-[20px]">~{affiliation}~</p>
             <div className="grid gap-y-[20px]">
                 {comments.map((comment, index) => (
-                    <div key={index} className={classNames(`relative px-[12px] py-[10px] max-w-[380px] rounded-[10px] font-main text-main`,
+                    <div key={index} className={classNames(`shadow-coming-soon-teep relative px-[12px] py-[10px] max-w-[380px] rounded-[10px] font-main text-main`,
                         `${cardStyle(
                             comment.place,
                             "mr-[14px] ml-auto bg-accent-green",
