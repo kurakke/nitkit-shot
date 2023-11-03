@@ -38,7 +38,7 @@ export const ScrollToTopButton = (): JSX.Element => {
       <Button
         onClick={scrollToTop}
         className={classNames(
-          'transition-[opacity, visibility] duraction-500 fixed bottom-[78px] right-[15px] z-[30] flex h-[48px] w-[48px] min-w-0 items-center justify-center rounded-[6px] border border-accent-green bg-accent-yellow',
+          'transition-[opacity, visibility] duraction-500 fixed bottom-[78px] right-[15px] z-[30] flex h-[48px] w-[48px] min-w-0 items-center justify-center rounded-[6px] border border-accent-green bg-accent-yellow shadow-scrolltopbutton',
           `${toTopButoonStyle(
             'translate-x-0', //表示時のスタイル
             'translate-x-[63px]', //非表示時のスタイル
