@@ -2,9 +2,9 @@ export type PageId =
   | 'top'
   | 'introduction'
   | 'forPlayer'
-  // | 'comment'
+  | 'comment'
   | 'movie'
   | 'qAndA'
   | 'credit'
-  | 'reservation'
-  | 'ranking';
+  | 'reservation';
+// | 'ranking';
