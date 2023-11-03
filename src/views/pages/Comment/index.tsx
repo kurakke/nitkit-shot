@@ -15,8 +15,8 @@ const CommentPage: NextPage = () => {
         >
             <ScrollRevealOnce>
                 <TitleText title='comment' />
-                <Comment />
             </ScrollRevealOnce>
+            <Comment />
         </DefaultLayout>
     );
 };
