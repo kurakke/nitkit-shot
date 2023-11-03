@@ -1,29 +1,16 @@
 /* eslint-disable sort/object-properties */
 import React from 'react';
 
-import { Sentence } from '../../../../types/Sentence';
 import { RedirectButton } from '../../general/RedirectButton';
 import SentenceGenerator from '../../general/SentenceGenerator';
 import { TitleText } from '../../general/TitleText';
 
-const INTRODUCTION_SENTENCE: Sentence = {
-  firstParagraph: {
-    id: 'firstParagraph',
-    sentence: 'ある日突然北九州高専に\n現れたゾンビたち！！！！！！！！',
-  },
-  secondParagraph: {
-    id: 'secondParagraph',
-    sentence: 'その正体は高専生と先生であった!?',
-  },
-  thirdParagraph: {
-    id: 'thirdParagraph',
-    sentence: 'ゾンビを元の姿に戻すため4号館の奥へと\n歩みを進めていくのだが……',
-  },
-  fourthParagraph: {
-    id: 'fourthParagraph',
-    sentence: '4I完全自作の\nハチャメチャゾンビシューティング！！！！',
-  },
-};
+const INTRODUCTION_SENTENCE: string[] = [
+  'ある日突然北九州高専に\n現れたゾンビたち！！！！！！！！',
+  'その正体は高専生と先生であった!?',
+  'ゾンビを元の姿に戻すため4号館の奥へと\n歩みを進めていくのだが……',
+  '4I完全自作の\nハチャメチャゾンビシューティング！！！！',
+];
 
 // const PS_SENTENCE: Sentence = {
 //   firstParagraph: {
