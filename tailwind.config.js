@@ -19,9 +19,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
+        bar: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
         regular: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
         thin: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
-        bar: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
       },
       colors: {
         'accent-green': {

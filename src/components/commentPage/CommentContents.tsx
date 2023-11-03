@@ -30,7 +30,7 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({ af
             <div className="grid gap-y-[20px]">
                 {comments.map((comment, index) => (
                     <ScrollRevealOnce>
-                        <div key={index} className={classNames(`shadow-coming-soon-teep relative px-[12px] py-[10px] max-w-[380px] rounded-[10px] font-main text-main`,
+                        <div key={index} className={classNames(`shadow-regular relative px-[12px] py-[10px] max-w-[380px] rounded-[10px] font-main text-main`,
                             `${cardStyle(
                                 comment.place,
                                 "mr-[14px] ml-auto bg-accent-green",
