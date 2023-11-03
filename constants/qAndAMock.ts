@@ -1,6 +1,6 @@
 import { QAndA } from '../types/QandA';
 
-export const GAMECONTENT_MOCK: QAndA = {
+export const GAME_CONTENT_MOCK: QAndA = {
   firstQAndA: {
     question: 'どのようにしたらスコアが高くなりますか?',
     answer:
