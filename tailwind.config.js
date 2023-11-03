@@ -25,6 +25,7 @@ module.exports = {
         button: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
         scrolltopbutton: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
         access: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        forplayer: '0px 8px 8px 2px rgba(0, 0, 0, 0.125)',
         ranking: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
         qanda: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
       },

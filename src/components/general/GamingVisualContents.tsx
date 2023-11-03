@@ -22,7 +22,7 @@ const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Elemen
           width={320}
           height={180}
           allow='fullscreen'
-          className=' md:my-[24px] md:scale-125 xl:my-[48px] xl:scale-150'
+          className=' rounded-[4px] shadow-forplayer md:my-[24px] md:scale-125 xl:my-[48px] xl:scale-150'
         />
       )}
       <div className='text-[20px] font-bold text-accent-green md:text-[24px]'>{title}</div>
