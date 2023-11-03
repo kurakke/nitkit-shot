@@ -4,7 +4,7 @@ import { QAndA } from '../../../types/QandA';
 interface Props {
   englishQAndATitle: string;
   japaneseQAndATitle: string;
-  qAndA: QAndA;
+  qAndA: QAndA[];
 }
 
 const QAndACard: ({ englishQAndATitle, japaneseQAndATitle, qAndA }: Props) => JSX.Element = ({
@@ -19,7 +19,7 @@ const QAndACard: ({ englishQAndATitle, japaneseQAndATitle, qAndA }: Props) => JS
         <p className='ml-[5px] font-menu-japanese text-[14px] leading-none'>{japaneseQAndATitle}</p>
       </div>
       <ul className='mt-[20px] grid gap-y-[30px] px-[5px]'>
-        {Object.values(qAndA).map((qAndAContents, index) => (
+        {qAndA.map((qAndAContents, index) => (
           <li key={index} className='font-main'>
             <div className='flex text-[16px] text-accent-green'>
               <p className='mr-[10px]'>Q.</p> <p>{qAndAContents.question}</p>
