@@ -10,8 +10,8 @@ const ForPlayer = () => {
   return (
     <div className='flex flex-col items-center'>
       <ul className='mt-[20px] grid gap-y-[30px]'>
-        {Object.values(GAMING_VISUAL).map((forPlayerContents) => (
-          <li key={forPlayerContents.id}>
+        {Object.values(GAMING_VISUAL).map((forPlayerContents, index) => (
+          <li key={index}>
             <GamingVisualContents {...forPlayerContents} />
           </li>
         ))}

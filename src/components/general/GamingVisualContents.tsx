@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 
-import { GamingVisualProps } from '../../../types/GamingVisual';
+import { GamingVisual } from '../../../types/GamingVisual';
 
-const GamingVisualContents: (Props: Omit<GamingVisualProps, 'id'>) => JSX.Element = ({
+const GamingVisualContents: ({ description, source, title, type }: GamingVisual) => JSX.Element = ({
   description,
   source,
   title,
