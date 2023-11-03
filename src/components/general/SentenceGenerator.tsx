@@ -1,10 +1,8 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { Sentence } from '../../../types/Sentence';
-
 interface Props {
-  sentence: Sentence;
+  sentence: string[];
   leading?: string;
   gap?: string;
   textSize: string;
@@ -31,9 +29,9 @@ const SentenceGenerator: ({ gap, leading, point, sentence, textSize }: Props) =>
         `${pointStyle()}`,
       )}
     >
-      {Object.values(sentence).map((paragraphs) => (
-        <li key={paragraphs.id} className='whitespace-pre-wrap'>
-          {paragraphs.sentence}
+      {sentence.map((paragraphs, index) => (
+        <li key={index} className='whitespace-pre-wrap'>
+          {paragraphs}
         </li>
       ))}
     </ul>
