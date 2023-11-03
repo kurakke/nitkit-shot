@@ -23,7 +23,7 @@ const ComingSoonTape: ({ rotate }: Props) => JSX.Element = ({ rotate }) => {
 
   return (
     <div
-      className={`shadow-coming-soon-teep flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow ${rotate}`}
+      className={`flex h-[22px] justify-center gap-x-[40px] whitespace-pre bg-accent-yellow shadow-coming-soon-tape ${rotate}`}
     >
       {Array.from({ length: wordCount }).map((_, index) => (
         <p key={index} className='font-ranking text-[16px]'>

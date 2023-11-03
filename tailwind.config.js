@@ -19,7 +19,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'coming-soon-teep': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
+        'coming-soon-tape': '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
         header: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
         footer: '0 5px 15px 10px rgba(0, 0, 0, 0.125)',
         button: '0px 8px 8px 2px rgba(0, 0, 0, 0.25)',
