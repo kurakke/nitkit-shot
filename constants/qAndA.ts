@@ -2,8 +2,8 @@ import { QAndA } from '../types/QandA';
 
 export const GAME_CONTENT: QAndA[] = [
   {
-    answer: 'シューティングゲームってなんですか？',
-    question: '次々に出てくる敵を武器でどんどん倒して行くゲームです。',
+    answer: '次々に出てくる敵を武器でどんどん倒して行くゲームです。',
+    question: 'シューティングゲームってなんですか？',
   },
   {
     answer:
