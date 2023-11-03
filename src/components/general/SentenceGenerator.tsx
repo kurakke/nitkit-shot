@@ -29,7 +29,7 @@ const SentenceGenerator: ({ gap, leading, point, sentence, textSize }: Props) =>
         `${pointStyle()}`,
       )}
     >
-      {Object.values(sentence).map((paragraphs, index) => (
+      {sentence.map((paragraphs, index) => (
         <li key={index} className='whitespace-pre-wrap'>
           {paragraphs}
         </li>
