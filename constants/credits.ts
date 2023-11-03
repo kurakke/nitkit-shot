@@ -33,26 +33,31 @@ export const SOFTWARE_CREDIT: Credit = {
   },
   7: {
     id: 7,
-    name: 'もりもり',
-    post: 'ステージモデリング',
+    name: 'さかたん',
+    post: 'ゲームUIデザイン',
   },
   8: {
     id: 8,
-    name: '2012年',
-    post: '小物配置',
+    name: 'もりもり',
+    post: 'ステージモデリング',
   },
   9: {
     id: 9,
-    name: 'える',
+    name: '2012年',
     post: '小物配置',
   },
   10: {
     id: 10,
-    name: 'SR',
+    name: 'える',
     post: '小物配置',
   },
   11: {
     id: 11,
+    name: 'SR',
+    post: '小物配置',
+  },
+  12: {
+    id: 12,
     name: 'みけねこ',
     post: 'Vfaker',
   },
