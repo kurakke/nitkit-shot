@@ -27,12 +27,6 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     englishName: 'For Player',
     japaneseName: 'プレイする人へ',
   },
-  comment: {
-    id: 'comment',
-    path: '/comment',
-    englishName: 'Comment',
-    japaneseName: '開発者の声',
-  },
   movie: {
     id: 'movie',
     path: '/movie',
@@ -44,6 +38,12 @@ export const MENUS_ITEMS: Record<PageId, MenuItems> = {
     path: '/qanda',
     englishName: 'Q&A',
     japaneseName: 'よくある質問',
+  },
+    comment: {
+    id: 'comment',
+    path: '/comment',
+    englishName: 'Comment',
+    japaneseName: '開発者の声',
   },
   credit: {
     id: 'credit',
