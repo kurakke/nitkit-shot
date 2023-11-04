@@ -8,7 +8,7 @@ export const SOFTWARE_COMMENT: Comment[] = [
     post: 'リーダー',
   },
   {
-    comment: '崖っぷち高専生',
+    comment: '13時間寝ました',
     name: 'たやけま',
     place: 'right',
     post: 'プログラム担当',
