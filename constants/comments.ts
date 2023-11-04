@@ -8,7 +8,7 @@ export const SOFTWARE_COMMENT: Comment[] = [
     post: 'リーダー',
   },
   {
-    comment: 'たやけまです。よろしくお願いします。',
+    comment: '崖っぷち高専生',
     name: 'たやけま',
     place: 'right',
     post: 'プログラム担当',
@@ -57,13 +57,14 @@ export const SOFTWARE_COMMENT: Comment[] = [
     post: '小物配置',
   },
   {
-    comment: 'SRです。よろしくお願いします。',
+    comment: 'インド人を右に！',
     name: 'SR',
     place: 'right',
     post: '小物配置',
   },
   {
-    comment: 'みけねこです。よろしくお願いします。',
+    comment:
+      'BGMと一部映像の編集を担当しています。\n色々言いたいことはありますが一つだけ。\nどことは言いませんが恐ろしさ溢れるBGM描いちゃってすみませんでした！！！！！！！！！！',
     name: 'みけねこ',
     place: 'left',
     post: 'Vfaker',
@@ -194,7 +195,7 @@ export const PLUSALPHA_COMMENT: Comment[] = [
     post: '装飾',
   },
   {
-    comment: '帰宅部のエースです。よろしくお願いします。',
+    comment: '崖っぷち高専生',
     name: '帰宅部のエース',
     place: 'right',
     post: '装飾',
@@ -212,7 +213,7 @@ export const PLUSALPHA_COMMENT: Comment[] = [
     post: 'マニュアル作成',
   },
   {
-    comment: 'ギガです。よろしくお願いします。',
+    comment: 'まだ舞える',
     name: 'ギガ',
     place: 'left',
     post: 'マニュアル作成',
