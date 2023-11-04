@@ -3,6 +3,10 @@ import { information } from '../types/information';
 export const INFORMATION_DATA: information[] = [
   {
     date: '2023.11.04',
+    text: 'nit-kit-shotの開催が11時からになりました'
+  },
+  {
+    date: '2023.11.04',
     text: 'nit-kit-shotの開催は10時からになります'
   },
   {
