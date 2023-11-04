@@ -75,13 +75,13 @@ export const HARDWARE_COMMENT: Comment[] = [
   {
     comment: '犬は犬でも食べられない犬はパンケーキ',
     name: 'kani',
-    place: 'left',
+    place: 'right',
     post: 'リーダー',
   },
   {
     comment: '既製品買えばよかったよねーーー\u{1f605}',
     name: '苦労人ATAGON',
-    place: 'right',
+    place: 'left',
     post: '銃設計',
   },
 ];
@@ -91,20 +91,20 @@ export const SENSOR_COMMENT: Comment[] = [
     comment:
       '準備期間、2450円のセンサ壊したり何本もの髪の毛を燃やしてきました。センサ類が不具合起きたら電話かかって出動しなきゃなので、壊さない程度にいっぱい楽しんでくださいー！',
     name: 'ことりん',
-    place: 'left',
+    place: 'right',
     post: 'リーダー',
   },
   {
     comment:
       '動画のOPの監督(？)と編集、などを担当しました、福田です。\n正直それ以外何もしてませんが、それはそれで拘ってるので良かったらスキップせずにご覧下さい！ｱﾄ,ｷﾃｸﾚﾃｱﾘｶﾞﾄ!!',
     name: '福田です。',
-    place: 'right',
+    place: 'left',
     post: '副リーダー, 動画編集',
   },
   {
     comment: '基盤、センサ、はんだとはしばらく距離を置きます。',
     name: '8',
-    place: 'left',
+    place: 'right',
     post: 'センサいろいろ',
   },
 ];
@@ -137,7 +137,7 @@ export const PLUSALPHA_COMMENT: Comment[] = [
   {
     comment: 'ま、なんとかなるか 期待してるよ、みんな',
     name: 'バーバパパ',
-    place: 'left',
+    place: 'right',
     post: '統括',
   },
   {
