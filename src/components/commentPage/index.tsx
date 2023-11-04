@@ -36,7 +36,7 @@ const Comment = (): JSX.Element => {
 
   return (
     <>
-      <div className='mt-[10px] grid gap-y-[20px]'>
+      <div className='mt-[10px] grid gap-y-[20px] md:gap-y-[24px]'>
         {commentContents.map((commentContent, index) => (
           <CommentContents
             affiliation={commentContent.affiliation}

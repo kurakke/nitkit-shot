@@ -28,13 +28,13 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
   return (
     <div>
       {/* <p className='mb-[20px] text-center font-main text-[16px] text-white'>~{affiliation}~</p> */}
-      <div className='m-0 grid w-[calc(100vw-30px)] gap-y-[20px]'>
+      <div className='m-0 grid w-[calc(100vw-30px)] gap-y-[20px] md:gap-y-[24px]'>
         {comments.map((comment, index) => (
           <ScrollRevealOnce>
             <div
               key={index}
               className={classNames(
-                `relative w-fit max-w-full rounded-[10px] px-[12px] py-[10px] font-main text-main shadow-regular`,
+                `relative w-fit max-w-full rounded-[10px] px-[12px] py-[10px] font-main text-main shadow-regular md:rounded-[12px] md:px-[14px] md:py-[12px]`,
                 `${cardStyle(
                   comment.place,
                   'ml-auto mr-[14px] max-w-[84%] break-words bg-accent-green md:mr-[44px]',
