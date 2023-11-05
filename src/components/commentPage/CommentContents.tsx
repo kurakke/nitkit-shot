@@ -37,8 +37,8 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
                 `relative w-fit max-w-full rounded-[10px] px-[12px] py-[10px] font-main text-main shadow-regular md:rounded-[12px] md:px-[14px] md:py-[12px]`,
                 `${cardStyle(
                   comment.place,
-                  'ml-auto mr-[14px] max-w-[84%] break-words bg-accent-green md:mr-[44px]',
-                  'ml-[14px] mr-auto max-w-[84%] break-words bg-accent-yellow md:ml-[44px]',
+                  'ml-auto mr-[14px] max-w-[85%] break-words bg-accent-green md:mr-[44px]',
+                  'ml-[14px] mr-auto max-w-[85%] break-words bg-accent-yellow md:ml-[44px]',
                 )}`,
               )}
             >
