@@ -64,9 +64,12 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
                 <p className='mb-[10px] w-fit border-b border-main text-[15px] leading-tight md:text-[18px]'>
                   {comment.name}
                 </p>
-                <p className='ml-[10px] text-[12px] leading-[1.44] md:text-[15px]'>
-                  Post = [ {comment.post} ];
-                </p>
+                <div className='ml-[10px] flex text-[12px] md:text-[15px]'>
+                  <p>Post = </p>
+                  <p className='whitespace-pre leading-[1.44] sm:whitespace-normal'>
+                    [ {comment.post} ];
+                  </p>
+                </div>
               </div>
               <p className='whitespace-pre-wrap break-words text-[12px]  md:text-[15px]'>
                 {comment.comment}
