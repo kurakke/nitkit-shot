@@ -27,7 +27,11 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
 
   return (
     <div>
-      <p className='mb-[20px] text-center font-main text-[16px] text-white'>~{affiliation}~</p>
+      <ScrollRevealOnce>
+        <p className='my-[20px] mb-[20px] text-center font-main text-[16px] text-white'>
+          ~{affiliation}~
+        </p>
+      </ScrollRevealOnce>
       <div className='m-0 grid w-[calc(100vw-30px)] gap-y-[20px] md:gap-y-[24px]'>
         {comments.map((comment, index) => (
           <ScrollRevealOnce>
