@@ -2,6 +2,10 @@ import { information } from '../types/information';
 
 export const INFORMATION_DATA: information[] = [
   {
+    date: '2023.11.05',
+    text: '高専祭2日目の案内を開始しました!'
+  },
+  {
     date: '2023.11.04',
     text: '1日目が終了しました!\n明日も遊びに来て下さい!!'
   },
