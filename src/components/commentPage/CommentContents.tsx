@@ -13,7 +13,7 @@ interface Props {
 }
 
 const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
-  //   affiliation,
+  affiliation,
   comments,
 }) => {
   const cardStyle = (place: string, right: string, left: string) => {
@@ -27,7 +27,7 @@ const CommentContents: ({ affiliation, comments }: Props) => JSX.Element = ({
 
   return (
     <div>
-      {/* <p className='mb-[20px] text-center font-main text-[16px] text-white'>~{affiliation}~</p> */}
+      <p className='mb-[20px] text-center font-main text-[16px] text-white'>~{affiliation}~</p>
       <div className='m-0 grid w-[calc(100vw-30px)] gap-y-[20px] md:gap-y-[24px]'>
         {comments.map((comment, index) => (
           <ScrollRevealOnce>
