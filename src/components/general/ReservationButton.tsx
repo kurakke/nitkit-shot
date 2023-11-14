@@ -16,7 +16,7 @@ export const ReservationButton: ({ path, waitingTime }: Props) => JSX.Element = 
     <>
       <div className='relative mt-[24px] md:mt-[50px] md:scale-125'>
         <Button className='h-[108px] w-[330px] bg-main shadow-thin'>
-          <Link className='flex h-full w-full items-center justify-center' href={`${path}`}>
+          <Link className='flex h-full w-full items-center justify-center' href={`/${path}`}>
             <div className='leading-none text-accent-yellow'>
               <p className='font-sub text-[24px] font-semibold'>予約はこちらから</p>
               <p className='mt-[6px] border-b border-accent-yellow font-menu-japanese text-[12px]'>
