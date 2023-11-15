@@ -23,11 +23,7 @@ const Reservation = (): JSX.Element => {
     <>
       <TitleText title='reservation' />
       <div className='mx-auto mt-[20px] flex w-fit md:pb-[20px]'>
-        <ReservationButton
-          // path='https://lin.ee/x1vcKvq' //ここにLINEbotへのリンクを貼る
-          path='closedreservation'
-          waitingTime={waitingTime as number}
-        />
+        <ReservationButton path='closedreservation' waitingTime={waitingTime as number} />
       </div>
     </>
   );
